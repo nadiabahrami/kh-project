@@ -1,9 +1,25 @@
 body{
     padding-top: 70px;
-    max-width: 960px;
-    margin: auto;
+    m/*ax-width: 960px;
+    margin: auto;*/
 }
 
-nav{
+nav {
     background-color: #F27C54;
+    color: white;
+}
+nav a {
+    color: white;
+}
+
+ul .active {
+    background-color: #ffa182;
+}
+
+#navbar a:hover {
+    background-color: orange;
+}
+
+.right-to-left li {
+    float:right;
 }
