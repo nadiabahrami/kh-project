@@ -10,6 +10,7 @@ nav {
 }
 nav a {
     color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 ul .active {
@@ -23,3 +24,27 @@ ul .active {
 .right-to-left li {
     float:right;
 }
+
+h1 {
+    font-family: 'Josefin Slab', serif;  
+    display:inline-block;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.18em;
+}
+/*
+font-family: 'Kite One', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'David Libre', serif;*/
+
+/*home page*/
+ .divider{
+    border-bottom: 1px solid #54F2CE;
+ }
