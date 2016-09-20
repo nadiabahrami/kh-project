@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <h1>Blog</h1>
+</div>
+<script>
+    $('#navbar ul li').removeClass("active");
+    $('#navbar ul :nth-child(4)').addClass("active");
+</script>
+{% endblock %}
