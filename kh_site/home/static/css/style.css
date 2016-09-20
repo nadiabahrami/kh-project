@@ -28,6 +28,11 @@ nav .container .navbar-collapse ul .active a:hover {
     color:white;
 }
 
+.navbar-header img {
+    height: 55px;
+    margin-top: -17px;
+}
+
 .right-to-left li {
     float:right;
 }
