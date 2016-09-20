@@ -13,12 +13,19 @@ nav a {
     font-family: 'Open Sans', sans-serif;
 }
 
-ul .active {
-    background-color: #ffa182;
+nav .container .navbar-collapse a:hover {
+    background-color: #F27C54;
+    color: #54F2CE;
 }
 
-#navbar a:hover {
-    background-color: orange;
+nav .container .navbar-collapse ul .active a {
+    background-color: #ffa182;
+    color: white;
+}
+
+nav .container .navbar-collapse ul .active a:hover {
+    background-color: #ffa182;
+    color:white;
 }
 
 .right-to-left li {
@@ -26,13 +33,17 @@ ul .active {
 }
 
 h1 {
+    font-family: 'Josefin Slab', serif; 
+    font-size:42px; 
+}
+
+h2 {
     font-family: 'Josefin Slab', serif;  
-    display:inline-block;
+    font-size: 36px;
 }
 
 h3{
     font-family: 'Open Sans', sans-serif;
-    display: inline-block;
 }
 
 p {
@@ -47,4 +58,30 @@ font-family: 'David Libre', serif;*/
 /*home page*/
  .divider{
     border-bottom: 1px solid #54F2CE;
+    padding-bottom: 30px;
+    margin-bottom:20px;
+ }
+
+.logo-heading{
+    display:inline-block;
+}
+
+.lh-1{
+    margin-left:-30px;
+    margin-bottom:5px;
+}
+
+.lh-2 {
+    margin-left:5px;
+    font-size:50px;
+}
+
+.lh-3 {
+    margin-top: 0px;
+}
+
+ #home-portrait {
+    border:5.5px solid #F94A61;
+    border-radius: 50%;
+    padding-top: 20px;
  }
