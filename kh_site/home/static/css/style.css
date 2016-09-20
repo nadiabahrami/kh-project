@@ -1,0 +1,87 @@
+body{
+    padding-top: 70px;
+    m/*ax-width: 960px;
+    margin: auto;*/
+}
+
+nav {
+    background-color: #F27C54;
+    color: white;
+}
+nav a {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav .container .navbar-collapse a:hover {
+    background-color: #F27C54;
+    color: #54F2CE;
+}
+
+nav .container .navbar-collapse ul .active a {
+    background-color: #ffa182;
+    color: white;
+}
+
+nav .container .navbar-collapse ul .active a:hover {
+    background-color: #ffa182;
+    color:white;
+}
+
+.right-to-left li {
+    float:right;
+}
+
+h1 {
+    font-family: 'Josefin Slab', serif; 
+    font-size:42px; 
+}
+
+h2 {
+    font-family: 'Josefin Slab', serif;  
+    font-size: 36px;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.18em;
+}
+/*
+font-family: 'Kite One', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'David Libre', serif;*/
+
+/*home page*/
+ .divider{
+    border-bottom: 1px solid #54F2CE;
+    padding-bottom: 30px;
+    margin-bottom:20px;
+ }
+
+.logo-heading{
+    display:inline-block;
+}
+
+.lh-1{
+    margin-left:-30px;
+    margin-bottom:5px;
+}
+
+.lh-2 {
+    margin-left:5px;
+    font-size:50px;
+}
+
+.lh-3 {
+    margin-top: 0px;
+}
+
+ #home-portrait {
+    border:5.5px solid #F94A61;
+    border-radius: 50%;
+    padding-top: 20px;
+ }
