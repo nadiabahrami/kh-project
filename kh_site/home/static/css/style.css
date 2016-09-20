@@ -85,8 +85,18 @@ font-family: 'David Libre', serif;*/
     margin-top: 0px;
 }
 
+#img-2{
+    height:200px;
+    width:300px;
+}
+
+#home-logo {
+    height:auto;
+    width:100%;
+}
+
  #home-portrait {
     border:5.5px solid #F94A61;
     border-radius: 50%;
-    padding-top: 20px;
+    padding-top: 15px;
  }
