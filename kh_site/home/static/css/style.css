@@ -85,7 +85,7 @@ font-family: 'David Libre', serif;*/
 
 /*home page*/
  .divider{
-    border-bottom: 1px solid #54F2CE;
+    border-bottom: 2px solid #54F2CE;
     padding-bottom: 30px;
     margin-bottom:20px;
  }
@@ -106,6 +106,18 @@ font-family: 'David Libre', serif;*/
 
 .lh-3 {
     margin-top: 0px;
+}
+
+#nav-branding{
+    width:300px;
+}
+
+#nav-branding p {
+    font-family: 'Josefin Slab', serif;
+    padding-top:20px;
+    margin-bottom: 0px;
+    display: inline-block;
+    margin-left: -15px;
 }
 
 #img-2{
