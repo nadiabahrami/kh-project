@@ -28,8 +28,8 @@ nav .container .navbar-collapse ul .active a:hover {
     color:white;
 }
 
-.icon {
-    color:white;
+.icon-bar {
+    background-color:white;
 }
 
 .navbar-header img {
