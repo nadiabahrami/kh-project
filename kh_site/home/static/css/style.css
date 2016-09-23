@@ -90,6 +90,10 @@ font-family: 'David Libre', serif;*/
     margin-bottom:20px;
  }
 
+.index-top{
+    padding-bottom: 60px;
+}
+
 .logo-heading{
     display:inline-block;
 }
@@ -102,6 +106,7 @@ font-family: 'David Libre', serif;*/
 .lh-2 {
     margin-left:5px;
     font-size:50px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .lh-3 {
@@ -120,9 +125,13 @@ font-family: 'David Libre', serif;*/
     margin-left: -15px;
 }
 
-#img-2{
-    height:200px;
-    width:300px;
+#img2{
+    margin-top: -55px;
+    margin-left: 120px;
+    height:100px;
+    width: 150px;
+    position:absolute;
+    z-index: 5;
 }
 
 #home-logo {
@@ -134,4 +143,27 @@ font-family: 'David Libre', serif;*/
     border:5.5px solid #F94A61;
     border-radius: 50%;
     padding-top: 15px;
+    width: 84%;
+ }
+
+ #about-img-div {
+    width:250px;
+    float: left;
+    margin-right: 20px;
+}
+
+ #about-img{
+    height:auto;
+    width: 100%;
+    border-radius: 10%;
+    border:2px solid #F94A61;;
+ }
+
+ .book-cover {
+    height:auto;
+    width:100%;
+ }
+
+ .book{
+    width:200px;
  }

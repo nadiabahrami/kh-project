@@ -1,8 +1,21 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div class="container">
-    <h1>Resources</h1>
+<div class="container divider">
+    <h1 class="text-center">Resources</h1>
+</div>
+<div class="container divider">
+    <h2>Recovery</h2>
+    <div class="col-md-3">
+        <div class="book">
+            <a type="_blank" href="http://www.amazon.com"><img class="book-cover" src="{% static 'imgs/book1.jpeg' %}"/></a>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="book">
+            <a type="_blank" href="http://www.amazon.com"><img class="book-cover" src="{% static 'imgs/book2.jpg' %}"/></a>
+        </div>
+    </div>
 </div>
 <script>
     $('#navbar .navbar-nav li').removeClass("active");
