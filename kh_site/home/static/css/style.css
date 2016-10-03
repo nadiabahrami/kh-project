@@ -180,20 +180,38 @@ font-family: 'David Libre', serif;*/
 .front {
     background-color: teal;
     width:100%;
-    height: 160px;
-    padding: 10px;
+    height: 230px;
+    padding: 20px;
     border-radius: 50%;
     -webkit-transition: padding .5s, width .5s, height .5s, margin-top .5s, margin-left .5s, margin-bottom .5s;
 }
 
 .front:hover{
     width:115%;
-    height:180px;
-    padding: 20px;
+    height:265px;
+    padding: 36px;
     margin-top:-10px;
-    margin-left:-10px;
-    margin-bottom: -20px;
+    margin-left:-20px;
+    margin-bottom: -30px;
    border-radius: 50%;
   /* HOVER ON */
    -webkit-transition: padding .5s, width .5s, height .5s, margin-top .5s, margin-left .5s, margin-bottom .5s;
 }
+
+.spacer {
+    margin-bottom: 60px;
+}
+
+.talk {
+    margin-left: 40px;
+}
+ 
+.speeches a {
+    text-decoration: none;
+}
+
+.front h2{
+    font-size: 30px;
+}
+
+.padded-text
