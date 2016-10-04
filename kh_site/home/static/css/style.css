@@ -279,3 +279,17 @@ font-family: 'David Libre', serif;*/
     color:white;
     margin-top: 0px;
 }
+
+.contact-info h4 {
+    margin-top: 0px;
+}
+
+.contact-imgs {
+    width:20px;
+    height:20px;
+    margin-right: 1em;
+}
+
+#map {
+    height:300px;
+}

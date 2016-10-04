@@ -2,10 +2,43 @@
 {% load static %}
 {% block content %}
 <div class="container divider">
-    <h1>Contact</h1>
+    <h1 class="text-center">Contact</h1>
+</div>
+<div class="container divider">
+    <div class="col-md-4">
+        <div id=map></div>
+        <h4>Address:</h4>
+        <p>2606 1/2 3rd Ave. Seattle, WA 98121</p>
+        <h4>Parking:</h4>
+        <p>Paid street parking is available 8am to 8pm on the street surrounding both the Queen Anne and the Belltown offices.</p>
+    </div>
+    <div class="col-md-8">
+        <p>I offer services in a warm and comfortable environment conveniently located in Belltown Seattle.  Please contact me directly to inquire about available time slots.</p>
+        <p>Call me at (205) 775-0502 or send me a message below.</p>
+
+
+    </div>
 </div>
 <script>
     $('#navbar .navbar-nav li').removeClass("active");
     $('#navbar .navbar-nav :nth-child(5)').addClass("active");
 </script>
+<script>
+    function initMap() {
+      var myLatLng = {lat: 47.616852, lng: -122.348026};
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: myLatLng
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: "Kyeisha Hodge's Office"
+      });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{ GOOGLE_KEY }}&callback=initMap"
+async defer></script>
 {% endblock %}
