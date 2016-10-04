@@ -1,7 +1,11 @@
 body{
-    padding-top: 70px;
+    padding-top: 95px;
     /*max-width: 960px;
     margin: auto;*/
+}
+
+.service a {
+    text-decoration: none;
 }
 
 nav {
@@ -49,6 +53,7 @@ h1 {
 h2 {
     font-family: 'Josefin Slab', serif;  
     font-size: 36px;
+/*    color: #0026FF;*/
 }
 
 h3{
@@ -85,11 +90,11 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'David Libre', serif;*/
 
 /*home page*/
- .divider{
-    border-bottom: 2px solid #54F2CE;
-    padding-bottom: 30px;
-    margin-bottom:30px;
- }
+.divider{
+border-bottom: 2px solid #54F2CE;
+padding-bottom: 30px;
+margin-bottom:30px;
+}
 
 .index-top{
     padding-bottom: 60px;
@@ -97,6 +102,21 @@ font-family: 'David Libre', serif;*/
 
 .logo-heading{
     display:inline-block;
+}
+
+.top-bar {
+    background-color: #54F2CE;
+}
+
+.top-bar p {
+    display: inline-block;
+    margin: 2px 0px 2px 0px;
+    font-size: 12px;
+    color:black;
+}
+
+.top-bar a {
+    color:black;
 }
 
 .lh-1{
@@ -140,34 +160,34 @@ font-family: 'David Libre', serif;*/
     width:100%;
 }
 
- #home-portrait {
+#home-portrait {
     border:5.5px solid #F94A61;
     border-radius: 50%;
     padding-top: 15px;
     width: 84%;
- }
+}
 
- #about-img-div {
+#about-img-div {
     width:250px;
     float: left;
     margin-right: 20px;
 }
 
- #about-img{
-    height:auto;
-    width: 100%;
-    border-radius: 10%;
-    border:2px solid #F94A61;;
- }
+#about-img{
+height:auto;
+width: 100%;
+border-radius: 10%;
+border:2px solid #F94A61;;
+}
 
- .book-cover {
-    height:auto;
-    width:100%;
- }
+.book-cover {
+height:auto;
+width:100%;
+}
 
- .book{
-    width:200px;
- }
+.book{
+width:200px;
+}
 
 .text-muted {
     margin:2px;
@@ -287,7 +307,8 @@ font-family: 'David Libre', serif;*/
 .contact-imgs {
     width:20px;
     height:20px;
-    margin-right: 1em;
+    margin-right: .4em;
+    margin-left: 1em;
 }
 
 #map {

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container divider">
+  <h1 class="text-center">Coaching for Healers</h1>
+</div>
+<div class="container divider">
+  <h2>Packages</h2>
+  <div class="col-md-6">
+    <h4>3 – Session Package Deal</h4>
+    <ul>
+      <li>3 sessions over a 6 week period</li>
+      <li>Meet bi-weekly (once in person, then 2 over skype)</li>
+      <li>Pricing: $450<li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <h4>6 – Session Package Deal</h4>
+    <ul>
+      <li>6 sessions over a 12 week period </li>
+      <li>Meet bi-weekly (once in person, then 2 over skype)</li>
+      <li>Pricing: $900</li>
+    </ul>
+  </div>
+  <h4 class="text-center col-md-12"><a href="{% url 'healers' %}">Return to Healing the Healers</a></h4>
+</div>
+<script>
+    $('#navbar .navbar-nav li').removeClass("active");
+    $('#navbar .navbar-nav :nth-child(3)').addClass("active");
+</script>
+{% endblock %}

@@ -5,7 +5,7 @@
     <div class="col-md-3 col-sm-offset-1">
       <img id="home-portrait" src="{% static 'imgs/img_4163-cut.png' %}">
       <div id="img2" class="pull-right">
-        <img id="home-logo" src="{% static 'imgs/sig-outline.png' %}"/>
+        <img id="home-logo" src="{% static 'imgs/khblacklogo-orange.png' %}"/>
       </div>
     </div>
     <div class="col-md-8">
@@ -30,23 +30,27 @@
     <h2>What I Offer</h2>
     <div class="col-md-4">
       <div class="service">
-        <a href="">
-          <h4>Counseling</h4>
+        <a href="{% url 'services' %}">
+          <h4 class="text-center">Trauma Counseling</h4>
           <img class="book-cover" src="{% static 'imgs/15-ieu1313-fr.png' %}">
         </a>
       </div>
     </div>
     <div class="col-md-4">
-      <a href="">
-        <h4>Speaking Engagements</h4>
-        <img class="book-cover" src="{% static 'imgs/group_paper-figures_77515495.jpg' %}">
-      </a>
+      <div class="service">
+        <a href="{% url 'speaking' %}">
+          <h4 class="text-center">Speaking Engagements</h4>
+          <img class="book-cover" src="{% static 'imgs/group_paper-figures_77515495.jpg' %}">
+        </a>
+      </div>
     </div>
     <div class="col-md-4">
-      <a href="">
-        <h4>Coaching</h4>
-        <img class="book-cover" src="{% static 'imgs/3dd567fca3-u2019-fr.jpg' %}">
-      </a>
+      <div class="service">
+        <a href="{% url 'healers' %}">
+          <h4 class="text-center">Healing the Healers</h4>
+          <img class="book-cover" src="{% static 'imgs/3dd567fca3-u2019-fr.jpg' %}">
+        </a>
+      </div>
     </div>
   </div>
 {% endblock %}

@@ -2,7 +2,24 @@
 {% load static %}
 {% block content %}
 <div class="container divider">
-    <h1>Healers</h1>
+    <h1 class="text-center">Healers</h1>
+</div>
+<div class="container divider speeches">
+    <div class="col-md-3 col-sm-offset-1">
+        <a href="{% url 'coaching' %}"><div class="front talk1 small-title">
+            <h2 class="text-center talks">Coaching for Healers</h2>
+        </div></a>
+    </div>
+    <div class="col-md-3 talk">
+        <a href="{% url 'play' %}"><div class="front talk2 small-title">
+            <h2 class="text-center talks">Healers at Play</h2>
+        </div><a>
+    </div>
+    <div class="col-md-3 talk">
+        <a href="{% url 'beyonce' %}"><div class="front talk3 small-title">
+            <h2 class="text-center talks">Dance like Beyonce</h2>
+        </div></a>
+    </div>
 </div>
 <script>
     $('#navbar .navbar-nav li').removeClass("active");
