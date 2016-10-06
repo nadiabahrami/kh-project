@@ -2,18 +2,19 @@
 {% load static %}
 {% block content %}
   <div class="container divider index-top">
-    <div class="col-md-3 col-sm-offset-1">
-      <img id="home-portrait" src="{% static 'imgs/img_4163-cut.png' %}">
-      <div id="img2" class="pull-right">
+    <div class="col-md-3 col-sm-offset-2">
+      <img id="home-portrait" src="{% static 'imgs/profile-lg.png' %}">
+      <!-- <div id="img2" class="pull-right">
         <img id="home-logo" src="{% static 'imgs/khblacklogo-orange.png' %}"/>
-      </div>
+      </div> -->
     </div>
-    <div class="col-md-8">
-      <h1 class="logo-heading lh-1">Tansforming Trauma into Thriving <span class="logo-heading lh-2">&</span></h1>
+    <div class="col-md-5">
+<!--       <h1 class="logo-heading lh-1">Tansforming Trauma into Thriving <span class="logo-heading lh-2">&</span></h1>
       <h1 class="logo-heading lh-3">Healing the Healers</h1>
       <div>
         <p>Therapist Kyeisha Hodge, LMHCA</p>
-      </div>
+      </div> -->
+      <img src="{% static 'imgs/main-logo.png' %}"/>
     </div>
   </div>
   <div class="container divider">
@@ -32,7 +33,7 @@
       <div class="service">
         <a href="{% url 'services' %}">
           <h4 class="text-center">Trauma Counseling</h4>
-          <img class="book-cover" src="{% static 'imgs/15-ieu1313-fr.png' %}">
+          <img class="book-cover" src="{% static 'imgs/15-cropped.jpg' %}">
         </a>
       </div>
     </div>

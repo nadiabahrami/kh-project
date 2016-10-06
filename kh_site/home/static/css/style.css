@@ -4,8 +4,9 @@ body{
     margin: auto;*/
 }
 
-.service a {
-    text-decoration: none;
+img{
+    height:auto;
+    width:100%;
 }
 
 nav {
@@ -97,7 +98,7 @@ margin-bottom:30px;
 }
 
 .index-top{
-    padding-bottom: 60px;
+    padding-bottom: 0px;
 }
 
 .logo-heading{
@@ -135,7 +136,7 @@ margin-bottom:30px;
 }
 
 #nav-branding{
-    width:400px;
+    width:450px;
 }
 
 #nav-branding p {
@@ -144,6 +145,10 @@ margin-bottom:30px;
     margin-bottom: 0px;
     display: inline-block;
     margin-left: -15px;
+}
+
+#nav-branding div{
+    width:140px;
 }
 
 #img2{
@@ -160,12 +165,12 @@ margin-bottom:30px;
     width:100%;
 }
 
-#home-portrait {
+/*#home-portrait {
     border:5.5px solid #F94A61;
     border-radius: 50%;
     padding-top: 15px;
     width: 84%;
-}
+}*/
 
 #about-img-div {
     width:250px;
@@ -178,6 +183,14 @@ height:auto;
 width: 100%;
 border-radius: 10%;
 border:2px solid #F94A61;;
+}
+
+.service a {
+    text-decoration: none;
+}
+
+.service img {
+    border-radius: 20px;
 }
 
 .book-cover {
