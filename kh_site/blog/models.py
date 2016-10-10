@@ -1,6 +1,6 @@
+"""Models for blog posts."""
 from django.db import models
-
-# Create your models here.
+from django.forms import ModelForm
 
 
 def _image_path(instance, filename):
@@ -17,7 +17,7 @@ class ArticleManager(models.Manager):
         return qs.all()
 
 
-class Article (models.Models):
+class Article (models.Model):
     """Create a blog article."""
 
     tile = models.CharField(max_length=200, blank=True),
@@ -31,3 +31,11 @@ class Article (models.Models):
     public = ArticleManager()
 
 
+class AddArticle(ModelForm):
+    """Form class for adding aa blog article."""
+
+    class Meta:
+        """Info to be served up to the form."""
+
+        model = Article
+        fields = ['title', 'content', 'blog_photo', 'tags']
