@@ -327,3 +327,9 @@ width:200px;
 #map {
     height:300px;
 }
+
+.blg-exr {
+    border:5px black solid;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
