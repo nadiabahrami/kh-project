@@ -1,8 +1,16 @@
+"""Views for blog page."""
+
 from django.shortcuts import render
-from models import AddArticle
+from models import AddArticle, Article
 from django.http import HttpResponseRedirect
 
 # Create your views here.
+
+
+def blog_view(request):
+    """Populate articles on blog page."""
+    articles = Article.objects.all()
+    return render(request, 'blog.html', {'articles': articles})
 
 
 def add_article(request):
