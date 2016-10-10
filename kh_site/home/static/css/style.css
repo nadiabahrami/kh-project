@@ -1,7 +1,12 @@
 body{
-    padding-top: 70px;
-    m/*ax-width: 960px;
+    padding-top: 95px;
+    /*max-width: 960px;
     margin: auto;*/
+}
+
+img{
+    height:auto;
+    width:100%;
 }
 
 nav {
@@ -28,6 +33,15 @@ nav .container .navbar-collapse ul .active a:hover {
     color:white;
 }
 
+.icon-bar {
+    background-color:white;
+}
+
+.navbar-header img {
+    height: 55px;
+    margin-top: -17px;
+}
+
 .right-to-left li {
     float:right;
 }
@@ -40,15 +54,36 @@ h1 {
 h2 {
     font-family: 'Josefin Slab', serif;  
     font-size: 36px;
+/*    color: #0026FF;*/
 }
 
 h3{
     font-family: 'Open Sans', sans-serif;
 }
 
+h4 {
+    font-family: 'Josefin Slab', serif;
+    color:#F94A61;
+    font-size:24px;
+    margin-top: 20px;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.18em;
+}
+
+.footer {
+/*    position: absolute;
+    bottom: 0;
+*/    width: 100%;
+    height: 100px;
+    background-color: white;
+    margin-top:40px;
+}
+
+.footer p{
+    /*margin: 20px 0;*/
 }
 /*
 font-family: 'Kite One', sans-serif;
@@ -56,14 +91,33 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'David Libre', serif;*/
 
 /*home page*/
- .divider{
-    border-bottom: 1px solid #54F2CE;
-    padding-bottom: 30px;
-    margin-bottom:20px;
- }
+.divider{
+border-bottom: 2px solid #54F2CE;
+padding-bottom: 30px;
+margin-bottom:30px;
+}
+
+.index-top{
+    padding-bottom: 0px;
+}
 
 .logo-heading{
     display:inline-block;
+}
+
+.top-bar {
+    background-color: #54F2CE;
+}
+
+.top-bar p {
+    display: inline-block;
+    margin: 2px 0px 2px 0px;
+    font-size: 12px;
+    color:black;
+}
+
+.top-bar a {
+    color:black;
 }
 
 .lh-1{
@@ -74,14 +128,208 @@ font-family: 'David Libre', serif;*/
 .lh-2 {
     margin-left:5px;
     font-size:50px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .lh-3 {
     margin-top: 0px;
 }
 
- #home-portrait {
+#nav-branding{
+    width:450px;
+}
+
+#nav-branding p {
+    font-family: 'Josefin Slab', serif;
+    padding-top:20px;
+    margin-bottom: 0px;
+    display: inline-block;
+    margin-left: -15px;
+}
+
+#nav-branding div{
+    width:140px;
+}
+
+#img2{
+    margin-top: -55px;
+    margin-left: 120px;
+    height:100px;
+    width: 150px;
+    position:absolute;
+    z-index: 5;
+}
+
+#home-logo {
+    height:auto;
+    width:100%;
+}
+
+/*#home-portrait {
     border:5.5px solid #F94A61;
     border-radius: 50%;
-    padding-top: 20px;
- }
+    padding-top: 15px;
+    width: 84%;
+}*/
+
+#about-img-div {
+    width:250px;
+    float: left;
+    margin-right: 20px;
+}
+
+#about-img{
+height:auto;
+width: 100%;
+border-radius: 10%;
+border:2px solid #F94A61;;
+}
+
+.service a {
+    text-decoration: none;
+}
+
+.service img {
+    border-radius: 20px;
+}
+
+.book-cover {
+height:auto;
+width:100%;
+}
+
+.book{
+width:200px;
+}
+
+.text-muted {
+    margin:2px;
+}
+
+.small-text{
+   font-size: .8em;
+}
+
+.front {
+    width:100%;
+    height: 230px;
+    padding: 20px;
+    border-radius: 50%;
+    -webkit-transition: padding .5s, width .5s, height .5s, margin-top .5s, margin-left .5s, margin-bottom .5s;
+}
+
+.front:hover{
+    width:115%;
+    height:265px;
+    padding: 40px;
+    margin-top:-20px;
+    margin-left:-20px;
+    margin-bottom: -30px;
+   border-radius: 50%;
+  /* HOVER ON */
+   -webkit-transition: padding .5s, width .5s, height .5s, margin-top .5s, margin-left .5s, margin-bottom .5s;
+}
+.small-title {
+    padding-top:35px;
+    padding-left: 25px;
+    padding-right: 25px;   
+    /*-webkit-transition: padding-top .5s;*/
+}
+
+
+/*.small-title:hover {
+    padding-top:55px;
+    padding-left: 45px;
+    padding-right: 45px;
+    -webkit-transition: padding-top .5s;
+}*/
+.spacer {
+    margin-bottom: 60px;
+}
+
+#talk1 {
+    color:#FF7829;
+}
+
+.talk1{
+    background-color: #FF7829;
+}
+
+#talk2 {
+    color:#0026FF;
+}
+
+.talk2{
+    background-color: #0026FF;
+}
+
+#talk3 {
+    color:#5F35D6;
+}
+
+.talk3{
+    background-color: #5F35D6;
+}
+
+#talk4 {
+    color:#FF1E8A;
+}
+
+.talk4{
+    background-color: #FF1E8A;
+}
+
+#talk5 {
+    color:#3AFF51;
+}
+
+.talk5{
+    background-color: #3AFF51;
+}
+
+#talk6 {
+    color:#FFD500;
+}
+
+.talk6{
+    background-color: #FFD500;
+}
+
+.talk {
+    margin-left: 40px;
+}
+ 
+.speeches a {
+    text-decoration: none;
+}
+
+.front h2{
+    font-size: 30px;
+    color:white;
+}
+
+.front h4{
+    color:white;
+    margin-top: 0px;
+}
+
+.contact-info h4 {
+    margin-top: 0px;
+}
+
+.contact-imgs {
+    width:20px;
+    height:20px;
+    margin-right: .4em;
+    margin-left: 1em;
+}
+
+#map {
+    height:300px;
+}
+
+.blg-exr {
+    border:5px black solid;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container divider">
+    <h1 class="text-center">Blog</h1>
+</div>
+{% for article in articles %}
+    <div class="container">
+        <div class="col-md-10 blg-exr">
+            <div class="col-md-6 float-left blg_photo">
+                <img src="{{ article.blog_photo.url }}"/>
+            </div>
+            <h2>{{ article.title }}</h2>
+            <p>{{ article.content }}</p>
+            <p>This was published on {{ article.date_published }}.</p>
+        </div>
+    </div>
+{% endfor %}
+<div class="container divider">
+</div>
+<script>
+    $('#navbar ul li').removeClass("active");
+    $('#navbar ul :nth-child(4)').addClass("active");
+</script>
+{% endblock %}

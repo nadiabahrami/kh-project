@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container divider">
+    <div class="col-md-6 col-md-offset-3">
+      <img src="{% static 'imgs/Healing the healers Logo.png' %}"/>
+    </div>
+</div>
+<div class="container spacer">
+  <p class="text-center">This is where a description of what Healing Healers is about</p>
+</div>
+<div class="container divider speeches">
+    <div class="col-md-3 col-sm-offset-1">
+        <a href="{% url 'coaching' %}"><div class="front talk1 small-title">
+            <h2 class="text-center talks">Coaching for Healers</h2>
+        </div></a>
+    </div>
+    <div class="col-md-3 talk">
+        <a href="{% url 'play' %}"><div class="front talk2 small-title">
+            <h2 class="text-center talks">Healers at Play</h2>
+        </div><a>
+    </div>
+    <div class="col-md-3 talk">
+        <a href="{% url 'beyonce' %}"><div class="front talk3 small-title">
+            <h2 class="text-center talks">Dance like Beyonce</h2>
+        </div></a>
+    </div>
+</div>
+<script>
+    $('#navbar .navbar-nav li').removeClass("active");
+    $('#navbar .navbar-nav :nth-child(3)').addClass("active");
+</script>
+{% endblock %}

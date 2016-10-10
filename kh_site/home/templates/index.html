@@ -1,13 +1,20 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-  <div class="container divider">
-    <div class="col-md-3 col-sm-offset-1">
-      <img id="home-portrait" src="{% static 'imgs/img_4163.png' %}">
+  <div class="container divider index-top">
+    <div class="col-md-3 col-sm-offset-2">
+      <img id="home-portrait" src="{% static 'imgs/profile-lg.png' %}">
+      <!-- <div id="img2" class="pull-right">
+        <img id="home-logo" src="{% static 'imgs/khblacklogo-orange.png' %}"/>
+      </div> -->
     </div>
-    <div class="col-md-8">
-      <h1 class="logo-heading lh-1">Tansforming Trauma into Thriving <h3 class="logo-heading lh-2">&</h3> </h1>
+    <div class="col-md-5">
+<!--       <h1 class="logo-heading lh-1">Tansforming Trauma into Thriving <span class="logo-heading lh-2">&</span></h1>
       <h1 class="logo-heading lh-3">Healing the Healers</h1>
+      <div>
+        <p>Therapist Kyeisha Hodge, LMHCA</p>
+      </div> -->
+      <img src="{% static 'imgs/main-logo.png' %}"/>
     </div>
   </div>
   <div class="container divider">
@@ -20,17 +27,31 @@
       <p class="text-center">This site is also for healers and helping professionals. Those of us in positions with intense work where we attempt to repair the physical, emotional and mental distress of others. On top of that, my helping professional clients often identify has empaths and tell me that they actively take on the emotional experiences of their clients, feeling saturated. For us healers empathy can become both a gift and a curse. My services not only help prevent secondary or vicarious trauma but works to create a life where thriving as a healing professional is your new standard.</p>
     </div>
   </div>
-  <div class="container">
-    <div class="col-md-3">
-      <h4>Individual</h4>
+  <div class="container divider">
+    <h2>What I Offer</h2>
+    <div class="col-md-4">
+      <div class="service">
+        <a href="{% url 'services' %}">
+          <h4 class="text-center">Trauma Counseling</h4>
+          <img class="book-cover" src="{% static 'imgs/15-cropped.jpg' %}">
+        </a>
+      </div>
     </div>
-    <div class="col-md-3">
-      <h4>Individual</h4>
+    <div class="col-md-4">
+      <div class="service">
+        <a href="{% url 'speaking' %}">
+          <h4 class="text-center">Speaking Engagements</h4>
+          <img class="book-cover" src="{% static 'imgs/group_paper-figures_77515495.jpg' %}">
+        </a>
+      </div>
     </div>
-    <div class="col-md-3">
-      <h4>Individual</h4>
+    <div class="col-md-4">
+      <div class="service">
+        <a href="{% url 'healers' %}">
+          <h4 class="text-center">Healing the Healers</h4>
+          <img class="book-cover" src="{% static 'imgs/3dd567fca3-u2019-fr.jpg' %}">
+        </a>
+      </div>
     </div>
-    <div class="col-md-3">
-      <h4>Individual</h4>
-    </div>
+  </div>
 {% endblock %}
