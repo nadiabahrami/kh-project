@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.auth'
     'home',
 ]
 
@@ -128,4 +127,4 @@ STATICFILES_DIRS = [
 
 # django Registation
 
-REGISTRATION_OPEN = False
+REGISTRATION_OPEN = True
