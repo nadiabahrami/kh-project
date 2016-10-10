@@ -1,9 +1,10 @@
 """Urls routes for main site."""
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.views.generic import TemplateView
 
 urlpatterns = [
     url(r'^about/$', TemplateView.as_view(template_name="about.html"), name="about"),
+    url(r'^accounts/', include('registration.backends.simple.urls')),
     url(r'^blog/$', TemplateView.as_view(template_name="blog.html"), name="blog"),
     url(r'^contact/$', TemplateView.as_view(template_name="contact.html"), name="contact"),
     url(r'^resources/$', TemplateView.as_view(template_name="resources.html"), name="resources"),
