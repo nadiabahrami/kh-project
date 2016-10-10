@@ -2,8 +2,7 @@
 {% load static %}
 {% block content %}
 <div class="container divider">
-    <h1>Blog</h1>
-    <p>{{ hello }}</p>
+    <h1 class="text-center">Blog</h1>
 </div>
 {% for article in articles %}
     <div class="container">
@@ -17,7 +16,8 @@
         </div>
     </div>
 {% endfor %}
-<p>This is after</p>
+<div class="container divider">
+</div>
 <script>
     $('#navbar ul li').removeClass("active");
     $('#navbar ul :nth-child(4)').addClass("active");
