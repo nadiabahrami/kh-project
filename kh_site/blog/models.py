@@ -26,7 +26,7 @@ class Article(models.Model):
     blog_photo = models.ImageField(upload_to=_image_path, blank=True)
     date_published = models.DateTimeField(default=datetime.datetime.now)
     tags = models.CharField(max_length=30, blank=True)
-    public = ArticleManager()
+    objects = ArticleManager()
 
 
 class AddArticle(ModelForm):
