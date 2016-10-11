@@ -24,7 +24,7 @@ def edit_article(request, pk):
     """Edit an article."""
     if request.method == 'POST':
         blog = Article.objects.get(id=pk)
-        form = AddArticle(request.POST, instance=blog)
+        form = AddArticle(request.POST, request.FILES, instance=blog)
         if form.is_valid():
             form.save()
             return HttpResponseRedirect('/blog/')
