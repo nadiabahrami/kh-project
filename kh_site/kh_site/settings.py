@@ -131,4 +131,4 @@ MEDIA_URL = '/media/'
 
 # django Registation
 
-REGISTRATION_OPEN = True
+REGISTRATION_OPEN = False
