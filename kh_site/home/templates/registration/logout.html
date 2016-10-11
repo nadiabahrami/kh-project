@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container"/>
+    {% block content %}
+        <h1>You are now logged out.</h1>
+    {% endblock %}
+</div>
+{% endblock %}
