@@ -16,7 +16,7 @@ def add_event(request):
     if request.method == 'POST':
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('/play/')
+            return HttpResponseRedirect('/healers/play/')
     return render(request, 'add_event.html', context={'form': form})
 
 
@@ -27,7 +27,7 @@ def edit_event(request, pk):
         form = AddEvent(request.POST, request.FILES, instance=event)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('/play/')
+            return HttpResponseRedirect('/healers/play/')
         return render(request, 'edit_event.html', context={'form': form})
     else:
         event = Event.objects.get(id=pk)

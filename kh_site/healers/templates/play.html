@@ -9,10 +9,10 @@
   <p class="col-md-10 col-sm-offset-1">Healing the Healers works to support the average helping professional in identifying, engaging in, and developing a practice of play! Kyeisha Hodge, the founder of Healing the Healers, can attest to this and demands time in her day few times a week to play. As a dancer, a movie enthusiast, and performer arts supporter, she finds a way to fill her weeks with fun and non-therapy speak. </p>  
   <h2 class="col-md-12 text-center">Join in the fun!  Come to an event and play.</h2>
   {% if user.is_authenticated %}
-    <a href="/add/">Add an event</a>
+    <a class="col-md-12 text-center" href="/healers/add/">Add an event</a>
   {% endif %}
   {% for event in events %}
-    <div class="full-event">
+    <div class="full-event col-md-12">
       <div class="col-md-3">
         <img src="{{ event.event_photo.url }}"/>
       </div>
@@ -28,10 +28,10 @@
         <p>{{ event.address.street }}</p>
         <p>{{ event.address.city }}, {{ event.address.state }} {{ event.address.zip_code }}</p>
       </div>
-    {% if user.is_authenticated %}
-      <a href="/edit/{{event.pk}}">Edit Event</a>
-    {% endif %}
-    </div>
+      {% if user.is_authenticated %}
+        <a href="/healers/edit/{{ event.pk }}">Edit Event</a>
+      {% endif %}
+      </div>
     {% endfor %} 
   <h4 class="col-md-12 text-center"><a href="{% url 'healers' %}">Return to Healing the Healers</a></h4>
 </div>
