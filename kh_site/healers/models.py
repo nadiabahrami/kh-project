@@ -50,4 +50,5 @@ class AddEvent(ModelForm):
         """Content for blog post form."""
 
         model = Event
-        fields = ['event_photo', 'title', 'description', 'address', 'event_date', 'event_time']
+        fields = ['event_photo', 'title', 'description', 'address',
+                  'event_date', 'event_time']
