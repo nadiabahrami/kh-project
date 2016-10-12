@@ -2,7 +2,7 @@
 from django.db import models
 from django.forms import ModelForm
 import datetime
-from django.contrib.localflavor.us.models import USStateField
+from localflavor.us.models import USStateField
 
 
 def _image_path(instance, filename):
@@ -26,7 +26,6 @@ class Event(models.Model):
     description = models.TextField(max_length=5000, blank=False)
     event_photo = models.ImageField(upload_to=_image_path, blank=True)
     date_published = models.DateTimeField(default=datetime.datetime.now)
-    address = models.CharField(max_length=200, blank=True)
     event_date = models.DateField()
     event_time = models.CharField(max_length=20, blank=True)
     objects = EventManager()
@@ -36,11 +35,11 @@ class Address(models.Model):
     """Create an address for the event."""
 
     event = models.OneToOneField(Event, on_delete=models.CASCADE,
-                                 primary_key=True, name="address")
+                                 primary_key=True, related_name="address")
     street = models.CharField(max_length=128)
     city = models.CharField(max_length=64, default="Seattle")
     state = USStateField(default="WA")
-    zip_code = models.CharField(max_length=5,)
+    zip_code = models.CharField(max_length=5)
 
 
 class AddEvent(ModelForm):
@@ -50,5 +49,4 @@ class AddEvent(ModelForm):
         """Content for blog post form."""
 
         model = Event
-        fields = ['event_photo', 'title', 'description', 'address',
-                  'event_date', 'event_time']
+        fields = ['event_photo', 'title', 'description', 'event_date', 'event_time']

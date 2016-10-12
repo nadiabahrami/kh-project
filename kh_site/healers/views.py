@@ -7,7 +7,7 @@ from django.http import HttpResponseRedirect
 def play_view(request):
     """Populate articles on blog page."""
     events = Event.objects.all()
-    return render(request, 'play.html', {'articles': events})
+    return render(request, 'play.html', {'events': events})
 
 
 def add_event(request):
