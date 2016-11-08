@@ -1,7 +1,5 @@
 body{
-    padding-top: 95px;
-    /*max-width: 960px;
-    margin: auto;*/
+    margin: 0px;
 }
 
 img{
@@ -73,6 +71,15 @@ nav .navbar-collapse ul .active a:hover {
 
 .navbar-right{
     margin-right: 15px;
+}
+
+.main {
+    height:500px;
+    /*background-image:url('{{ STATIC_URL }}imgs/IMG_6106.JPG');*/
+}
+#index-logo{
+    padding-top:150px;
+    background-color: grey;
 }
 
 h1 {
