@@ -9,17 +9,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Playfair+Display|Poiret+One|Raleway" rel="stylesheet">
     <link rel='shortcut icon' href="{% static 'imgs/favicon.ico' %}" type='image/x-icon'/ >
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <title>Kyeisha Hodge</title>
-    </head>
-    <body>
+  </head>
+  <body>
         <nav class="navbar navbar-fixed-top">
-          <div class="container">
+          <div id="background"></div>
+          <div id="labels">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -85,5 +87,15 @@
 
           </div>
         </footer>
+        <script>
+        $(window).scroll(function() {
+          console.log("scrolling");
+          if ($(this).scrollTop() > 200) {
+            $( "nav #background" ).fadeIn();
+          } else {
+            console.log('there');
+            $( "nav #background" ).fadeOut();
+          }
+        });</script>
     </body>
 </html>
