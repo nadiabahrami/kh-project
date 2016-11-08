@@ -10,9 +10,10 @@ img{
 }
 
 nav {
+    color: white;
     padding-right: 20px;
     width:100%;
-    height:100px;
+    height:90px;
     position:fixed;
     top:0px;
     z-index:3;
@@ -48,7 +49,6 @@ nav .navbar-collapse a:hover {
 }
 
 nav .navbar-collapse ul .active a {
-    background-color: #F27C54;
     border: 2px solid white;
     color: white;
 }
@@ -69,6 +69,10 @@ nav .navbar-collapse ul .active a:hover {
 
 .right-to-left li {
     float:right;
+}
+
+.navbar-right{
+    margin-right: 15px;
 }
 
 h1 {
