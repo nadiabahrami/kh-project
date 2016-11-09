@@ -108,7 +108,8 @@ nav .navbar-collapse ul .active a:hover {
 }
 
 #index-logo{
-    padding-top:150px;
+    margin-top:-80px;
+    padding-top: 0px;
     background-color: grey;
 }
 
@@ -133,8 +134,12 @@ nav .navbar-collapse ul .active a:hover {
 /* common classes */
 .main {
     height:500px;
-    border-bottom: 2px solid #54F2CE;
+    border-bottom: 3px solid #54F2CE;
     /*background-image:url('{{ STATIC_URL }}imgs/IMG_6106.JPG');*/
+}
+.main h1{
+    padding-top: 225px;
+    color:white;
 }
 
 .divider{

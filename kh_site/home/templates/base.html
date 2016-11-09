@@ -52,18 +52,7 @@
             </li>
             <li><a href="{% url 'blog'%}">Blog</a></li>
             <li><a href="{% url 'contact'%}">Contact</a></li>
-            <li class="">
-              <a class="dropdown-hover" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
-              <ul class="dropdown-menu">
-                <li><a href="{% url 'resources'%}">Resources</a></li>
-                <li><a href="{% url 'faq'%}">F.A.Q.</a></li>
-                <!-- <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li> -->
-              </ul>
-            </li>
+            <li><a href="{% url 'resources'%}">Resources</a></li>
           {% if user.is_authenticated %}
           <li><a href="/accounts/logout/">Logout</a></li>  
           {% endif %}
@@ -89,11 +78,9 @@
         </footer>
         <script>
         $(window).scroll(function() {
-          console.log("scrolling");
           if ($(this).scrollTop() > 200) {
             $( "nav #background" ).fadeIn();
           } else {
-            console.log('there');
             $( "nav #background" ).fadeOut();
           }
         });</script>
