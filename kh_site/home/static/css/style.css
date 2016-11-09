@@ -133,6 +133,7 @@ nav .navbar-collapse ul .active a:hover {
 /* common classes */
 .main {
     height:500px;
+    border-bottom: 2px solid #54F2CE;
     /*background-image:url('{{ STATIC_URL }}imgs/IMG_6106.JPG');*/
 }
 
