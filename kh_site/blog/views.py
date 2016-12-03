@@ -1,6 +1,6 @@
 """Views for blog page."""
 from django.shortcuts import render
-from blog.models import Article, AddArticle
+from blog.models import Article, AddArticle, DeleteArticle
 from django.http import HttpResponseRedirect
 
 
@@ -33,3 +33,18 @@ def edit_article(request, pk):
         blog = Article.objects.get(id=pk)
         form = AddArticle(instance=blog)
         return render(request, 'edit_article.html', context={'form': form})
+
+
+def delete_article(request, pk):
+    """Edit an article."""
+    if request.method == 'POST':
+        blog = Article.objects.get(id=pk)
+        form = DeleteArticle(request.POST, instance=blog)
+        if form.is_valid():
+            blog.delete()
+            return HttpResponseRedirect('/blog/')
+        return render(request, 'delete_article.html', context={'form': form})
+    else:
+        blog = Article.objects.get(id=pk)
+        form = DeleteArticle(request.POST, instance=blog)
+        return render(request, 'delete_article.html', context={'form': form})
