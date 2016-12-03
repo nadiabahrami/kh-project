@@ -9,12 +9,12 @@ img{
 
 h1 {
     font-family: 'Poiret One', cursive;
-    font-size:42px; 
+    font-size:44px; 
 }
 
 h2 {
     font-family: 'Alfa Slab One', cursive;
-    font-size: 36px;
+    font-size: 44px;
 
 }
 
@@ -108,9 +108,8 @@ nav .navbar-collapse ul .active a:hover {
 }
 
 #index-logo{
-    margin-top:-80px;
+    margin-top:125px;
     padding-top: 0px;
-    background-color: grey;
 }
 
 #nav-branding{
@@ -138,7 +137,8 @@ nav .navbar-collapse ul .active a:hover {
     /*background-image:url('{{ STATIC_URL }}imgs/IMG_6106.JPG');*/
 }
 .main h1{
-    padding-top: 225px;
+    padding-top: 200px;
+    font-size:72px; 
     color:white;
 }
 
@@ -241,24 +241,28 @@ font-family: 'David Libre', serif;*/
 }
 
 #about-img{
-height:auto;
-width: 100%;
-border-radius: 10%;
-border:2px solid #F94A61;;
+    height:auto;
+    width: 100%;
+    border-radius: 10%;
+    border:2px solid #F94A61;
 }
 
 
 
 /* Resource Page*/
 .book-cover {
-height:auto;
-width:100%;
+    height:300px;
+    width:100%;
 }
 
-.book{
-width:200px;
+.book {
+    width:200px;
+    margin-top: 20px;
 }
 
+.res-con {
+    margin-top: 20px;
+}
 
 
 
