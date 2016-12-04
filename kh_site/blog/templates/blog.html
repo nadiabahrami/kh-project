@@ -18,6 +18,7 @@
             <p>This was published on {{ article.date_published }}.</p>
             {% if user.is_authenticated%}
                 <a href="/blog/edit/{{article.pk}}/">Edit Post</a>
+                <a href="/blog/delete/{{article.pk}}/">Delete Post</a>
             {% endif %}
         </div>
     </div>

@@ -37,3 +37,13 @@ class AddArticle(ModelForm):
 
         model = Article
         fields = ['blog_photo', 'title', 'content', 'tags']
+
+
+class DeleteArticle(ModelForm):
+    """Form class for adding aa blog article."""
+
+    class Meta:
+        """Content for blog post form."""
+
+        model = Article
+        fields = []
