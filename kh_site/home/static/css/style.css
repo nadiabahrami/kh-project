@@ -13,8 +13,8 @@ h1 {
 }
 
 h2 {
-    font-family: 'Alfa Slab One', cursive;
-    font-size: 44px;
+    font-family: 'Vesper Libre', serif;
+    font-size: 48px;
 
 }
 
@@ -25,13 +25,17 @@ h3{
 h4 {
     font-family: 'Poiret One', cursive;
     color:#F94A61;
-    font-size:24px;
+    font-size:2em;
     margin-top: 20px;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
     font-size: 1.3em;
+}
+
+ul {
+    list-style-type: none;
 }
 
 
@@ -235,21 +239,36 @@ font-family: 'David Libre', serif;*/
     border-radius: 20px;
 }
 
+.right-index {
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
 
 
 
 /*about page*/
-#about-img-div {
+.about-img-div {
     width:250px;
-    float: left;
     margin-right: 20px;
 }
 
-#about-img{
+.about-img{
     height:auto;
     width: 100%;
     border-radius: 10%;
-    border:2px solid #F94A61;
+    border:2px solid #54F2CE;
+}
+
+#about-p {
+    margin-top:20px;
+}
+
+#about1 {
+    float: left;
+}
+
+#about2 {
+    float:right;
 }
 
 
