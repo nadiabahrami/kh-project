@@ -73,7 +73,7 @@ nav #background {
     display: none;
 }
 
-nav a {
+nav .main-opt {
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;

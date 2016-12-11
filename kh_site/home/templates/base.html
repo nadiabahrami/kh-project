@@ -41,19 +41,19 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="{% url 'home'%}">Home</a></li>
-            <li><a href="{% url 'about'%}">About</a></li>
+            <li class="active main-opt"><a href="{% url 'home'%}">Home</a></li>
+            <li><a class="main-opt" href="{% url 'about'%}">About</a></li>
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+              <a  class="main-opt" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
               <ul class="dropdown-menu">
                 <li><a href="{% url 'services' %}">Counseling</a></li>
                 <li><a href="{% url 'speaking' %}">Speaking</a></li>
                 <li><a href="{% url 'healers' %}">Healers</a></li>
               </ul>
             </li>
-            <li><a href="{% url 'blog'%}">Blog</a></li>
-            <li><a href="{% url 'contact'%}">Contact</a></li>
-            <li><a href="{% url 'resources'%}">Resources</a></li>
+            <li><a class="main-opt" href="{% url 'blog'%}">Blog</a></li>
+            <li><a class="main-opt" href="{% url 'contact'%}">Contact</a></li>
+            <li><a class="main-opt" href="{% url 'resources'%}">Resources</a></li>
           {% if user.is_authenticated %}
           <li><a href="/accounts/logout/">Logout</a></li>  
           {% endif %}
