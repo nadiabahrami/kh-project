@@ -107,17 +107,21 @@ nav .navbar-collapse ul .active a:hover {
 /*.right-to-left li {
     float:right;
 }*/
-.navbar-right{
+.navbar-right {
     margin-right: 15px;
 }
 
-#index-logo{
+#index-logo {
     margin-top:125px;
     padding-top: 0px;
 }
 
-#nav-branding{
+#nav-branding {
     width:500px;
+}
+
+#nav-branding img{
+    margin-top: 1px;
 }
 
 #nav-branding p {
