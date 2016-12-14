@@ -57,7 +57,7 @@ nav {
 }
 
 
-nav #background, nav #labels{
+nav #background, nav #labels, nav #background2 {
     position:absolute;
     top:0px;
     width:100%;
@@ -71,6 +71,10 @@ nav #labels{
 nav #background {
     background-color: #F27C54;
     display: none;
+}
+
+nav #background2 {
+    background-color: #F27C54;
 }
 
 nav .main-opt {
