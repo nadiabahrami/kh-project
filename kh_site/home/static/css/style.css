@@ -1,8 +1,8 @@
-body{
+body {
     margin: 0px;
 }
 
-img{
+img {
     height:auto;
     width:100%;
 }
@@ -15,10 +15,9 @@ h1 {
 h2 {
     font-family: 'Vesper Libre', serif;
     font-size: 48px;
-
 }
 
-h3{
+h3 {
     font-family: 'Poiret One', cursive;
 }
 
@@ -51,10 +50,10 @@ nav {
     z-index:3;
 }
 
-.stable{
+/*.stable{
     background-color: #F27C54;
     height: 90px;
-}
+}*/
 
 
 nav #background, nav #labels, nav #background2 {
