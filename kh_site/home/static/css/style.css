@@ -50,12 +50,6 @@ nav {
     z-index:3;
 }
 
-/*.stable{
-    background-color: #F27C54;
-    height: 90px;
-}*/
-
-
 nav #background, nav #labels, nav #background2 {
     position:absolute;
     top:0px;
@@ -63,7 +57,7 @@ nav #background, nav #labels, nav #background2 {
     height:100%;
 }
 
-nav #labels{
+nav #labels {
     background-color: transparent;
 }
 
@@ -123,7 +117,7 @@ nav .navbar-collapse ul .active a:hover {
     width:500px;
 }
 
-#nav-branding img{
+#nav-branding img {
     margin-top: 1px;
 }
 
@@ -138,30 +132,6 @@ nav .navbar-collapse ul .active a:hover {
 
 #nav-branding div{
     width:140px;
-}
-
-
-
-/* common classes */
-.main {
-    height:500px;
-    border-bottom: 3px solid #54F2CE;
-    /*background-image:url('{{ STATIC_URL }}imgs/IMG_6106.JPG');*/
-}
-.main h1{
-    padding-top: 200px;
-    font-size:72px; 
-    color:white;
-}
-
-.divider{
-    border-bottom: 2px solid #54F2CE;
-    padding-bottom: 30px;
-    margin-bottom:30px;
-}
-
-.top-con {
-    margin-top: 20px;
 }
 
 
@@ -186,54 +156,29 @@ nav .navbar-collapse ul .active a:hover {
    font-size: .8em;
 }
 
-/*
-font-family: 'Kite One', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'David Libre', serif;*/
 
-/*.index-top{
-    padding-bottom: 0px;
-}
-*/
-/*.logo-heading{
-    display:inline-block;
-}*/
 
-/*.lh-1{
-    margin-left:-30px;
-    margin-bottom:5px;
+/* common classes */
+.main {
+    height:500px;
+    border-bottom: 3px solid #54F2CE;
 }
 
-.lh-2 {
-    margin-left:5px;
-    font-size:50px;
-    font-family: 'Raleway', sans-serif;
+.main h1 {
+    padding-top: 200px;
+    font-size:72px; 
+    color:white;
 }
 
-.lh-3 {
-    margin-top: 0px;*/
+.divider{
+    border-bottom: 2px solid #54F2CE;
+    padding-bottom: 30px;
+    margin-bottom:30px;
 }
 
-/*#img2{
-    margin-top: -55px;
-    margin-left: 120px;
-    height:100px;
-    width: 150px;
-    position:absolute;
-    z-index: 5;
+.top-con {
+    margin-top: 20px;
 }
-
-#home-logo {
-    height:auto;
-    width:100%;
-}
-
-#home-portrait {
-    border:5.5px solid #F94A61;
-    border-radius: 50%;
-    padding-top: 15px;
-    width: 84%;
-}*/
 
 
 
@@ -293,7 +238,30 @@ font-family: 'David Libre', serif;*/
 
 
 
-/*Speaking PAge*/
+/* Contact Page*/
+.contact-info h4 {
+    margin-top: 0px;
+}
+
+.contact-imgs {
+    width:20px;
+    height:20px;
+    margin-right: .4em;
+    margin-left: 1em;
+}
+
+#map {
+    height:400px;
+}
+
+.scrolloff {
+    pointer-events: none;
+}
+
+
+
+/* Healers */
+/*Speaking Page*/
 .front {
     width:100%;
     height: 230px;
@@ -302,7 +270,7 @@ font-family: 'David Libre', serif;*/
     -webkit-transition: padding .5s, width .5s, height .5s, margin-top .5s, margin-left .5s, margin-bottom .5s;
 }
 
-.front:hover{
+.front:hover {
     width:115%;
     height:265px;
     padding: 40px;
@@ -400,29 +368,7 @@ font-family: 'David Libre', serif;*/
 
 
 
-/* Contact Page*/
-.contact-info h4 {
-    margin-top: 0px;
-}
-
-.contact-imgs {
-    width:20px;
-    height:20px;
-    margin-right: .4em;
-    margin-left: 1em;
-}
-
-#map {
-    height:400px;
-}
-
-.scrolloff {
-    pointer-events: none;
-}
-
-
-
-/*Blog*/
+/* Blog */
 .blg-exr {
     border:5px black solid;
     margin-bottom: 30px;
