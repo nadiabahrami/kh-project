@@ -30,6 +30,7 @@
       </div>
       {% if user.is_authenticated %}
         <a href="/healers/edit/{{ event.pk }}">Edit Event</a>
+        <a href="/healers/delete/{{article.pk}}/">Delete Event</a>
       {% endif %}
       </div>
     {% endfor %} 
