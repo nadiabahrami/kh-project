@@ -54,14 +54,16 @@
             <li><a class="main-opt" href="{% url 'blog'%}">Blog</a></li>
             <li><a class="main-opt" href="{% url 'contact'%}">Contact</a></li>
             <li><a class="main-opt" href="{% url 'resources'%}">Resources</a></li>
-          {% if user.is_authenticated %}
-          <li><a href="/accounts/logout/">Logout</a></li>  
-          {% endif %}
+            {% if user.is_authenticated %}
+              <li><a href="/accounts/logout/">Logout</a></li>  
+            {% endif %}
           </ul>
         </div>
       </div>
     </nav>
         {% block content %}
+        {% endblock %}
+        {% block footer %}
         {% endblock %}
         <footer class="footer">
           <div class="container">
@@ -84,5 +86,5 @@
             $( "nav #background" ).fadeOut();
           }
         });</script> -->
-    </body>
+  </body>
 </html>
