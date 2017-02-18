@@ -134,3 +134,5 @@ MEDIA_URL = '/media/'
 # django Registation
 
 REGISTRATION_OPEN = False
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'

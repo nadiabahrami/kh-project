@@ -151,11 +151,20 @@ nav .navbar-collapse ul .active a:hover {
     width: 100%;
     height: 100px;
     background-color: white;
-    margin-top:40px;
+    margin-top:20px;
+    margin-bottom: 20px;
 }
 
 .footer p{
     /*margin: 20px 0;*/
+}
+
+.contact-outer {
+    padding-bottom: 10px;
+}
+
+.contact-div {
+    padding-top: 5px;
 }
 
 .text-muted {
@@ -164,6 +173,10 @@ nav .navbar-collapse ul .active a:hover {
 
 .small-text{
    font-size: .8em;
+}
+
+#contact-quote {
+    font-size:1.4em;
 }
 
 
