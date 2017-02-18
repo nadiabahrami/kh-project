@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from django.contrib.auth.views import login
+from django.http import HttpResponseRedirect
 
-# Create your views here.
+
+def custom_login(request):
+    """"""
+    if request.user.is_authenticated():
+        return HttpResponseRedirect('/')
+    else:
+        return login(request)
