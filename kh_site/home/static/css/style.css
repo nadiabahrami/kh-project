@@ -20,6 +20,7 @@ h2 {
 
 h3 {
     font-family: 'Poiret One', cursive;
+    font-size: 3.0em;
 }
 
 h4 {
@@ -193,6 +194,10 @@ nav .navbar-collapse ul .active a:hover {
     padding-top: 79px;
 }
 
+.intro-p {
+    font-size: 1.5em;
+}
+
 
 
 /*index page*/
@@ -209,6 +214,26 @@ nav .navbar-collapse ul .active a:hover {
     margin-bottom: 35px;
 }
 
+#home-squares{
+    margin-bottom: 0px;
+}
+
+#MHC {
+    margin-top: -3px;
+}
+
+ #consult {
+    width: 120%;
+}
+
+#consult-text {
+    color:#333;
+    text-decoration: none;
+}
+
+#consult-text:hover {
+    text-decoration: none;
+}
 
 
 /*about page*/

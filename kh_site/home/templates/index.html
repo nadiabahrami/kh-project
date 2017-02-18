@@ -11,16 +11,16 @@
   <div class="container divider top-con">
     <div class="col-md-6">
       <h2 class="text-center">Mental Health Counseling</h2>
-      <h3 class="text-center">Transforming Trauma into Thriving</h3>
-      <p class="text-center">For years I have had the privilege of serving powerful men and women who have a history of childhood abuse, sexual assault, and domestic violence. All of the people I serve have been determined to see what their lives would look like if they lived from a place of intention, power, and authenticity. They have worked to eliminate ͞survivor mode͟ which holds us all hostage to a limited range of experiences and feelings in order to remain safe after trauma. My clinical style avoids pathology, and instead identifies the impact that oppressive systems have had on individual’s mental health. <a href="{% url 'services' %}">Click here to learn more.</a></p>
+      <h4 id="MHC" class="text-center">Transforming Trauma into Thriving</h4>
+      <p class="text-center">For years I have had the privilege of serving powerful men and women who have a history of childhood abuse, sexual assault, and domestic violence. All of the people I serve have been determined to see what their lives would look like if they lived from a place of intention, power, and authenticity. They have worked to eliminate "survivor mode" which holds us all hostage to a limited range of experiences and feelings in order to remain safe after trauma. My clinical style avoids pathology, and instead identifies the impact that oppressive systems have had on individual’s mental health. <a href="{% url 'services' %}">Click here to learn more.</a></p>
     </div>
     <div class="col-md-6">
       <h2 class="text-center right-index">Healing the Healers</h2>
-      <h3 class="text-center">Empowering Healers to Thrive  </h3>
+      <h4 class="text-center">Empowering Healers to Thrive  </h4>
       <p class="text-center">Are you a helping professional that works with clients deeply impacted by trauma? It is common knowledge that those of us who attempt to repair the physical/emotional/mental distress of others can unwillingly take on their emotional experiences. For us healers, empathy can become both a gift and a curse...These factors and more encouraged me to create <span id=home-bold>Healing the Healers</span>. Our services not only help prevent secondary and vicarious trauma but assist in creating a life where thriving as a helping professional is a gold standard! <a href="{% url 'healers' %}">Click here to learn more.</a></p>
     </div>
   </div>
-  <div class="container divider">
+  <div class="container divider" id="home-squares">
     <h2>Services I Offer</h2>
     <div class="col-md-4">
       <div class="service">
@@ -47,10 +47,11 @@
       </div>
     </div>
   </div>
-  <section class="" style="background: url('{% static 'imgs/15-ieu1313-fr.png' %}') no-repeat; background-size:100%; background-position:left;">
+  <section id="consult" class="" style="background: url('{% static 'imgs/15-ieu1313-fr.png' %}') no-repeat; background-size:100%; background-position:left;">
     <div class ="container">
       <div class="col-md-6 col-md-offset-5" style="height:400px;">
-        <h2>Schedule your free 20 minute consultation today.</h2>
+        <p>&nbsp;</p>
+        <a id="consult-text" href="mailto:info@kyeishahodge.com​?subject=Free Consultation"><h2 class="text-center">Schedule your free 20 minute consultation today.</h2></a>
       </div>
     </div>
   </section>
@@ -58,4 +59,5 @@
     $('#navbar .navbar-nav li').removeClass("active");
     $('#home-link').addClass("active");
   </script>
+  {% include 'footer.html' %}
 {% endblock %}
