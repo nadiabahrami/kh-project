@@ -108,6 +108,14 @@ nav .navbar-collapse ul .active a:hover {
     margin-right: 15px;
 }
 
+.nav .open>a:hover, .nav .open>a {
+    background-color: #ff926d;
+}
+
+#drop-opt {
+    color:#333;
+}
+
 #index-logo {
     margin-top:125px;
     padding-top: 0px;
