@@ -61,28 +61,15 @@
         </div>
       </div>
     </nav>
-        {% block content %}
-        {% endblock %}
-        <footer class="footer">
-          <div class="container">
-            <div class="col-md-8">
-              <p class="text-muted">Therapy doesn't have to be serious! Come prepared to laugh!</p>
-              <p class="text-muted">Kyeisha Hodge is a licensed therapist find out <a href="{% url 'about'%}">more</a></p>
-              <p class="text-muted small-text">Website designed by <a target="_blank" href="http://nadia-bahrami.ddns.net">Nadia Bahrami</a>  &copy;2016</p>
-            </div>
-            <div class="col-md-4 contact-info">
-              <h4>Contact</h4>
-              <p><img class="contact-imgs" src="{% static 'imgs/tele (1).png' %}"/>1 . 205 . 755 . 0502</p>
-              <p><img class="contact-imgs" src="{% static 'imgs/email.png' %}"/><a href="mailto:info@kyeishahodge.com​?subject=Website Referral">info@kyeishahodge.com​</a></p>
-          </div>
-        </footer>
-        <script>
-        $(window).scroll(function() {
-          if ($(this).scrollTop() > 200) {
-            $( "nav #background" ).fadeIn();
-          } else {
-            $( "nav #background" ).fadeOut();
-          }
-        });</script>
-    </body>
+    {% block content %}
+    {% endblock %}
+    <script>
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 200) {
+        $( "nav #background" ).fadeIn();
+      } else {
+        $( "nav #background" ).fadeOut();
+      }
+    });</script>
+  </body>
 </html>
