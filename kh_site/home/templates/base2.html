@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Vesper+Libre:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Playfair+Display|Poiret+One|Raleway" rel="stylesheet">
     <link rel='shortcut icon' href="{% static 'imgs/favicon.ico' %}" type='image/x-icon'/ >
@@ -41,9 +40,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a class ="main-opt" href="{% url 'home'%}">Home</a></li>
-            <li><a class="main-opt" href="{% url 'about'%}">About</a></li>
-            <li class="dropdown">
+            <li id="home-link" class="active"><a class ="main-opt" href="{% url 'home'%}">Home</a></li>
+            <li id="about-link"><a class="main-opt" href="{% url 'about'%}">About</a></li>
+            <li id="service-link" class="dropdown">
               <a  class="main-opt" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
               <ul class="dropdown-menu">
                 <li><a href="{% url 'services' %}">Counseling</a></li>
@@ -51,9 +50,9 @@
                 <li><a href="{% url 'healers' %}">Healers</a></li>
               </ul>
             </li>
-            <li><a class="main-opt" href="{% url 'blog'%}">Blog</a></li>
-            <li><a class="main-opt" href="{% url 'contact'%}">Contact</a></li>
-            <li><a class="main-opt" href="{% url 'resources'%}">Resources</a></li>
+            <li id="blog-link"><a class="main-opt" href="{% url 'blog'%}">Blog</a></li>
+            <li id="contact-link"><a class="main-opt" href="{% url 'contact'%}">Contact</a></li>
+            <li id="resc-link"><a class="main-opt" href="{% url 'resources'%}">Resources</a></li>
             {% if user.is_authenticated %}
               <li><a href="/accounts/logout/">Logout</a></li>  
             {% endif %}

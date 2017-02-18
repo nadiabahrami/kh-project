@@ -32,17 +32,17 @@
     </div>
     <div class="col-md-4">
       <div class="service">
-        <a href="{% url 'speaking' %}">
-          <h4 class="text-center">Speaking Engagements</h4>
-          <img class="book-cover" src="{% static 'imgs/group_paper-figures_77515495.jpg' %}">
+        <a href="{% url 'healers' %}">
+          <h4 class="text-center">Healing the Healers</h4>
+          <img class="book-cover" src="{% static 'imgs/3dd567fca3-u2019-fr.jpg' %}">
         </a>
       </div>
     </div>
     <div class="col-md-4">
       <div class="service">
-        <a href="{% url 'healers' %}">
-          <h4 class="text-center">Healing the Healers</h4>
-          <img class="book-cover" src="{% static 'imgs/3dd567fca3-u2019-fr.jpg' %}">
+        <a href="{% url 'speaking' %}">
+          <h4 class="text-center">Speaking Engagements</h4>
+          <img class="book-cover" src="{% static 'imgs/group_paper-figures_77515495.jpg' %}">
         </a>
       </div>
     </div>
@@ -54,4 +54,8 @@
       </div>
     </div>
   </section>
+  <script>
+    $('#navbar .navbar-nav li').removeClass("active");
+    $('#home-link').addClass("active");
+  </script>
 {% endblock %}

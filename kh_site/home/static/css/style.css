@@ -180,6 +180,10 @@ nav .navbar-collapse ul .active a:hover {
     margin-top: 20px;
 }
 
+.b2-top{
+    padding-top: 79px;
+}
+
 
 
 /*index page*/
@@ -251,11 +255,16 @@ nav .navbar-collapse ul .active a:hover {
 }
 
 #map {
-    height:400px;
+    height:418px;
 }
 
 .scrolloff {
     pointer-events: none;
+}
+
+.contact-p {
+    font-family: 'Poiret One', cursive;
+    font-family: 'Vesper Libre', serif;
 }
 
 

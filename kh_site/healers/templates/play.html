@@ -5,9 +5,10 @@
     <h1 class="text-center">Healers at Play</h1>
 </div>
 <div class="container divider">
-  <p class="col-md-10 col-sm-offset-1">As adults we tend to leave the playing to kids. Yet, after studying and surveying helping professionals in the community it appears that we need to learn a thing or two from the little ones.</p>
-  <p class="col-md-10 col-sm-offset-1">Healing the Healers works to support the average helping professional in identifying, engaging in, and developing a practice of play! Kyeisha Hodge, the founder of Healing the Healers, can attest to this and demands time in her day few times a week to play. As a dancer, a movie enthusiast, and performer arts supporter, she finds a way to fill her weeks with fun and non-therapy speak. </p>  
-  <h2 class="col-md-12 text-center">Join in the fun!  Come to an event and play.</h2>
+  <p class="col-md-10 col-sm-offset-1">As adults we tend to leave the playing to the little ones. Yet, after studying and surveying helping professionals in the community it appears that we need to learn a thing or two from the kiddos! </p>
+  <p class="col-md-10 col-sm-offset-1">Healing the Healers works to support the average helping professional in identifying, engaging in, and developing a practice of play! </p>  
+  <p class="col-md-10 col-sm-offset-1">Before founding Healing the Healers, I could still attest to the impact of play in my own life.  I demanded time in my week to let loose and as a dancer, a movie enthusiast, and a performer arts supporter, I found ways to fill my weeks with fun and non-therapy speak. </p>  
+  <h2 class="col-md-12 text-center">Below are some pictures of my primary way of engaging in play!</h2>
   {% if user.is_authenticated %}
     <a class="col-md-12 text-center" href="/healers/add/">Add an event</a>
   {% endif %}
@@ -39,6 +40,6 @@
 
 <script>
     $('#navbar .navbar-nav li').removeClass("active");
-    $('#navbar .navbar-nav :nth-child(3)').addClass("active");
+    $('#service-link').addClass("active");
 </script>
 {% endblock %}
