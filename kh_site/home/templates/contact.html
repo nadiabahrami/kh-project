@@ -4,8 +4,8 @@
 <section class="b2-top main" id="contact-section">
   <div id=map></div>
 </section>
-<div class="container">
-    <div class="col-md-4">
+<div class="container divider">
+    <div class="col-md-3">
         <h4>Address:</h4>
         <p>600 N 36th Street</p>
         <p>Suite 226</p>
@@ -13,9 +13,9 @@
         <h4>Parking:</h4>
         <p>Paid street parking is available 8am to 8pm on the street surrounding both the Fremont Office.</p>
     </div>
-    <div class="col-md-8">
-        <p class="contact-p">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I offer services in a warm and comfortable environment conveniently located in Fremont Seattle.  Please contact me directly to inquire about available time slots.</p>
-        <p id="cp2" class="contact-p text-center">Call (205) 775-0502 or email me at <a href="mailto:info@kyeishahodge.com​?subject=Contact Kyeisha">info@kyeishahodge.com​</a></p>
+    <div class="col-md-7 col-sm-offset-2">
+        <p class="contact-p">I offer services in a warm and comfortable environment conveniently located in Fremont Seattle.  Please contact me directly to inquire about available time slots.</p>
+        <p id="cp2" class="contact-p">Call (205) 775-0502 or email me at <a href="mailto:info@kyeishahodge.com​?subject=Services Request">info@kyeishahodge.com​</a></p>
     </div>
 </div>
 <script>
@@ -57,4 +57,5 @@
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key={{ GOOGLE_KEY }}&callback=initMap"
 async defer></script>
+{% include 'footer.html' %}
 {% endblock %}
