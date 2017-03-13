@@ -3,69 +3,63 @@
 {% block content %}
   <section class="main" style="background: url('{% static 'imgs/IMG_6106-sm-long.JPG' %}') no-repeat; background-size:100%; background-position:right;">
     <div class ="container">
-      <div class="col-md-6" id="index-logo">
-        <img src="{% static 'imgs/main-logo-fade.png' %}"/>
+      <div class="col-md-8" id="index-logo">
+        <img src="{% static 'imgs/overall-logo.png' %}"/>
       </div>
     </div>
   </section>
-  <!-- <div class="container divider index-top">
-    <div class="col-md-3 col-sm-offset-2">
-      <img id="home-portrait" src="{% static 'imgs/profile-lg.png' %}">
-      <!-- <div id="img2" class="pull-right">
-        <img id="home-logo" src="{% static 'imgs/khblacklogo-orange.png' %}"/>
-      </div>
-    </div>
-    <div class="col-md-5">
-<!--       <h1 class="logo-heading lh-1">Tansforming Trauma into Thriving <span class="logo-heading lh-2">&</span></h1>
-      <h1 class="logo-heading lh-3">Healing the Healers</h1>
-      <div>
-        <p>Therapist Kyeisha Hodge, LMHCA</p>
-      </div> --
-      <img src="{% static 'imgs/main-logo.png' %}"/>
-    </div>
-  </div> -->
   <div class="container divider top-con">
     <div class="col-md-6">
-      <h2 class="text-center">Transforming Trauma into Thriving</h2>
-      <p class="text-center">For years, I have had the privilege of serving powerful men and women who have survived childhood abuse, sexual assault, and domestic violence. Despite their vast differences in backgrounds all of the people I serve have been determined to see what their lives would look like if they lived from a place of intention, power, and authenticity. Together, we work together to identify and revise the limitingbeliefs that you were forced to align with in order to survive trauma. My social justice oriented counseling will assist you in healing from trauma while also decreasing the likelihood of re-traumatization that is often a reality for manysurvivors. <a href="{% url 'services' %}">Click here to learn more.</a></p>
+      <h2 class="text-center">Mental Health Counseling</h2>
+      <h4 id="MHC" class="text-center">Transforming Trauma into Thriving</h4>
+      <p class="text-center">For years I have had the privilege of serving powerful men and women who have a history of childhood abuse, sexual assault, and domestic violence. All of the people I serve have been determined to see what their lives would look like if they lived from a place of intention, power, and authenticity. They have worked to eliminate "survivor mode" which holds us all hostage to a limited range of experiences and feelings in order to remain safe after trauma. My clinical style avoids pathology, and instead identifies the impact that oppressive systems have had on individual’s mental health. <a href="{% url 'services' %}">Click here to learn more.</a></p>
     </div>
     <div class="col-md-6">
-      <h2 class="text-center right-index">Healing the Healers</h2>
-      <p class="text-center">Are you a helping professional that works with clients deeply impacted by trauma? Those of us in positions where we attempt to repair the physical, emotional and mental distress of others often tell me that they unwillingly take on the emotional experiences of their clients, often leaving sessions feeling saturated. For us healers, empathy can become both a gift and a curse. My services not only help prevent secondary and vicarious trauma but works to create a life where thriving as a helping professional is your new standard!  <a href="{% url 'healers' %}">Click here to learn more.</a></p>
+      <h2 class="text-center right-index">Revising Beliefs Coaching</h2>
+      <h4 class="text-center">Empowering Healers to Thrive  </h4>
+      <p class="text-center">Are you a helping professional that works with clients deeply impacted by trauma? It is common knowledge that those of us who attempt to repair the physical/emotional/mental distress of others can unwillingly take on their emotional experiences. For us healers, empathy can become both a gift and a curse...These factors and more encouraged me to create <span id=home-bold>Healing the Healers</span>. Our services not only help prevent secondary and vicarious trauma but assist in creating a life where thriving as a helping professional is a gold standard! <a href="{% url 'healers' %}">Click here to learn more.</a></p>
     </div>
   </div>
-  <div class="container divider">
-    <h2>Services I Offer</h2>
+  <div class="container divider" id="home-squares">
+    <h2 class="text-center">Services</h2>
     <div class="col-md-4">
       <div class="service">
         <a href="{% url 'services' %}">
+          <!-- <h4 class="text-center">Trauma Counseling</h4> -->
+          <img class="book-cover" src="{% static 'imgs/pexels-photo-185410.jpeg' %}">
           <h4 class="text-center">Trauma Counseling</h4>
-          <img class="book-cover" src="{% static 'imgs/15-cropped.jpg' %}">
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="service">
-        <a href="{% url 'speaking' %}">
-          <h4 class="text-center">Speaking Engagements</h4>
-          <img class="book-cover" src="{% static 'imgs/group_paper-figures_77515495.jpg' %}">
         </a>
       </div>
     </div>
     <div class="col-md-4">
       <div class="service">
         <a href="{% url 'healers' %}">
-          <h4 class="text-center">Healing the Healers</h4>
+          <!-- <h4 class="text-center">Healing the Healers</h4> -->
           <img class="book-cover" src="{% static 'imgs/3dd567fca3-u2019-fr.jpg' %}">
+          <h4 class="text-center">Healing the Healers</h4>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service">
+        <a href="{% url 'speaking' %}">
+          <img class="book-cover" src="{% static 'imgs/group_paper-figures_77515495.jpg' %}">
+          <h4 class="text-center">Groups & Workshops</h4>
         </a>
       </div>
     </div>
   </div>
-  <section class="" style="background: url('{% static 'imgs/15-ieu1313-fr.png' %}') no-repeat; background-size:100%; background-position:left;">
+  <section id="consult" class="" style="background: url('{% static 'imgs/15-ieu1313-fr.png' %}') no-repeat; background-size:100%; background-position:left;">
     <div class ="container">
       <div class="col-md-6 col-md-offset-5" style="height:400px;">
-        <h2>Schedule your Free 20 minute consultation today.</h2>
+        <p>&nbsp;</p>
+        <a id="consult-text" href="mailto:info@kyeishahodge.com​?subject=Free Consultation"><h2 class="text-center">Schedule your free 20 minute consultation today.</h2></a>
       </div>
     </div>
   </section>
+  <script>
+    $('#navbar .navbar-nav li').removeClass("active");
+    $('#home-link').addClass("active");
+  </script>
+  {% include 'footer.html' %}
 {% endblock %}

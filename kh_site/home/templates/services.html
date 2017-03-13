@@ -1,38 +1,40 @@
-{% extends 'base.html' %}
+{% extends 'base2.html' %}
 {% load static %}
 {% block content %}
-<div class="container divider">
-    <h1 class="text-center">Trauma Counseling</h1>
+<div class="container divider b2-top">
+    <div id="coun-img">
+      <img class="about-img" src="{% static 'imgs/yellow-sip-72.jpg' %}"/>
+    </div>
+    <h3 class="text-center">Kyeisha Hodge, LMHC, M.S.Ed.</h3>
 </div>
 <div class="container divider">
-  <p>First off, congrats! Taking the time to research therapists means you're acting on your desires to make positive changes and that's something to be proud of.</p>
-  <p>&nbsp;</p>
+  <p class="quote">“Therapy shouldn’t be a place you go to slap another label of pathology on yourself. Therapy is where you go to remove the already stuck on destructive labels and give yourself permission to thrive and achieve your brand of excellence!”</p>
   <h4>Getting Past Survivor Mode and into Thriving Mode</h4>
-  <p>Survivor mode, although once necessary to endure traumatic experiences, only paints the world in less vibrant colors. It holds us hostage to a limited range of experiences and feelings in order to remain safe. My hope for you is that in our time together we not only explore, and unpack the past but that we also move into painting the world with whatever colors you desire.</p>
-  <p>&nbsp;</p>
+  <p>Survivor mode is common for those effected by traumatic experiences. Although once necessary to endure experiences, survivor mode continues to paint the world in dull colors long after we leave trauma behind. It holds us hostage to a limited range of experiences and feelings in order to avoid perceived dangers. In our time together we will not only explore, and unpack your past but also move into painting the world in whatever colors you desire.</p>
+  <p class="quote">"I aim to serve and include African Americans and communities of color in therapy’s healing process. The style of counseling I offer considers collective trauma and re-frames mental dysfunction as a strategy to stay safe within dysfunctional experiences."</p>
+  <h4>Healing Personal and Collective Trauma</h4>
+  <p>Together we will explore how the collective trauma of racism and sexism impact mental health. We will also explore the different systems you belong to and then uncover, challenge, and revise the beliefs that you had to align with in order to safely navigate these systems.  </p>
+  <p>For example, if you have learned that in order to be safe you must give away your power, or, that having extreme control over yourself and others means you can avoid pain, then you understand the power of our environments to shape who we are.  </p>
+  <p>This social justice perspective to counseling not only creates healing but also decreases the likelihood of finding yourself in future abusive environments.</p>
   <h4>A Unique Approach</h4>
-  <p>The clinical theories I use are Narrative Therapy and Cognitive Processing Therapy. They are two of the most holistic methods of healing that I can offer you. Narrative therapy focuses on uncovering the stories we create about ourselves and the power to rewrite the destructive ones. Cognitive Processing Therapy offers concrete techniques to change maladaptive beliefs, thoughts actions and assumptions that get in the way of living the highest quality of life possible.</p>
-  <p>&nbsp;</p>
-  <h4>Making Lasting Changes</h4>
-  <p>We all exists within various systems. Some systems are by nature oppressive and become secretly detrimental to our mental health. During our sessions we will explore the systems you belong to and uncover and revise the beliefs that you had to align with in order to safely navigate these dysfunctional systems. This means that if you had to believe that in order to be safe you must give away your power, or, that having extreme control over yourself and others means you can avoid getting hurt then you understand the power of our environment to shape who we are.</p>
-  <p>This social justice perspective to counseling not only creates healing but also decreases the likelihood of finding yourself in future abusive-like environments. This strength based approach to therapy helps you to create a life where you are not a victim to your emotions and experiences but instead a powerful force for positive change and acceptance.</p>
+  <p>The two most holistic methods of healing that I can offer you are Narrative Therapy and Cognitive Processing Therapy. Narrative therapy focuses on uncovering the stories we create about ourselves and acknowledges our power to rewrite the destructive ones. Cognitive Processing Therapy offers concrete techniques to change limiting beliefs, thoughts, actions and assumptions that get in the way of living the highest quality of life possible.</p>
   <p>&nbsp;</p>
   <h4>My Specific Counseling Specialties</h4>
-  <p>Although I help people with a variety of issues my expertise lies in the in the following areas:</p>
-  <ul>
-    <li>Domestic Violence</li>
-    <li>Anxiety</li>
-    <li>Complex</li>
-    <li>Trauma and PTSD</li>
-    <li>Childhood Abuse</li>
-    <li>African American/Minority Issues</li>
-    <li>Women's Issues</li>
-  </ul>
-  <p>No matter the challenge you are currently acing, therapy can transform self-destructive behaviors and habits, resolve painful feelings, improve your relationships, and more.</p>
-  <p>Simplify your life by getting the guidance you need.</p>
+  <div class="col-md-7">
+    <p>My expertise lies in assisting in the healing of the following issues:</p>
+    <ul>
+      <li><p>Domestic Violence</p></li>
+      <li><p>Sexual Assault</p></li>
+      <li><p>Childhood Abuse</p></li>
+      <li><p>PTSD and Anxiety</p></li>
+      <li><p>African American Issues</p></li>
+      <li><p>Collective Trauma (racism, sexism, classism, etc)</p></li>
+    </ul>
+  </div>
 </div>
 <script>
     $('#navbar .navbar-nav li').removeClass("active");
-    $('#navbar .navbar-nav :nth-child(3)').addClass("active");
+    $('#service-link').addClass("active");
 </script>
+{% include 'footer.html' %}
 {% endblock %}

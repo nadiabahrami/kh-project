@@ -1,8 +1,9 @@
-body{
+body {
     margin: 0px;
+    height:100%;
 }
 
-img{
+img {
     height:auto;
     width:100%;
 }
@@ -14,24 +15,25 @@ h1 {
 
 h2 {
     font-family: 'Vesper Libre', serif;
+    font-family: 'Poiret One', cursive;
     font-size: 48px;
-
 }
 
-h3{
+h3 {
     font-family: 'Poiret One', cursive;
+    font-size: 3.0em;
 }
 
 h4 {
     font-family: 'Poiret One', cursive;
     color:#F94A61;
-    font-size:2em;
+    font-size:2.3em;
     margin-top: 20px;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.35em;
 }
 
 ul {
@@ -45,26 +47,20 @@ nav {
     color: white;
     padding-right: 20px;
     width:100%;
-    height:90px;
+    height:80px;
     position:fixed;
     top:0px;
     z-index:3;
 }
 
-.stable{
-    background-color: #F27C54;
-    height: 90px;
-}
-
-
-nav #background, nav #labels{
+nav #background, nav #labels, nav #background2 {
     position:absolute;
     top:0px;
     width:100%;
     height:100%;
 }
 
-nav #labels{
+nav #labels {
     background-color: transparent;
 }
 
@@ -73,11 +69,15 @@ nav #background {
     display: none;
 }
 
-nav a {
+nav #background2 {
+    background-color: #F27C54;
+}
+
+nav .main-opt {
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
-    margin-top: 15px;
+    margin-top: 12px;
 }
 
 nav .navbar-collapse a:hover {
@@ -107,17 +107,29 @@ nav .navbar-collapse ul .active a:hover {
 /*.right-to-left li {
     float:right;
 }*/
-.navbar-right{
+.navbar-right {
     margin-right: 15px;
 }
 
-#index-logo{
+.nav .open>a:hover, .nav .open>a {
+    background-color: #ff926d;
+}
+
+#drop-opt {
+    color:#333;
+}
+
+#index-logo {
     margin-top:125px;
     padding-top: 0px;
 }
 
-#nav-branding{
+#nav-branding {
     width:500px;
+}
+
+#nav-branding img {
+    margin-top: 1px;
 }
 
 #nav-branding p {
@@ -135,13 +147,48 @@ nav .navbar-collapse ul .active a:hover {
 
 
 
+/*footer*/
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.footer p{
+    /*margin: 20px 0;*/
+}
+
+.contact-outer {
+    padding-bottom: 10px;
+}
+
+.contact-div {
+    padding-top: 5px;
+}
+
+.text-muted {
+    margin:2px;
+}
+
+.small-text{
+   font-size: .8em;
+}
+
+#contact-quote {
+    font-size:1.4em;
+}
+
+
+
 /* common classes */
 .main {
     height:500px;
     border-bottom: 3px solid #54F2CE;
-    /*background-image:url('{{ STATIC_URL }}imgs/IMG_6106.JPG');*/
 }
-.main h1{
+
+.main h1 {
     padding-top: 200px;
     font-size:72px; 
     color:white;
@@ -157,76 +204,13 @@ nav .navbar-collapse ul .active a:hover {
     margin-top: 20px;
 }
 
-
-
-/*footer*/
-.footer {
-    width: 100%;
-    height: 100px;
-    background-color: white;
-    margin-top:40px;
+.b2-top{
+    padding-top: 79px;
 }
 
-.footer p{
-    /*margin: 20px 0;*/
+.intro-p {
+    font-size: 1.5em;
 }
-
-.text-muted {
-    margin:2px;
-}
-
-.small-text{
-   font-size: .8em;
-}
-
-/*
-font-family: 'Kite One', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'David Libre', serif;*/
-
-/*.index-top{
-    padding-bottom: 0px;
-}
-*/
-/*.logo-heading{
-    display:inline-block;
-}*/
-
-/*.lh-1{
-    margin-left:-30px;
-    margin-bottom:5px;
-}
-
-.lh-2 {
-    margin-left:5px;
-    font-size:50px;
-    font-family: 'Raleway', sans-serif;
-}
-
-.lh-3 {
-    margin-top: 0px;*/
-}
-
-/*#img2{
-    margin-top: -55px;
-    margin-left: 120px;
-    height:100px;
-    width: 150px;
-    position:absolute;
-    z-index: 5;
-}
-
-#home-logo {
-    height:auto;
-    width:100%;
-}
-
-#home-portrait {
-    border:5.5px solid #F94A61;
-    border-radius: 50%;
-    padding-top: 15px;
-    width: 84%;
-}*/
 
 
 
@@ -244,6 +228,26 @@ font-family: 'David Libre', serif;*/
     margin-bottom: 35px;
 }
 
+#home-squares{
+    margin-bottom: 0px;
+}
+
+#MHC {
+    margin-top: -3px;
+}
+
+ #consult {
+    width: 120%;
+}
+
+#consult-text {
+    color:#333;
+    text-decoration: none;
+}
+
+#consult-text:hover {
+    text-decoration: none;
+}
 
 
 /*about page*/
@@ -286,95 +290,187 @@ font-family: 'David Libre', serif;*/
 
 
 
-/*Speaking PAge*/
+/* Contact Page*/
+.contact-info h4 {
+    margin-top: 0px;
+}
+
+.contact-imgs {
+    width:20px;
+    height:20px;
+    margin-right: .4em;
+    margin-left: 1em;
+}
+
+.scrolloff {
+    pointer-events: none;
+}
+
+.contact-p {
+     font-family: 'Poiret One', cursive;
+    font-size: 2em;
+    color:#333;
+    padding-top: 20px;
+}
+
+#cp2 {
+    font-size:2em;
+    color:#333;
+    font-family: 'Raleway', sans-serif;
+}
+
+#map {
+    height:368px;
+}
+
+#contact-section {
+    height:450px;
+}
+
+
+/* Healers */
+#healer-logo {
+    padding-top:15px;
+}
+
 .front {
     width:100%;
     height: 230px;
     padding: 20px;
     border-radius: 50%;
-    -webkit-transition: padding .5s, width .5s, height .5s, margin-top .5s, margin-left .5s, margin-bottom .5s;
-}
-
-.front:hover{
-    width:115%;
-    height:265px;
-    padding: 40px;
-    margin-top:-20px;
-    margin-left:-20px;
-    margin-bottom: -30px;
-   border-radius: 50%;
-  /* HOVER ON */
-   -webkit-transition: padding .5s, width .5s, height .5s, margin-top .5s, margin-left .5s, margin-bottom .5s;
 }
 
 .small-title {
     padding-top:35px;
     padding-left: 25px;
     padding-right: 25px;   
-    /*-webkit-transition: padding-top .5s;*/
+}
+
+#b1 {
+    background-color: #006dbe;
+    color:white;
+}
+
+#b1:hover{
+    color:lightgrey;
+}
+
+#b2 {
+    background-color: #50d4fc;
+}
+
+#b3 {
+    background-color: #ffb92d;
 }
 
 
-/*.small-title:hover {
-    padding-top:55px;
-    padding-left: 45px;
-    padding-right: 45px;
-    -webkit-transition: padding-top .5s;
-}*/
+/* Counseling Page */
+.quote{
+    color: #fa8d4a;
+    font-family: 'Vesper Libre', serif;
+    padding-top: 20px;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+#coun-img {
+    padding-top: 30px;
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Speaking Page*/
+
+.small-title {
+    padding-top:35px;
+    padding-left: 25px;
+    padding-right: 25px;   
+}
+
 .spacer {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
-#talk1 {
-    color:#FF7829;
+#two-talks {
+    margin-left: 16%;
 }
+
+#three-talks {
+    margin-left: 19.5%;
+}
+
+.sp {
+    color:white;
+}
+
+.sp>div>p {
+    border-bottom: 2px solid white;
+}
+
+.talks {
+    font-size: 1.5em;
+}
+
+.sp:hover {
+    color:lightgrey;
+}
+/*
+#talk1 {
+    color:#4ad5d5;
+}*/
 
 .talk1{
-    background-color: #FF7829;
+    background-color: #4ad5d5;
 }
-
+/*
 #talk2 {
-    color:#0026FF;
-}
+    color:#d45754;
+}*/
 
 .talk2{
-    background-color: #0026FF;
+    background-color: #d45754;
 }
 
-#talk3 {
-    color:#5F35D6;
-}
+/*#talk3 {
+    color:#7a7edb;
+}*/
 
 .talk3{
-    background-color: #5F35D6;
+    background-color: #7a7edb;
 }
 
-#talk4 {
-    color:#FF1E8A;
-}
+/*#talk4 {
+    color:#f16c00;
+}*/
 
 .talk4{
-    background-color: #FF1E8A;
+    background-color: #f16c00;
 }
 
-#talk5 {
-    color:#3AFF51;
-}
+/*#talk5 {
+    color:#23ac94;
+}*/
 
 .talk5{
-    background-color: #3AFF51;
+    background-color: #23ac94;
 }
 
-#talk6 {
-    color:#FFD500;
-}
+/*#talk6 {
+    color:#009900;
+}*/
 
 .talk6{
-    background-color: #FFD500;
+    background-color: #888;
 }
 
-.talk {
-    margin-left: 40px;
+/*#talk7 {
+    color:#888;
+}*/
+
+.talk7{
+    background-color: #009900;
 }
  
 .speeches a {
@@ -393,29 +489,7 @@ font-family: 'David Libre', serif;*/
 
 
 
-/* Contact Page*/
-.contact-info h4 {
-    margin-top: 0px;
-}
-
-.contact-imgs {
-    width:20px;
-    height:20px;
-    margin-right: .4em;
-    margin-left: 1em;
-}
-
-#map {
-    height:400px;
-}
-
-.scrolloff {
-    pointer-events: none;
-}
-
-
-
-/*Blog*/
+/* Blog */
 .blg-exr {
     border:5px black solid;
     margin-bottom: 30px;

@@ -27,6 +27,7 @@ class Event(models.Model):
     event_photo = models.ImageField(upload_to=_image_path, blank=True)
     date_published = models.DateTimeField(default=datetime.datetime.now)
     event_date = models.DateField()
+    cost = models.CharField(max_length=50, blank=True)
     event_time = models.CharField(max_length=20, blank=True)
     objects = EventManager()
 
@@ -49,4 +50,15 @@ class AddEvent(ModelForm):
         """Content for blog post form."""
 
         model = Event
-        fields = ['event_photo', 'title', 'description', 'event_date', 'event_time']
+        fields = ['event_photo', 'title', 'description', 'event_date',
+                  'event_time', 'cost']
+
+
+class DeleteEvent(ModelForm):
+    """Form class for adding an event."""
+
+    class Meta:
+        """Content for event form."""
+
+        model = Event
+        fields = []
