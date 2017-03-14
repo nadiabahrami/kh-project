@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('home.urls')),
     url(r'^blog/', include('blog.urls')),
-    url(r'^healers/', include('healers.urls')),
+    # url(r'^healers/', include('healers.urls')),
 ]
 
 if settings.DEBUG:

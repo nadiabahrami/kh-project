@@ -1,0 +1,33 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block content %}
+<div class="container divider b2-top">
+  <h1 class="text-center">Coaching for Healers</h1>
+</div>
+<div class="container divider">
+  <p class="intro-p text-center">This is a brief explanation of packages.</p>
+  <h2>Packages</h2>
+  <div class="col-md-6">
+    <h4>3 – Session Package Deal</h4>
+    <ul>
+      <li><p>3 sessions over a 6 week period</p></li>
+      <li><p>Meet bi-weekly (once in person, then 2 over skype)</p></li>
+      <li><p>Pricing: $450</p><li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <h4>6 – Session Package Deal</h4>
+    <ul>
+      <li><p>6 sessions over a 12 week period</p></li>
+      <li><p>Meet bi-weekly (once in person, then 2 over skype)</p></li>
+      <li><p>Pricing: $900</p></li>
+    </ul>
+  </div>
+  <p>&nbsp;</p>
+</div>
+  <script>
+      $('#navbar .navbar-nav li').removeClass("active");
+      $('#service-link').addClass("active");
+  </script>
+  {% include 'footer.html' %}
+{% endblock %}

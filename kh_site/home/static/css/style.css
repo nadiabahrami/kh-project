@@ -196,8 +196,8 @@ nav .navbar-collapse ul .active a:hover {
 
 .divider{
     border-bottom: 2px solid #54F2CE;
-    padding-bottom: 30px;
-    margin-bottom:30px;
+    padding-bottom: 25px;
+/*    margin-bottom:30px;*/
 }
 
 .top-con {
@@ -223,10 +223,10 @@ nav .navbar-collapse ul .active a:hover {
     border-radius: 20px;
 }
 
-.right-index {
+/*.right-index {
     margin-top: 45px;
     margin-bottom: 35px;
-}
+}*/
 
 #home-squares{
     margin-bottom: 0px;
