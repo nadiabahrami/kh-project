@@ -104,9 +104,6 @@ nav .navbar-collapse ul .active a:hover {
     margin-top: -17px;
 }
 
-/*.right-to-left li {
-    float:right;
-}*/
 .navbar-right {
     margin-right: 15px;
 }
@@ -222,11 +219,6 @@ nav .navbar-collapse ul .active a:hover {
 .service img {
     border-radius: 20px;
 }
-
-/*.right-index {
-    margin-top: 45px;
-    margin-bottom: 35px;
-}*/
 
 #home-squares{
     margin-bottom: 0px;
@@ -355,7 +347,7 @@ nav .navbar-collapse ul .active a:hover {
     color:white;
 }
 
-#b1:hover{
+#b1:hover {
     color:lightgrey;
 }
 
@@ -420,58 +412,30 @@ nav .navbar-collapse ul .active a:hover {
 .sp:hover {
     color:lightgrey;
 }
-/*
-#talk1 {
-    color:#4ad5d5;
-}*/
 
 .talk1{
     background-color: #4ad5d5;
 }
-/*
-#talk2 {
-    color:#d45754;
-}*/
 
 .talk2{
     background-color: #d45754;
 }
 
-/*#talk3 {
-    color:#7a7edb;
-}*/
-
 .talk3{
     background-color: #7a7edb;
 }
-
-/*#talk4 {
-    color:#f16c00;
-}*/
 
 .talk4{
     background-color: #f16c00;
 }
 
-/*#talk5 {
-    color:#23ac94;
-}*/
-
 .talk5{
     background-color: #23ac94;
 }
 
-/*#talk6 {
-    color:#009900;
-}*/
-
 .talk6{
     background-color: #888;
 }
-
-/*#talk7 {
-    color:#888;
-}*/
 
 .talk7{
     background-color: #009900;
