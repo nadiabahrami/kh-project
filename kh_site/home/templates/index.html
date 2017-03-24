@@ -3,21 +3,18 @@
 {% block content %}
   <section class="main" style="background: url('{% static 'imgs/home-main.jpg' %}') no-repeat; background-size:100%; background-position:right;">
     <div class ="container">
-      <div class="col-md-8" id="index-logo">
-        <img src="{% static 'imgs/overall-logo.png' %}"/>
+      <div class="col-md-8">
+        <div class="col-md-12" id="index-logo">
+          <img src="{% static 'imgs/overall-logo.png' %}"/>
+          </div>
       </div>
     </div>
   </section>
   <div class="container divider top-con">
-    <div class="col-md-6">
+    <div class="col-md-12">
       <h2 class="text-center">Mental Health Counseling</h2>
       <h4 id="MHC" class="text-center">Transforming Trauma into Thriving</h4>
       <p class="text-center">For years I have had the privilege of serving powerful men and women who have a history of childhood abuse, sexual assault, and domestic violence. All of the people I serve have been determined to see what their lives would look like if they lived from a place of intention, power, and authenticity. They have worked to eliminate "survivor mode" which holds us all hostage to a limited range of experiences and feelings in order to remain safe after trauma. My clinical style avoids pathology, and instead identifies the impact that oppressive systems have had on individual’s mental health. <a href="{% url 'services' %}">Click here to learn more.</a></p>
-    </div>
-    <div class="col-md-6">
-      <h2 class="text-center right-index">Revising Beliefs Coaching</h2>
-      <h4 class="text-center">Empowering Healers to Thrive</h4>
-      <p class="text-center">Are you a helping professional that works with clients deeply impacted by trauma? It is common knowledge that those of us who attempt to repair the physical/emotional/mental distress of others can unwillingly take on their emotional experiences. For us healers, empathy can become both a gift and a curse...These factors and more encouraged me to create <span id=home-bold>Healing the Healers</span>. Our services not only help prevent secondary and vicarious trauma but assist in creating a life where thriving as a helping professional is a gold standard! <a href="{% url 'coaching' %}">Click here to learn more.</a></p>
     </div>
   </div>
   <div class="container divider" id="home-squares">
@@ -26,7 +23,7 @@
       <div class="service">
         <a href="{% url 'services' %}">
           <!-- <h4 class="text-center">Trauma Counseling</h4> -->
-          <img class="book-cover" src="{% static 'imgs/pexels-photo-185410.jpeg' %}">
+          <!-- <img class="book-cover" src="{% static 'imgs/pexels-photo-185410.jpeg' %}"> -->
           <h4 class="text-center">Trauma Counseling</h4>
         </a>
       </div>
@@ -35,7 +32,7 @@
       <div class="service">
         <a href="{% url 'coaching' %}">
           <!-- <h4 class="text-center">Healing the Healers</h4> -->
-          <img class="book-cover" src="{% static 'imgs/3dd567fca3-u2019-fr.jpg' %}">
+          <!-- <img class="book-cover" src="{% static 'imgs/3dd567fca3-u2019-fr.jpg' %}"> -->
           <h4 class="text-center">Healing the Healers</h4>
         </a>
       </div>
@@ -43,7 +40,7 @@
     <div class="col-md-4">
       <div class="service">
         <a href="{% url 'speaking' %}">
-          <img class="book-cover" src="{% static 'imgs/group_paper-figures_77515495.jpg' %}">
+          <!-- <img class="book-cover" src="{% static 'imgs/group_paper-figures_77515495.jpg' %}"> -->
           <h4 class="text-center">Groups & Workshops</h4>
         </a>
       </div>
@@ -51,7 +48,7 @@
   </div>
   <section id="consult" class="" style="background: url('{% static 'imgs/IMG_6106-sm-long.jpg' %}') no-repeat; background-size:100%; background-position:left;">
     <div class ="container">
-      <div class="col-md-5" style="height:450px;">
+      <div class="col-md-5" style="height:500px;">
         <p>&nbsp;</p>
         <a id="consult-text" href="mailto:kyeisha.hodge@gmail.com​?subject=Free Consultation"><h2 class="text-center">Schedule your free 20 minute consultation today.</h2></a>
         <button>Click here to schedule</button>
