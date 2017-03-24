@@ -10,29 +10,34 @@ img {
 
 h1 {
     font-family: 'Poiret One', cursive;
-    font-size:44px; 
+    font-size: 6em; 
 }
 
 h2 {
-    font-family: 'Vesper Libre', serif;
     font-family: 'Poiret One', cursive;
-    font-size: 48px;
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Rosario', sans-serif;
+/*    font-family: 'News Cycle', sans-serif;*/
+    font-size: 4em;
 }
 
 h3 {
     font-family: 'Poiret One', cursive;
-    font-size: 3.0em;
+    font-size: 3.5em;
+    margin-bottom: 0px;
 }
 
 h4 {
     font-family: 'Poiret One', cursive;
-    color:#F94A61;
-    font-size:2.3em;
+    /*font-family: 'Flamenco', cursive;*/
+    /*color:#F94A61;*/
+    font-size:3em;
     margin-top: 20px;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
     font-size: 1.35em;
 }
 
@@ -154,8 +159,9 @@ nav .navbar-collapse ul .active a:hover {
     width: 100%;
     height: 100px;
     background-color: white;
-    margin-top:20px;
+    padding-top:20px;
     margin-bottom: 20px;
+    border-top: 3px solid #54F2CE;
 }
 
 .footer p{
@@ -191,8 +197,7 @@ nav .navbar-collapse ul .active a:hover {
 }
 
 .main h1 {
-    padding-top: 200px;
-    font-size:72px; 
+    padding-top: 190px;
     color:white;
 }
 
@@ -201,10 +206,10 @@ nav .navbar-collapse ul .active a:hover {
     padding-bottom: 25px;
 /*    margin-bottom:30px;*/
 }
-
+/*
 .top-con {
     margin-top: 20px;
-}
+}*/
 
 .b2-top{
     padding-top: 79px;
@@ -219,21 +224,30 @@ nav .navbar-collapse ul .active a:hover {
 /*index page*/
 .service {
     border-radius: 20px;
-    border: 5px solid #006dbe;
+    border: 3.5px solid #006dbe;
     height: 300px;
-    background-color: rgba(0, 109, 190, .3);
+    background-color: rgba(0, 109, 190, .4);
+    color: #006dbe;
 }
 
 .service h4 {
-    color: #006dbe;
-    margin-top: 37.5%;
+    /*color: #006dbe;*/
+    margin-top: 86px;
+    padding-left: 14%;
+    padding-right:14%;
+    font-size: 3.8em;
 }
 
-.service h4:hover {
+.service .s2 {
+    margin-top: 57px;
+}
+
+.service:hover {
     color:lightgrey;
+    background-color: rgba(0, 109, 190, .7);
 }
 
-.service a {
+#home-squares a {
     text-decoration: none;
 }
 
@@ -243,14 +257,24 @@ nav .navbar-collapse ul .active a:hover {
 
 #home-squares{
     margin-bottom: 0px;
+    padding-bottom: 25px;
 }
 
 #MHC {
     margin-top: -3px;
 }
 
- #consult {
-    width: 120%;
+#consult {
+    width: 100%;
+    height:500px;
+    border-top: 2px solid rgba(84, 242, 206, 1);
+}
+
+#consult-container{
+    border-radius: 20px;
+    border: 2px solid white;
+    height: 300px;
+    background-color: rgba(255, 255, 255, .7);
 }
 
 #consult-text {
@@ -299,6 +323,14 @@ nav .navbar-collapse ul .active a:hover {
 .book {
     width:200px;
     margin-top: 20px;
+}
+
+.res-con .divider {
+    border-bottom: 2px solid darkgrey;
+}
+
+.res-con h4 {
+    font-size: 2.8em;
 }
 
 #res-2{
@@ -383,7 +415,7 @@ nav .navbar-collapse ul .active a:hover {
 
 /* Counseling Page */
 .quote{
-    color: #fa8d4a;
+    color: black;
     font-family: 'Vesper Libre', serif;
     padding-top: 20px;
     font-style: italic;
