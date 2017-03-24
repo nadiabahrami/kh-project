@@ -109,7 +109,9 @@ nav .navbar-collapse ul .active a:hover {
 }
 
 .nav .open>a:hover, .nav .open>a {
-    background-color: #ff926d;
+   /* border: 2px solid rgba(255, 146, 109, 1);*/
+    border: 2px solid rgba(255, 255, 255, .6);
+    background-color: transparent;
 }
 
 #drop-opt {
