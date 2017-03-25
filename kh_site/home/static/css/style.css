@@ -204,12 +204,16 @@ nav .navbar-collapse ul .active a:hover {
 .divider{
     border-bottom: 2px solid #54F2CE;
     padding-bottom: 25px;
-/*    margin-bottom:30px;*/
 }
-/*
+
 .top-con {
     margin-top: 20px;
-}*/
+}
+
+.spacer {
+    margin-bottom: 20px;
+}
+
 
 .b2-top{
     padding-top: 79px;
@@ -231,7 +235,6 @@ nav .navbar-collapse ul .active a:hover {
 }
 
 .service h4 {
-    /*color: #006dbe;*/
     margin-top: 86px;
     padding-left: 14%;
     padding-right:14%;
@@ -432,80 +435,8 @@ nav .navbar-collapse ul .active a:hover {
 
 /*Speaking Page*/
 
-.small-title {
-    padding-top:35px;
-    padding-left: 25px;
-    padding-right: 25px;   
-}
-
 .spacer {
     margin-bottom: 20px;
-}
-
-#two-talks {
-    margin-left: 16%;
-}
-
-#three-talks {
-    margin-left: 19.5%;
-}
-
-.sp {
-    color:white;
-}
-
-.sp>div>p {
-    border-bottom: 2px solid white;
-}
-
-.talks {
-    font-size: 1.5em;
-}
-
-.sp:hover {
-    color:lightgrey;
-}
-
-.talk1{
-    background-color: #4ad5d5;
-}
-
-.talk2{
-    background-color: #d45754;
-}
-
-.talk3{
-    background-color: #7a7edb;
-}
-
-.talk4{
-    background-color: #f16c00;
-}
-
-.talk5{
-    background-color: #23ac94;
-}
-
-.talk6{
-    background-color: #888;
-}
-
-.talk7{
-    background-color: #009900;
-}
- 
-.speeches a {
-    text-decoration: none;
-}
-
-.front h2{
-    font-size: 30px;
-    color:white;
-}
-
-.front h4{
-    color:white;
-    margin-top: 0px;
 }
 
 
