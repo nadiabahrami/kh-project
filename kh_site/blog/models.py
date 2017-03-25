@@ -24,7 +24,7 @@ class Article(models.Model):
     title = models.CharField(max_length=200, blank=True)
     content = models.TextField(max_length=5000, blank=False)
     blog_photo = models.ImageField(upload_to=_image_path, blank=True)
-    date_published = models.DateField(default=datetime.datetime.now)
+    date_published = models.DateTimeField(default=datetime.datetime.now)
     tags = models.CharField(max_length=30, blank=True)
     objects = ArticleManager()
 

@@ -6,9 +6,10 @@ from django.http import HttpResponseRedirect
 
 def blog_view(request):
     """Populate articles on blog page."""
-    # TODO: Order by  most recently created to latest created.
     articles = Article.objects.all().order_by('-date_published')
-    return render(request, 'blog.html', {'articles': articles})
+    tags = Article.objects.all().distinct('tags')
+    print(tags)
+    return render(request, 'blog.html', {'articles': articles, 'tags': tags})
 
 
 def add_article(request):
