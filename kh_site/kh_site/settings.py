@@ -131,7 +131,7 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-# django Registation
+# django Registration
 
 REGISTRATION_OPEN = False
 LOGIN_REDIRECT_URL = '/'
