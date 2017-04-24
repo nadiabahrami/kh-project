@@ -2,4 +2,4 @@
 set -e
 cd kh_site
 python manage.py migrate
-gunicorn collateral_consequence.wsgi --log-file -
+gunicorn kh_site.wsgi --log-file -
