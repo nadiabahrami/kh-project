@@ -344,7 +344,9 @@ nav .navbar-collapse ul .active a:hover {
 #res-2{
     margin-top: 40px;
 }
-
+.contact-info a {
+    font-size: 0.9em;
+}
 
 
 /* Contact Page*/
@@ -485,4 +487,9 @@ nav .navbar-collapse ul .active a:hover {
 
 #article-bar {
     height:30px;
+}
+
+/* TWEAKS */
+.top-50 {
+    margin-top: 50px;
 }
