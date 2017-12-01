@@ -25,7 +25,7 @@ ContactItems
 - link
 - name (charfield)
 
-Blog
+Article
 - title
 - body (wysiwyg)
 - date created
@@ -39,6 +39,7 @@ Book
 - author
 - category
 - image
+- link
 
 MentalHealthResources
 - title

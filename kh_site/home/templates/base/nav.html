@@ -1,0 +1,46 @@
+{% load static %}
+<nav class="navbar navbar-fixed-top">
+  <div id="background"></div>
+  <div id="labels">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="nav-branding">
+        <a class="navbar-brand" href="/accounts/login/">
+          <div>
+            <img src="{% static 'imgs/khsig-white.png' %}"/>
+          </div>
+        </a>
+        <section id="main-description">
+          <p>Mental Health Counselor.</p>
+          <p>Coach. Speaker.</p>
+        </section>
+      </div>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active" id="home-link"><a class="main-opt" href="{% url 'home'%}">Home</a></li>
+        <li id="about-link"><a class="main-opt" href="{% url 'about'%}">About</a></li>
+        <li id="service-link" class="dropdown">
+          <a  class="main-opt dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+          <ul class="dropdown-menu">
+            <li><a id="drop-opt" href="{% url 'services' %}">Counseling</a></li>
+            <li><a id="drop-opt" href="{% url 'speaking' %}">Speaking</a></li>
+            <li><a id="drop-opt" href="{% url 'coaching' %}">Group Coaching</a></li>
+            <li><a id="drop-opt" href="{% url 'healing_healers' %}">Healing the Healers</a></li>
+          </ul>
+        </li>
+        <li id="blog-link"><a class="main-opt" href="{% url 'blog'%}">Blog</a></li>
+        <li id="contact-link"><a class="main-opt" href="{% url 'contact'%}">Contact</a></li>
+        <li id="resc-link"><a class="main-opt" href="{% url 'resources'%}">Resources</a></li>
+      {% if user.is_authenticated %}
+        <li><a class="main-opt" href="/accounts/logout/">Logout</a></li>  
+      {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,65 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+  <section class="main" style="background: url('{% static 'imgs/home-main.jpg' %}') no-repeat; background-size:100%; background-position:right;">
+    <div class ="container">
+      <div class="col-md-8">
+        <div class="col-md-12" id="index-logo">
+          <img src="{% static 'imgs/overall-logo.png' %}"/>
+          </div>
+      </div>
+    </div>
+  </section>
+  <div class="container divider top-con">
+    <div class="col-md-12">
+      <div class="container">
+        <div class="col-md-4">
+          <h2 class="text-left">Mental Health Counseling</h2>
+          <h4 id="MHC" class="text-left">Transforming Trauma into Thriving</h4>
+        </div>
+        <div class="col-md-8">
+          <p class="text-right top-50">For years I have had the privilege of serving powerful men and women who have a history of childhood abuse, sexual assault, and domestic violence. All of the people I serve have been determined to see what their lives would look like if they lived from a place of intention, power, and authenticity. They have worked to eliminate "survivor mode" which holds us all hostage to a limited range of experiences and feelings in order to remain safe after trauma. My clinical style avoids pathology, and instead identifies the impact that oppressive systems have had on individual’s mental health. <a href="{% url 'services' %}">Click here to learn more.</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="home-squares">
+    <h2 class="text-center">Services</h2>
+    <h4 class="text-center">Start on your path to thriving</h4>
+    <div class="col-md-4">
+      <a href="{% url 'services' %}">
+        <div class="service">
+          <h4 class="text-center">Trauma Counseling</h4>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="{% url 'speaking' %}">
+        <div class="service">
+          <h4 class="text-center s2">Presentations</h4>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="{% url 'coaching' %}">
+        <div class="service">
+          <h4 class="text-center">Group Coaching</h4>
+        </div>
+      </a>
+    </div>
+  </div>
+  <section id="consult" class="" style="background: url('{% static 'imgs/brick-flip.jpg' %}') no-repeat; background-size:100%; background-position:left;">
+    <div class ="container">
+      <div class="col-md-6 pull-right" id="consult-container">
+        <a target="_blank" href="https://www.timetrade.com/app/td-4213452/workflows/wgwch/schedule/availability?wfsid=b07a7e16-baba97f6-b07af3d1-baba97f6-00000002-6q4m7itfgise3c345ono5fk7h9il2tn6&view=full&fs=1">
+          <h4 class="text-center">Schedule your free 15 minute consultation now.</h4>
+        </a>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('#navbar .navbar-nav li').removeClass("active");
+    $('#home-link').addClass("active");
+  </script>
+  {% include 'footer.html' %}
+{% endblock %}
