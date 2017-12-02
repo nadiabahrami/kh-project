@@ -8,4 +8,6 @@ urlpatterns = [
     url(r'^edit/(?P<pk>[0-9]+)/', login_required(edit_article), name='edit_bpost'),
     url(r'^$', blog_view, name="blog"),
     url(r'^delete/(?P<pk>[0-9]+)/', login_required(delete_article), name='delete_bpost'),
+    url(r'^(?P<pk>\d+)/$', blog_view, name="blog_detail_pk"),
+    url(r'^(?P<slug>[\w\-\_]+)/$', blog_view, name="blog_detail_slug"),
 ]

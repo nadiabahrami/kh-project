@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base/base.html' %}
 {% load static %}
 {% block content %}
 <section class="main" style="background: url('{% static 'imgs/book-main-long.jpg' %}') no-repeat; background-size:100%; background-position:center left;">
@@ -7,7 +7,7 @@
     </div>
 </section>
 <div class="container top-con">
-    <h2 class="text-center">Suggested Books Section</h2>
+    <h2 class="text-center">Suggested Books</h2>
     <h3>Learning to Thrive </h3>
     <div class="col-md-3 col-sm-4">
         <div class="book">
@@ -61,7 +61,7 @@
     </div>
 </div>
 <div class="container">
-    <h2 class="text-center">Mental Health Resources </h2>
+    <h3 class="text-center">Mental Health Resources </h3>
     <div class="col-md-6 res-con">
         <div class="col-md-12 divider">
             <h4>Mosaic Counseling Collective</h4>
@@ -78,10 +78,6 @@
     </div>
     <div class="col-md-6 res-con">
         <div class="col-md-12 divider">
-            <h4>Seattle Therapy Alliance </h4>
-            <p>Low Fee/Long Term Counseling for Women <a href="http://www.seattletherapyalliance.com" target="_blank">www.seattletherapyalliance.com</a></p>
-        </div>
-        <div class="col-md-12 divider">
             <h4>Washington State Domestic Violence Hotline</h4>
             <p>1-800-562-6025</p>
         </div>
@@ -90,6 +86,10 @@
             <p>206-461-3222</p>
         </div>
     </div>
+{#         <div class="col-md-12 divider">
+            <h4>Seattle Therapy Alliance </h4>
+            <p>Low Fee/Long Term Counseling for Women <a href="http://www.seattletherapyalliance.com" target="_blank">www.seattletherapyalliance.com</a></p>
+        </div> #}
     <!-- <h2 class="text-center">Mental Health Resources </h2>
     <h4>Mosaic Counseling Collective</h4>
     <p>Social justice-oriented counseling</p> -->
@@ -110,5 +110,4 @@
     $('#navbar .navbar-nav li').removeClass("active");
     $('#resc-link').addClass("active");
 </script>
-{% include 'footer.html' %}
 {% endblock %}

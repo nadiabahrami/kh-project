@@ -1,0 +1,16 @@
+<div class="col-md-12 blg-exr">
+  {# <div id="article-bar" class="article-{{article.tags}}"></div> #}
+{#         <div class="col-md-6 float-left blg_photo">
+    <img src="{{ article.blog_photo.url }}"/>
+  </div> #}
+  <h2>{{ article.title }}</h2>
+  <p>Published on {{ article.date_published|date:'m-d-Y' }}</p>
+  <section>
+    {{ article.content|safe }}
+  </section>
+  <a href="{% url 'blog_detail_slug' slug=article.slug %}"><button>-- Read More --</button></a>
+  {% if user.is_authenticated%}
+    <a href="{% url 'edit_bpost' pk=article.pk %}">Edit Post</a>
+    <a href="{% url 'delete_bpost' pk=article.pk %}">Delete Post</a>
+  {% endif %}
+</div>

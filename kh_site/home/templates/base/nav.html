@@ -38,7 +38,7 @@
         <li id="contact-link"><a class="main-opt" href="{% url 'contact'%}">Contact</a></li>
         <li id="resc-link"><a class="main-opt" href="{% url 'resources'%}">Resources</a></li>
       {% if user.is_authenticated %}
-        <li><a class="main-opt" href="/accounts/logout/">Logout</a></li>  
+        <li><a class="main-opt" href="{% url 'auth_logut' %}">Logout</a></li>  
       {% endif %}
       </ul>
     </div>

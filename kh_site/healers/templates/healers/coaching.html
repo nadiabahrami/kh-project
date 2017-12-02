@@ -1,0 +1,36 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+<section class="main" style="background: url('{% static 'imgs/g2b.jpg' %}') no-repeat; background-size:100%; background-position:right;">
+    <div class="container">
+      <h1 class="text-center">Group Coaching</h1>
+    </div>
+</section>
+<div class="container divider top-con">
+  <h2>Learn to Thrive with Community!</h2>
+  <p>By the end of the group, you will have moved from feeling fearful, disconnected, and confused to feeling empowered, clear, intentional and courageous in pursuing your ideal life. You'll become inspired by and reconnected to your own intrinsic worth and beauty!</p>
+  <section>
+    <h3>Who is the Group For?</h3>
+    <p>This group is for powerful, ambitious women who have been affected by domestic violence (childhood/family and adult/romantic forms) and have healed enough to live productive lives but still feel something is missing.</p>
+    <p>These women are committed to their personal development and are searching for tools and strategies to design their lives to take things to the next level.</p>
+    <p>They are tired of negative relationships, emotional breakdowns, aimlessness, intense fear, and self-doubt creeping into their lives. </p>
+    <p>This group is for women who are willing to risk the discomfort and vulnerability associated with <strong>REAL transformation</strong> and are ready to step into their greatness.</p>
+  </section>
+  <section>
+    <h3>Outcomes and Benefits</h3>
+    <p>The major undertaking of this group is to offer support, tools and encouragement so that members can: foster self-love, design a thriving life and eliminate the lies from domestic violence that have been internalized.</p>
+    <p>Each group session will explore a theme associated with the above goals, provide check-in space for members, and flexibility to go with the group's flow.</p>
+    <p>Each member will be asked to be vocal, to be fully present, and to both share and take up space.</p>
+  </section>
+  <a href="{% url 'coaching_event' %}">
+    <div>
+      <p>For Current Group Information &amp; to Sign Up</p>
+      <p>&gt;&gt;&gt; Click Here &lt;&lt;&lt;</p>
+    </div>
+  </a>
+</div>
+  <script>
+      $('#navbar .navbar-nav li').removeClass("active");
+      $('#service-link').addClass("active");
+  </script>
+{% endblock %}

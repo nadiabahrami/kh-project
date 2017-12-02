@@ -1,21 +1,24 @@
-{% extends 'base2.html' %}
+{% extends 'base/base.html' %}
 {% load static %}
 {% block content %}
-<section class="b2-top main" id="contact-section">
-  <div id=map></div>
+<section class="main" style="background: url('{% static 'imgs/b1.jpg' %}') no-repeat; background-size:100%; background-position:right;">
+    <div class="container">
+      <h1 class="text-center">Contact</h1>
+    </div>
 </section>
 <div class="container divider">
     <div class="col-md-3">
-        <h4>Address:</h4>
+        <h3>Address:</h3>
         <p>600 N 36th Street</p>
         <p>Suite 226</p>
         <p>Seattle, WA 98103</p>
-        <h4>Parking:</h4>
+        <h3>Parking:</h3>
         <p>Paid street parking is available 8am to 8pm on the street surrounding both the Fremont Office.</p>
     </div>
     <div class="col-md-7 col-sm-offset-2">
         <p class="contact-p">I offer services in a warm and comfortable environment conveniently located in Fremont Seattle.  Please contact me directly to inquire about available time slots.</p>
-        <p id="cp2" class="contact-p">Call (205) 775-0502 or email me at <a href="mailto:kyeisha.hodge@gmail.com​?subject=Services Request">kyeisha.hodge@gmail.com​</a></p>
+        <p id="cp2" class="contact-p">Call <a href="tel:+12057750502">(205) 775-0502</a> or email me at <a href="mailto:kyeisha.hodge@gmail.com​?subject=Services Request">kyeisha.hodge@gmail.com​</a></p>
+        <div id="map"></div>
     </div>
 </div>
 <script>
@@ -24,7 +27,7 @@
 </script>
 <script>
     function initMap() {
-      var myLatLng = {lat: 47.651738, lng: -122.351017};
+      var myLatLng = {lat: 47.6514919, lng: -122.3510309};
 
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
@@ -57,5 +60,4 @@
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key={{ GOOGLE_KEY }}&callback=initMap"
 async defer></script>
-{% include 'footer.html' %}
 {% endblock %}

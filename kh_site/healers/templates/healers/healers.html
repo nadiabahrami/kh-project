@@ -1,0 +1,37 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+<section class="main" style="background: url('{% static 'imgs/g2b.jpg' %}') no-repeat; background-size:100%; background-position:right;">
+    <div class="container">
+      <h1 class="text-center">Healing the Healers</h1>
+    </div>
+</section>
+<div class="container divider top-con">
+  <img src="{% static 'imgs/healing_healers_logo.png' %}" />
+  <p>Helping professionals work tirelessly to repair the physical, emotional and mental health of others. This includes classic helping professions like acase managers, psychologists, and social workers, but also applies to lawyers, doctors, home attendants and other professionals. These healers have a higher potential to experience vicarious trauma, burnout, and develop mental health issues.</p>
+  <p>The mission of Healing the Healers is to assist those in the helping professions to improve their overall quality of life using workshops, and talks. Also as a Trauma Stewardship coach I have worked with organizations such as Powerful Voices and the Young Women’s Christian Organization (YWCA).</p>
+  <p>My work as a trauma stewardship coach and speaker allow me to help healers:</p>
+  <img src="{% static 'imgs/seattle_therapy_alliance.jpeg' %}"/>
+  <ul>
+    <li>Reduce burnout</li>
+    <li>Create a stronger sense of purpose within themselves and teams</li>
+    <li>Gain energy and mental space to focus on priorities</li>
+    <li>Create tailored work/life boundaries </li>
+    <li>Foster connection with self and others </li>
+    <li>Improve decision making skills</li>
+    <li>Improve mental health </li>
+    <li>Increase in job performance</li>
+    <li>Understand the warning signs and prevention of burnout</li>
+    <li>Understand and share a universal self-care vocabulary for helping professionals</li>
+    <li>Improve overall quality of life and reduce vicarious trauma, work related depression or anxiety. </li>
+    <li>Create a collaborative rather than competitive professional atmosphere</li>
+  </ul>
+  <div class="alert">
+    <p>To contact me about supporting you or your staff through Trauma Stewardship coaching or speaking, please schedule a free 15-minute session to discuss things further.</p>
+  </div>
+</div>
+  <script>
+      $('#navbar .navbar-nav li').removeClass("active");
+      $('#service-link').addClass("active");
+  </script>
+{% endblock %}
