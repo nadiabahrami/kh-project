@@ -5,27 +5,55 @@ Affiliates
 - image
 - link
 
-Presentations
+## Models
+
+### Need to make:
+
+#### Presentations
+
 - title
 - image
 - body
 
-GroupSession
+#### ContactItems
+
+- icon (img file)
+- link
+- name (charfield)
+
+#### Book
+
+- title
+- author
+- category
+- image
+- link
+
+#### MentalHealthResources
+
+- title
+- subtitle
+- phone number
+- email
+
+### Already Made
+
+#### Event
+
 - start date
 - end date
+- meeting days
 - meeting time start
 - meeting time end
 - location
 - group logistics (with some default)
 - session outline (with some default)
 - cost
-
-ContactItems
-- icon (img file)
 - link
-- name (charfield)
 
-Article
+
+#### Article
+
 - title
 - body (wysiwyg)
 - date created
@@ -33,16 +61,3 @@ Article
 - status (public, private, draft - default)
 - last modified
 - tags
-
-Book
-- title
-- author
-- category
-- image
-- link
-
-MentalHealthResources
-- title
-- subtitle
-- phone number
-- email
