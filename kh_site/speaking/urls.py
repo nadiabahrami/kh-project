@@ -1,7 +1,7 @@
 from django.conf.urls import url
-from django.views.generic import TemplateView
+from speaking.views import PresentationsList
 
 
 urlpatterns = [
-    url(r'^$', TemplateView.as_view(template_name="speaking/speaking.html"), name="presentation_list")
+    url(r'^$', PresentationsList.as_view(), name="presentation_list")
 ]

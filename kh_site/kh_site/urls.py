@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('home.urls')),
     url(r'^blog/', include('blog.urls')),
-    url(r'^speaking/', include('speaking.urls')),
+    url(r'^services/speaking/', include('speaking.urls')),
     # url(r'^healers/', include('healers.urls')),
 ]
 
