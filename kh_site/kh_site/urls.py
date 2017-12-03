@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^blog/', include('blog.urls')),
     url(r'^services/speaking/', include('speaking.urls')),
     url(r'^healers/', include('healers.urls')),
+    url(r'^groups/', include('group_coaching.urls')),
     url(r'^accounts/', include('registration.backends.simple.urls')),
 ]
 
