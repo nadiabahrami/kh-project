@@ -16,5 +16,7 @@ class PresentationsList(ListView):
         """Chop the presentations into pairs."""
         context = super().get_context_data(**kwargs)
         presentations = context['presentations']
-        context['presentation_pairs'] = [[presentations[i], presentations[i + 1]] for i in context[self.context_object_name][:-1]]
+        context['presentation_pairs'] = []
+        for i in range(0, len(context[self.context_object_name]) - 1, 2):
+            context['presentation_pairs'].append([presentations[i], presentations[i + 1]])
         return context

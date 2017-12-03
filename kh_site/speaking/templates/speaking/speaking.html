@@ -12,18 +12,11 @@
 </div>
 {% if presentations %}
 {% for pair in presentation_pairs %}
-<div id="two-talks" class="container spacer">
-    <div class="col-md-4 col-md-offset-1">
-        <img class="talk-dot" src="{% static 'imgs/pd-3.png' %}"/>
-    </div>
-    <div class="col-md-4 col-md-offset-2">
-        <img class="talk-dot" src="{% static 'imgs/pd-4.png' %}"/>
-    </div>
-</div>
+    {% include 'speaking/presentation_row.html' %}
+{% endfor %}
+{% endif %}
 <script>
     $('#navbar .navbar-nav li').removeClass("active");
     $('#service-link').addClass("active");
 </script>
-{% endfor %}
-{% endif %}
 {% endblock %}
