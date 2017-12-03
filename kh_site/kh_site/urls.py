@@ -19,11 +19,12 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
     url(r'^', include('home.urls')),
+    url(r'^admin/', admin.site.urls),
     url(r'^blog/', include('blog.urls')),
     url(r'^services/speaking/', include('speaking.urls')),
-    # url(r'^healers/', include('healers.urls')),
+    url(r'^healers/', include('healers.urls')),
+    url(r'^accounts/', include('registration.backends.simple.urls')),
 ]
 
 if settings.DEBUG:

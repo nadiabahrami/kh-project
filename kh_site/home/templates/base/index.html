@@ -5,8 +5,8 @@
     <div class ="container">
       <div class="col-md-8">
         <div class="col-md-12" id="index-logo">
-          <img src="{% static 'imgs/overall-logo.png' %}"/>
-          </div>
+          <img src="{% static 'imgs/khblacklogo-orange.png' %}"/>
+        </div>
       </div>
     </div>
   </section>
@@ -14,52 +14,53 @@
     <div class="col-md-12">
       <div class="container">
         <div class="col-md-4">
-          <h2 class="text-left">Mental Health Counseling</h2>
+          <h1 class="">Trauma is a Liar</h1>
           <h4 id="MHC" class="text-left">Transforming Trauma into Thriving</h4>
         </div>
         <div class="col-md-8">
-          <p class="text-right top-50">For years I have had the privilege of serving powerful men and women who have a history of childhood abuse, sexual assault, and domestic violence. All of the people I serve have been determined to see what their lives would look like if they lived from a place of intention, power, and authenticity. They have worked to eliminate "survivor mode" which holds us all hostage to a limited range of experiences and feelings in order to remain safe after trauma. My clinical style avoids pathology, and instead identifies the impact that oppressive systems have had on individual's mental health. <a href="{% url 'services' %}">Click here to learn more.</a></p>
+          <p class="top-50">You are not broken. You do not have a pathology. <strong>You are not unworthy of love and the life you truly want.</strong> You simply haven't gained access to the power that you ALREADY have.</p>
+          <p>The effects of Domestic Violence, sexual assualt, childhood abuse, racism, and sexism all create LIES that we unknownigly internalize and build a life around.</p>
+          <p>My passion and my purpose is to dismantle this internalized oppression from the inside out.  Only then can you step into your power, <strong>live an intentional life, filled with purpose and PASSION</strong> without suffering through negative self talk, doubt, worry, and hyper-vigilence. Let's start the Jouney!</p>
         </div>
       </div>
     </div>
   </div>
   <div class="container" id="home-squares">
-    <h2 class="text-center">Services</h2>
-    <h4 class="text-center">Start on your path to thriving</h4>
-    <div class="col-md-4">
-      <a href="{% url 'services' %}">
+    <div class="col-md-6">
+      <a href="{% url 'counseling' %}">
         <div class="service">
-          <h4 class="text-center">Trauma Counseling</h4>
+          <h3 class="text-center">Counseling</h3>
+          <h4 class="text-center subtitle">Heal From Trauma &amp; Reclaim Your Power</h4>
         </div>
       </a>
     </div>
-    <div class="col-md-4">
-      <a href="{% url 'speaking' %}">
-        <div class="service">
-          <h4 class="text-center s2">Presentations</h4>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
       <a href="{% url 'coaching' %}">
         <div class="service">
-          <h4 class="text-center">Group Coaching</h4>
+          <h3 class="text-center s2">Group Coaching</h3>
+          <h4 class="text-center subtitle">Redesign Your Life with Community</h4>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-6">
+      <a href="{% url 'presentation_list' %}">
+        <div class="service">
+          <h3 class="text-center s2">Speaking</h3>
+          <h4 class="text-center subtitle">Presentations to Inspire Change</h4>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-6">
+      <a href="{% url 'healing_healers' %}">
+        <div class="service">
+          <h3 class="text-center s2">Healing the Healers</h3>
+          <h4 class="text-center subtitle">Workshops &amp; Coaching Designed for Healers who Serve Trauma Survivors</h4>
         </div>
       </a>
     </div>
   </div>
-  <section id="consult" class="" style="background: url('{% static 'imgs/brick-flip.jpg' %}') no-repeat; background-size:100%; background-position:left;">
-    <div class ="container">
-      <div class="col-md-6 pull-right" id="consult-container">
-        <a target="_blank" href="https://www.timetrade.com/app/td-4213452/workflows/wgwch/schedule/availability?wfsid=b07a7e16-baba97f6-b07af3d1-baba97f6-00000002-6q4m7itfgise3c345ono5fk7h9il2tn6&view=full&fs=1">
-          <h4 class="text-center">Schedule your free 15 minute consultation now.</h4>
-        </a>
-      </div>
-    </div>
-  </section>
   <script>
     $('#navbar .navbar-nav li').removeClass("active");
     $('#home-link').addClass("active");
   </script>
-  {% include 'footer.html' %}
 {% endblock %}
