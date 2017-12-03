@@ -13,7 +13,7 @@ Affiliates
 
 - title
 - image
-- body
+- details
 
 #### ContactItems
 

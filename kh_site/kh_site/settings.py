@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'localflavor',
     'home',
     'blog',
-    'healers'
+    'healers',
+    'speaking'
 ]
 
 MIDDLEWARE = [
