@@ -14,6 +14,7 @@ def mod_date_formatter(obj):
     """Format a date."""
     return obj.last_modified.strftime(FMT)
 
+
 def image_tag(obj):
     return f'<img src="{ obj.image.url }" />'
 

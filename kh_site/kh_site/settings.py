@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'home',
     'blog',
     'healers',
-    'speaking'
+    'speaking',
+    'group_coaching'
 ]
 
 MIDDLEWARE = [
