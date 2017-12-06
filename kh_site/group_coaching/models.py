@@ -23,7 +23,8 @@ class CoachingEvent(models.Model):
     start_time = models.TimeField()
     end_time = models.TimeField()
     cost = models.DecimalField(
-        decimal_places=2, max_digits=5, help_text='Cost per person ($)'
+        decimal_places=2, max_digits=5,
+        help_text='Cost per person ($)', default=79.00
     )
     external_link = models.URLField(
         max_length=1024,
@@ -31,7 +32,9 @@ class CoachingEvent(models.Model):
     )
     location = models.CharField(default=DEFAULT_LOCATION, max_length=1024)
     logistics = models.TextField(default=DEFAULT_LOGISTICS)
-    current_event = models.BooleanField(default=False)
+    current_event = models.BooleanField(
+        default=False, help_text='Is this the next group?'
+    )
 
     def __repr__(self):
         return f"<Coaching Event | start { self.start_date.strftime(DATE_FMT) } >"
