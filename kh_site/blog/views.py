@@ -21,9 +21,8 @@ class BlogDetail(DetailView):
     model = Article
     queryset = Article.published.all()
     context_object_name = 'article'
-    template_name = 'blog/blog_item.html'
+    template_name = 'blog/detail_article.html'
     query_pk_and_slug = True
-
 
 
 def add_article(request):
