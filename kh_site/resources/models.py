@@ -13,6 +13,7 @@ class Book(models.Model):
     cover_image = models.ImageField(upload_to='covers')
     link = models.URLField(max_length=512, blank=True, null=True)
     date_added = models.DateTimeField(auto_now_add=True)
+    position = models.IntegerField(null=True, blank=True)
 
 
 class Resource(models.Model):
@@ -22,3 +23,4 @@ class Resource(models.Model):
     link = models.URLField(max_length=512, blank=True, null=True)
     phone_number = PhoneNumberField(blank=True, null=True)
     email = models.EmailField()
+    position = models.IntegerField(null=True, blank=True)
