@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-from resource.models import Category, Resource
+from resources.models import Category, Resource
 
 
 class ResourceView(TemplateView):
