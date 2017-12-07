@@ -7,12 +7,6 @@
     </div>
 </section>
 <div id="blog-body">
-{#   <div id="blog-menu">
-    <h4 class='text-center'>Tags</h4>
-    {% for tag in tags %}
-      <p>{{ tag.tags }}</p>
-    {% endfor %}
-  </div> #}
   <div class="container divider b2-top" id="blog-articles">
     {% if user.is_authenticated%}
       <a href="/blog/add/">Add a Post</a>

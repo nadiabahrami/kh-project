@@ -1,15 +1,29 @@
 """Views for blog page."""
 from django.shortcuts import render
+from django.views.generic import ListView, DetailView
 from blog.models import Article, AddArticle, DeleteArticle
 from django.http import HttpResponseRedirect
 
 
-def blog_view(request):
-    """Populate articles on blog page."""
-    articles = Article.objects.all().order_by('-date_published')
-    tags = Article.objects.all().distinct('tags')
-    print(tags)
-    return render(request, 'blog.html', {'articles': articles, 'tags': tags})
+class BlogView(ListView):
+    """List all of the blog articles in descending order."""
+
+    model = Article
+    queryset = Article.published.order_by('-date_published').all()
+    context_object_name = 'articles'
+    template_name = 'blog/blog.html'
+    paginate_by = 5
+
+
+class BlogDetail(DetailView):
+    """Get the detail for one blog post by pk or by slug."""
+
+    model = Article
+    queryset = Article.published.all()
+    context_object_name = 'article'
+    template_name = 'blog/blog_item.html'
+    query_pk_and_slug = True
+
 
 
 def add_article(request):

@@ -14,7 +14,7 @@ class ArticleManager(models.Manager):
 
     def get_queryset(self):
         """Return a list of all active users."""
-        qs = super(ArticleManager, self).get_queryset().filter_by(status='pb')
+        qs = super(ArticleManager, self).get_queryset().filter(status='pb')
         return qs.all()
 
 
