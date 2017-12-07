@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'speaking',
     'group_coaching',
     'resources',
-    'phonenumber_field'
 ]
 
 MIDDLEWARE = [
@@ -146,3 +145,4 @@ GOOGLE_KEY = os.environ.get('GOOGLE_KEY', '')
 
 # Django phone numbers
 PHONENUMBER_DB_FORMAT = 'NATIONAL'
+PHONENUMBER_DEFAULT_REGION = 'US'
