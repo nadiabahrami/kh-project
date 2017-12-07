@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     'blog',
     'healers',
     'speaking',
-    'group_coaching'
+    'group_coaching',
+    'resources',
+    'phonenumber_field'
 ]
 
 MIDDLEWARE = [
@@ -141,3 +143,6 @@ LOGOUT_REDIRECT_URL = '/'
 
 # Google Maps API
 GOOGLE_KEY = os.environ.get('GOOGLE_KEY', '')
+
+# Django phone numbers
+PHONENUMBER_DB_FORMAT = 'NATIONAL'

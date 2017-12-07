@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^healers/', include('healers.urls')),
     url(r'^groups/', include('group_coaching.urls')),
     url(r'^accounts/', include('registration.backends.simple.urls')),
+    url(r'^resources/', include('resources.urls'))
 ]
 
 if settings.DEBUG:

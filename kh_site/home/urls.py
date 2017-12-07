@@ -6,7 +6,6 @@ from home.views import ContactView
 urlpatterns = [
     url(r'^about/$', TemplateView.as_view(template_name="base/about.html"), name="about"),
     url(r'^contact/$', ContactView.as_view(), name="contact"),
-    url(r'^resources/$', TemplateView.as_view(template_name="base/resources.html"), name="resources"),
     url(r'^services/$', TemplateView.as_view(template_name="base/counseling.html"), name="counseling"),
     url(r'^$', TemplateView.as_view(template_name="base/index.html"), name="home"),
 ]
