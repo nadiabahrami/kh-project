@@ -1,12 +1,11 @@
 from django.conf.urls import url
-from django.views.generic import TemplateView
+from resources.views import ResourceView
 
 
 urlpatterns = [
     url(
         r'^$',
-        TemplateView.as_view(
-            template_name="resources/resource_list.html"
-        ),
-        name="resources"),
+        ResourceView.as_view(),
+        name="resources"
+    ),
 ]
