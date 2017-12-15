@@ -22,6 +22,7 @@ class ArticleAdmin(admin.ModelAdmin):
     list_display = [
         'title', 'slug', 'status', 'date_created', 'date_published'
     ]
+    list_filter = ['status']
     date_hierarchy = 'date_created'
     empty_value_display = '-- empty --'
     readonly_fields = [last_modified_formatter]
