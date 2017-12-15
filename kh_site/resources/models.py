@@ -5,6 +5,9 @@ from localflavor.us.models import PhoneNumberField
 class Category(models.Model):
     name = models.CharField(max_length=512)
 
+    def __str__(self):
+        return self.name
+
 
 class Book(models.Model):
     title = models.CharField(max_length=512)
@@ -15,6 +18,9 @@ class Book(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
     position = models.IntegerField(null=True, blank=True)
 
+    def __str__(self):
+        return self.title
+
 
 class Resource(models.Model):
     title = models.CharField(max_length=512)
@@ -22,5 +28,8 @@ class Resource(models.Model):
     description = models.TextField(blank=True, null=True)
     link = models.URLField(max_length=512, blank=True, null=True)
     phone_number = PhoneNumberField(blank=True, null=True)
-    email = models.EmailField()
+    email = models.EmailField(blank=True, null=True)
     position = models.IntegerField(null=True, blank=True)
+
+    def __str__(self):
+        return self.title
