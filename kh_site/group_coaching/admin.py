@@ -28,6 +28,6 @@ class CoachingEventAdmin(admin.ModelAdmin):
         'start_time', 'end_time', 'cost', 'external_link', 'location',
         'logistics'
     ]
-    list_display = [start_date_formatter, end_date_formatter, 'location']
+    list_display = [start_date_formatter, end_date_formatter, 'current_event', 'location']
     date_hierarchy = 'start_date'
     empty_value_display = "-- empty --"

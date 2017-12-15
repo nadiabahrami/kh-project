@@ -45,8 +45,9 @@ class CoachingEvent(models.Model):
 
 @receiver(post_save, sender=CoachingEvent)
 def one_current(sender, **kwargs):
-    if sender.current_event:
-        events = CoachingEvent.objects.exclude(pk=sender.pk).filter_by(current_event=True).all()
+    instance = kwargs['instance']
+    if instance.current_event:
+        events = CoachingEvent.objects.exclude(pk=instance.pk).filter(current_event=True).all()
         for event in events:
             event.current_event = False
             event.save()
