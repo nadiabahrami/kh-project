@@ -6,19 +6,17 @@
       <div class="col-md-8">
         <div class="col-md-12" id="index-logo">
           <img src="{% static 'imgs/khblacklogo-orange.png' %}"/>
+          <p id="prof-title">Kyeisha Hodge, LMHC</p>
         </div>
       </div>
     </div>
   </section>
-  <div class="container divider top-con">
+  <div class="container divider top-con" id="home-top">
     <div class="col-md-12">
       <div class="container">
-        <div class="col-md-4">
+        <div class="col-md-12">
           <h1 class="">Trauma is a Liar</h1>
-          <h4 id="MHC" class="text-left">Transforming Trauma into Thriving</h4>
-        </div>
-        <div class="col-md-8">
-          <p class="top-50">You are not broken. You do not have a pathology. <strong>You are not unworthy of love and the life you truly want.</strong> You simply haven't gained access to the power that you ALREADY have.</p>
+          <p class="top-20">You are not broken. You do not have a pathology. <strong>You are not unworthy of love and the life you truly want.</strong> You simply haven't gained access to the power that you ALREADY have.</p>
           <p>The effects of Domestic Violence, sexual assualt, childhood abuse, racism, and sexism all create LIES that we unknownigly internalize and build a life around.</p>
           <p>My passion and my purpose is to dismantle this internalized oppression from the inside out.  Only then can you step into your power, <strong>live an intentional life, filled with purpose and PASSION</strong> without suffering through negative self talk, doubt, worry, and hyper-vigilence. Let's start the Jouney!</p>
         </div>
@@ -26,35 +24,55 @@
     </div>
   </div>
   <div class="container" id="home-squares">
-    <div class="col-md-6">
+    <div class="col-md-6 service-container">
       <a href="{% url 'counseling' %}">
+        <div class='service-img s1'>
+          <img src="{% static 'imgs/forest-road-in-the-fall.jpg' %}">
+        </div>
         <div class="service">
-          <h3 class="text-center">Counseling</h3>
-          <h4 class="text-center subtitle">Heal From Trauma &amp; Reclaim Your Power</h4>
+          <div class="service-inner">
+            <h3 class="text-center">Counseling</h3>
+            <h4 class="text-center subtitle">Heal From Trauma &amp; Reclaim Your Power</h4>
+          </div>
         </div>
       </a>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 service-container">
       <a href="{% url 'coaching' %}">
+        <div class='service-img s2'>
+          <img src="{% static 'imgs/together.gif' %}">
+        </div>
         <div class="service">
-          <h3 class="text-center s2">Group Coaching</h3>
-          <h4 class="text-center subtitle">Redesign Your Life with Community</h4>
+          <div class="service-inner">
+            <h3 class="text-center">Group Coaching</h3>
+            <h4 class="text-center subtitle">Redesign Your Life with Community</h4>
+          </div>
         </div>
       </a>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 service-container">
       <a href="{% url 'presentation_list' %}">
+        <div class='service-img s3'>
+          <img src="{% static 'imgs/b1.jpg' %}">
+        </div>
         <div class="service">
-          <h3 class="text-center s2">Speaking</h3>
-          <h4 class="text-center subtitle">Presentations to Inspire Change</h4>
+          <div class="service-inner">
+            <h3 class="text-center">Speaking</h3>
+            <h4 class="text-center subtitle">Presentations to Inspire Change</h4>
+          </div>
         </div>
       </a>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 service-container">
       <a href="{% url 'healing_healers' %}">
+        <div class='service-img s4'>
+          <img src="{% static 'imgs/c1.jpg' %}">
+        </div>
         <div class="service">
-          <h3 class="text-center s2">Healing the Healers</h3>
-          <h4 class="text-center subtitle">Workshops &amp; Coaching Designed for Healers who Serve Trauma Survivors</h4>
+          <div class="service-inner">
+            <h3 class="text-center">Healing the Healers</h3>
+            <h4 class="text-center subtitle">Workshops &amp; Coaching Designed for Healers who Serve Trauma Survivors</h4>
+          </div>
         </div>
       </a>
     </div>
