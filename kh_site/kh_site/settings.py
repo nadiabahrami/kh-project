@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'speaking',
     'group_coaching',
     'resources',
+    'markdownx'
 ]
 
 MIDDLEWARE = [
@@ -146,3 +147,16 @@ GOOGLE_KEY = os.environ.get('GOOGLE_KEY', '')
 # Django phone numbers
 PHONENUMBER_DB_FORMAT = 'NATIONAL'
 PHONENUMBER_DEFAULT_REGION = 'US'
+
+# Django Rich Text Settings
+# TINYMCE_PROFILE = {
+#     'theme': 'modern',
+#     'plugins': 'noneditable advlist autolink link lists charmap hr searchreplace wordcount visualblocks visualchars code insertdatetime save table contextmenu directionality paste textcolor',
+#     'toolbar': 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | forecolor backcolor',
+#     'noneditable_leave_contenteditable': 'true',
+#     'setup': 'addCustomButtons',
+#     'content_css': os.path.join(STATIC_URL, "mycss/tinymce.css"),
+#     'relative_urls': False,
+#     'remove_script_host': True,
+#     'removed_menuitems': 'newdocument'
+# }

@@ -2,7 +2,7 @@
   <h2>{{ article.title }}</h2>
   <p>Published on {{ article.date_published|date:'m-d-Y' }}</p>
   <section>
-    {{ article.content|safe }}
+    {{ article.excerpt|safe }}
   </section>
   <a href="{% url 'blog_detail_slug' slug=article.slug %}"><button>-- Read More --</button></a>
   {% if user.is_authenticated%}

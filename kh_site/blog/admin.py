@@ -1,6 +1,7 @@
 """Site administration for the Blog application."""
 from django.contrib import admin
 from blog.models import Article
+from markdownx.admin import MarkdownxModelAdmin
 
 DATE_FMT = '%b %d, %Y'
 
@@ -12,11 +13,11 @@ last_modified_formatter.short_description = 'Last updated on'
 
 
 @admin.register(Article)
-class ArticleAdmin(admin.ModelAdmin):
+class ArticleAdmin(MarkdownxModelAdmin):
     """."""
 
     fields = [
-        'title', 'slug', 'content', 'status',
+        'title', 'slug', 'excerpt', 'content', 'status',
         last_modified_formatter, 'date_published',
     ]
     list_display = [

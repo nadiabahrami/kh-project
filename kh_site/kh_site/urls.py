@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^services/groups/', include('group_coaching.urls')),
     url(r'^services/resources/', include('resources.urls')),
     url(r'^accounts/', include('registration.backends.simple.urls')),
+    url(r'^markdownx/', include('markdownx.urls'))
 ]
 
 admin.site.site_title = "Kyeisha Hodge admin"

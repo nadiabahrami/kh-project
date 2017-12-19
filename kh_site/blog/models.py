@@ -1,6 +1,7 @@
 """Models for blog posts."""
 from django.db import models
 from django.forms import ModelForm
+from markdownx.models import MarkdownxField
 import datetime
 
 
@@ -29,7 +30,8 @@ class Article(models.Model):
 
     title = models.CharField(max_length=200, blank=True)
     slug = models.SlugField()
-    content = models.TextField(max_length=50000, blank=False)  # TODO: change to wysiwyg field
+    content = MarkdownxField(blank=False)  # TODO: change to wysiwyg field
+    excerpt = MarkdownxField(blank=True, null=True)
     blog_photo = models.ImageField(upload_to=_image_path, blank=True)
     date_created = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
