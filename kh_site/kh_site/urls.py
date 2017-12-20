@@ -22,12 +22,12 @@ urlpatterns = [
     url(r'^', include('home.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^blog/', include('blog.urls')),
+    url(r'^redactor/', include('redactor.urls')),
     url(r'^services/speaking/', include('speaking.urls')),
     url(r'^services/healers/', include('healers.urls')),
     url(r'^services/groups/', include('group_coaching.urls')),
     url(r'^services/resources/', include('resources.urls')),
     url(r'^accounts/', include('registration.backends.simple.urls')),
-    url(r'^markdownx/', include('markdownx.urls'))
 ]
 
 admin.site.site_title = "Kyeisha Hodge admin"

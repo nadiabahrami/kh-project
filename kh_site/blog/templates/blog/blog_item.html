@@ -1,12 +1,12 @@
 <div class="col-md-12 blg-exr">
-  <h2>{{ article.title }}</h2>
-  <p>Published on {{ article.date_published|date:'m-d-Y' }}</p>
-  <section>
-    {{ article.excerpt|safe }}
-  </section>
-  <a href="{% url 'blog_detail_slug' slug=article.slug %}"><button>-- Read More --</button></a>
+  <a href="{% url 'blog_detail_slug' slug=article.slug %}" class="title-link"><h2>{{ article.title }}</h2></a>
+  <p>{{ article.date_published|date:'F d, Y' }} | {{ article.reading_time }}</p>
   {% if user.is_authenticated%}
     <a href="{% url 'edit_bpost' pk=article.pk %}">Edit Post</a>
     <a href="{% url 'delete_bpost' pk=article.pk %}">Delete Post</a>
   {% endif %}
+  <section>
+    <p>{{ article.excerpt }}</p>
+  </section>
+  <a href="{% url 'blog_detail_slug' slug=article.slug %}" class="blog-btn">-- Read More --</a>
 </div>

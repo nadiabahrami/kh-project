@@ -567,12 +567,6 @@ nav .navbar-collapse ul .active a:hover {
 
 
 /* Blog */
-.blg-exr {
-    margin-bottom: 30px;
-    padding-left: 0px;
-    border-left: 2px solid black;
-}
-
 .article- {
     background-color: orange;
 }
@@ -585,25 +579,58 @@ nav .navbar-collapse ul .active a:hover {
     background-color: rgba(0, 109, 190, 1);
 }
 
-#blog-body {
-    display: flex;
-    background: lightgrey;
-}
-
 #blog-menu {
     display: inline-block;
     padding-left:20px;
     flex:1;
     width: 10%;
-
 }
 
 #blog-articles {
-    display: inline-block;
-    width:80%;
-    border-left: 2px solid black;
     background: white;
     padding-top: 20px;
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+.blg-exr {
+    margin-bottom: 30px;
+    padding-left: 0px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #54F2CE;
+}
+.blg-exr .title-link:hover {
+    text-decoration: none;
+}
+
+.blog-btn:hover {
+    text-decoration: none;
+    color: #979797;
+}
+.blog-btn {
+    padding: 15px 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    width: 300px;
+    display: block;
+    color: #979797;
+    margin: auto;
+    text-align: center;
+    border: thin solid #979797;
+}
+
+.page-control {
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.page-control .blog-btn {
+    display: inline-block;
+}
+.page-control #prev-page {
+    float: left;
+}
+.page-control #next-page {
+    float: right;
 }
 
 #article-bar {
