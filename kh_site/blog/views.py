@@ -24,6 +24,12 @@ class BlogDetail(DetailView):
     template_name = 'blog/detail_article.html'
     query_pk_and_slug = True
 
+    def get_context_data(self, **kwargs):
+        """Modify the context data to include recommended articles."""
+        context = super().get_context_data(**kwargs)
+        context['recommended'] = Article.published.exclude(id=context['article'].id).order_by('?').all()[:4]
+        return context
+
 
 def add_article(request):
     """View to add a blog article to database through UI."""

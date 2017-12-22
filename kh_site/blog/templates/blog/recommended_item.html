@@ -1,9 +1,8 @@
-<div class="col-md-6 blg-exr">
-  {# <div id="article-bar" class="article-{{article.tags}}"></div> #}
-{#         <div class="col-md-6 float-left blg_photo">
-    <img src="{{ article.blog_photo.url }}"/>
-  </div> #}
-  <h4>{{ article.title }}</h4>
-  <p>Published on {{ article.date_published|date:'m-d-Y' }}</p>
-  <a href="{% url 'blog_detail_slug' slug=article.slug %}"><button>-- Read More --</button></a>
+{% load blog_functions %}
+<div class="col-md-6 recommended">
+  <a href="{% url 'blog_detail_slug' slug=article.slug %}" class="title-link"><h4>{{ article.title }}</h4></a>
+  <section class="blog-date-time">
+    <p>{{ article.date_published|date:'F d, Y' }}</p><span class="text-divider"> | </span><p>Reading Time: {{ article.content|reading_time }}</p>
+  </section>
+  <a href="{% url 'blog_detail_slug' slug=article.slug %}" class="blog-btn">&mdash; Read More &mdash;</a>
 </div>

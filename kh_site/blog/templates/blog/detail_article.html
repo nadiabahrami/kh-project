@@ -1,5 +1,6 @@
 {% extends 'base/base.html' %}
 {% load static %}
+{% load blog_functions %}
 {% block content %}
 <section class="main" style="background: url('{% static 'imgs/b1.jpg' %}') no-repeat; background-size:100%; background-position:right;">
     <div class="container">
@@ -9,26 +10,30 @@
 <div id="blog-body">
   <div class="container divider b2-top" id="blog-article">
     {% if user.is_authenticated%}
-      <a href="/blog/add/">Add a Post</a>
+      <a href="{% url 'add_bpost' %}">Add a Post</a>
     {% endif %}
-      <div class="col-md-12 blg-exr">
+      <div class="col-md-12">
         <h2>{{ article.title }}</h2>
         {% if user.is_authenticated%}
           <a href="{% url 'edit_bpost' pk=article.pk %}">Edit Post</a>
           <a href="{% url 'delete_bpost' pk=article.pk %}">Delete Post</a>
         {% endif %}
-        <p>Published on {{ article.date_published|date:'m-d-Y' }}</p>
-        <p>Permalink: {% url 'blog_detail_pk' pk=article.pk %}</p>
+        <section class="blog-date-time">
+          <p>{{ article.date_published|date:'F d, Y' }}</p><span class="text-divider"> | </span><p>Reading Time: {{ article.content|reading_time }}</p>
+        </section>
+        <p>Permalink: <a href="{% url 'blog_detail_pk' pk=article.pk %}"><i class="fa fa-link" aria-hidden="true"></i></a></p>
         <section>
           {{ article.content|safe }}
         </section>
-        <img src="{% static 'imgs/khblacklogo-orange' %}" />
-        <p class="text-right">Kyeisha Hodge, LMHC</p>
+        <div id="article-signature" class="col-md-3">
+          <img src="{% static 'imgs/khblacklogo-orange.png' %}" />
+          <p class="text-center">Kyeisha Hodge, LMHC</p>
+        </div>
       </div>
   </div>
 </div>
 <div id="recommended-articles">
-  <div class="container divider b2-top">
+  <div class="container ">
     <h3>Recommended Articles</h3>
     {% for article in recommended %}
       {% include 'blog/recommended_item.html' %}

@@ -599,7 +599,11 @@ nav .navbar-collapse ul .active a:hover {
     padding-bottom: 30px;
     border-bottom: 3px solid #54F2CE;
 }
-.blg-exr .title-link:hover {
+
+.blg-exr .title-link h2{
+    font-size: 2.4em;
+}
+.title-link:hover, .title-link:focus {
     text-decoration: none;
 }
 
@@ -632,10 +636,49 @@ nav .navbar-collapse ul .active a:hover {
 .page-control #next-page {
     float: right;
 }
+.blog-date-time {
+    color: #979797;
+}
+.blog-date-time p {
+    display: inline-block;
+}
+.text-divider {
+    padding: 0 20px;
+}
+
+#blog-article {
+    padding-top: 40px;
+}
 
 #article-bar {
     height:30px;
 }
+#article-signature {
+    color: #EC8E71;
+    float: right;
+}
+#article-signature img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+#recommended-articles h3 {
+    margin-bottom: 20px;
+}
+#recommended-articles h4 {
+    font-size: 2em;
+    color: #EC8E71;
+    height: 100px;
+    line-height: 1.3em;
+}
+.recommended {
+    text-align: center;
+    border: thin solid #979797;
+    padding-bottom: 30px;
+    width: 45%;
+    margin: 0 2.5% 40px;
+    height: 260px;
+}
+
 
 /* TWEAKS */
 .top-10 {
