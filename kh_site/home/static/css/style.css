@@ -487,16 +487,9 @@ nav .navbar-collapse ul .active a:hover {
 }
 
 .contact-p {
-     font-family: 'Raleway', sans-serif;
-    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
     color:#333;
     padding-top: 20px;
-}
-
-#cp2 {
-    font-size:2em;
-    color:#333;
-    font-family: 'Raleway', sans-serif;
 }
 
 #map {
@@ -505,6 +498,22 @@ nav .navbar-collapse ul .active a:hover {
 
 #contact-section {
     height:450px;
+}
+
+#address {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4em;
+    padding-top: 20px;
+}
+#address ul {
+    padding-left: 0px;
+}
+
+#contact-body {
+    margin-bottom: 40px;
+}
+#contact-body h4{
+    color: #EC8E71;
 }
 
 
