@@ -444,22 +444,46 @@ nav .navbar-collapse ul .active a:hover {
 
 
 /* Resource Page*/
+#resources-body h2 {
+    margin-bottom: 20px;
+}
+#resources-body h4 {
+    color: #EC8E71;
+}
+
+.book-container {
+    width: 20%;
+}
+
 .book-cover {
     height:300px;
     width:100%;
 }
 
 .book {
-    width:200px;
-    margin-top: 20px;
+    width: 200px;
+    margin: 20px auto 20px;
 }
 
 .res-con .divider {
     border-bottom: 2px solid darkgrey;
+    height: 200px;
+    margin-bottom: 0;
+}
+.res-con .divider:last-child {
+    border-bottom: none;
+}
+.resource-inner {
+    position: relative;
+    left: 20px;
+}
+.resource-inner p {
+    margin-bottom: 10px;
 }
 
 .res-con h4 {
-    font-size: 2.8em;
+    font-size: 2.2em;
+    line-height: 1.4em;
 }
 
 #res-2{
