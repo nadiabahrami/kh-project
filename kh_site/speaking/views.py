@@ -13,6 +13,7 @@ class PresentationsList(ListView):
     model = Presentation
     context_object_name = 'presentations'
     template_name = "speaking/speaking.html"
+    queryset = Presentation.objects.order_by('order').all()
 
     def get_context_data(self, **kwargs):
         """Chop the presentations into pairs."""

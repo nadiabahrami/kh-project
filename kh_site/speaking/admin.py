@@ -35,6 +35,6 @@ class PresentationAdmin(admin.ModelAdmin):
 
     empty_value_display = '-- empty --'
     date_hierarchy = 'date_created'
-    list_display = ['title', creation_date_formatter, mod_date_formatter]
-    fields = ['title', 'subtitle', 'image', image_tag, 'details']
+    list_display = ['title', creation_date_formatter, mod_date_formatter, 'order']
+    fields = ['title', 'subtitle', 'image', image_tag, 'details', 'order']
     readonly_fields = [image_tag]

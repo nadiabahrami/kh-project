@@ -613,8 +613,35 @@ nav .navbar-collapse ul .active a:hover {
 
 /*Speaking Page*/
 
-
-
+#speaking-overlay {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2000;
+}
+.speaking-item {
+    cursor: pointer;
+}
+.close-overlay {
+    cursor: pointer;
+}
+#presentation-detail {
+    width: 60vw;
+    height: 80vh;
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#presentation-content {
+    overflow-y: scroll;
+}
 
 /* Blog */
 .article- {

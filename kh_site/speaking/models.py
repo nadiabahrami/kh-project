@@ -11,6 +11,7 @@ class Presentation(models.Model):
     details = RedactorField(null=True, blank=True)
     date_created = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
+    order = models.IntegerField(blank=True, null=True)
 
     def __repr__(self):
         return f"<Presentation | { self.title }>"

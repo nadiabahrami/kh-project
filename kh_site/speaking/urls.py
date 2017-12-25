@@ -4,5 +4,5 @@ from speaking.views import PresentationsList, PresentationDetail
 
 urlpatterns = [
     url(r'^$', PresentationsList.as_view(), name="presentation_list"),
-    url(r'^api/(?P<pk>[0-9]+)/', PresentationDetail.as_view(), name='presentation_detail')
+    url(r'^api/detail/(?P<pk>[0-9]+)/', PresentationDetail.as_view(), name='presentation_detail')
 ]
