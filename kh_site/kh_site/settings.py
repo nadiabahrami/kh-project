@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'speaking',
     'group_coaching',
     'resources',
-    'redactor'
+    'redactor',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
