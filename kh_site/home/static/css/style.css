@@ -49,6 +49,9 @@ p {
 ul {
     list-style-type: none;
 }
+.clearfix {
+    clear: both;
+}
 
 
 
@@ -586,6 +589,17 @@ nav .navbar-collapse ul .active a:hover {
     font-size: 1.5em;
 }
 
+.top-quote {
+    text-align: center;
+    border: none;
+    font-size: 1.15em;
+    font-style: italic;
+    font-weight: 100;
+}
+.top-quote p {
+    margin-bottom: 5px;
+}
+
 #coun-img {
     padding-top: 30px;
     width:300px;
@@ -593,6 +607,9 @@ nav .navbar-collapse ul .active a:hover {
     margin-right: auto;
 }
 
+#specialties ul {
+    list-style-type: disc;
+}
 
 /*Speaking Page*/
 
