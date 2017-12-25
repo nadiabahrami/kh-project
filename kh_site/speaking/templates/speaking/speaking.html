@@ -28,10 +28,19 @@
             $('#presentation-title h4').html(response.title)
             $('#presentation-content').html(response.details)
             $('#speaking-overlay').show()
+            $('body').addClass('noscroll')
         })
     })
-    $('.close-overlay').on('click', _ => {
+    let closeOverlay =  _ => {
         $('#speaking-overlay').hide()
+        $('body').removeClass('noscroll')
+    }
+    $('.close-overlay').on('click', closeOverlay)
+    $('body').on('keyup', function(event) {
+        if (event.keyCode === 27) {
+            closeOverlay()
+        }
     })
+
 </script>
 {% endblock %}

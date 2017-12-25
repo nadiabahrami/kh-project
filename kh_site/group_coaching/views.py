@@ -7,6 +7,7 @@ class EventDetail(DetailView):
     """View for displaying a single event's detail."""
 
     model = CoachingEvent
+    context_object_name = 'event'
     template_name = 'group_coaching/next_event.html'
 
     def get_object(self, queryset=None):
