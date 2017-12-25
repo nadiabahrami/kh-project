@@ -810,7 +810,7 @@ nav .navbar-collapse ul .active a:hover {
     margin-bottom: 0;
 }
 
-#group-event-detail p {
+#group-event-info p {
     margin-bottom: 0px;
     text-align: center;
 }
@@ -829,6 +829,19 @@ nav .navbar-collapse ul .active a:hover {
     margin: auto;
     padding: 20px 60px 20px;
     border-radius: 0px;
+}
+
+#group-event-detail ul {
+    list-style-type: disc;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+}
+#group-event-detail li {
+    margin: 20px 10px;
+}
+.note {
+    font-size: 1.3em;
+    color: #EC8E71;
 }
 
 /* TWEAKS */

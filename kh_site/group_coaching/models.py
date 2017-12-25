@@ -7,19 +7,19 @@ from redactor.fields import RedactorField
 
 DATE_FMT = '%b %d, %Y'
 DEFAULT_LOGISTICS = """<ul>
-    <li>8 group sessions total</li>
-    <li>Weekly “office hours” (TBD in the new year) over the phone where I’m available for troubleshooting, Q&A, and check-ins</li>
-    <li>Formation of daily self-care practice-exercises (Monday through Friday) to help you stay focused, build momentum, and move forward throughout the week</li>
-    <li>Tailored invitations to work on between sessions to help you get stronger and more free</li>
+    <li><p>8 group sessions total</p></li>
+    <li><p>Weekly “office hours” (TBD in the new year) over the phone where I’m available for troubleshooting, Q&A, and check-ins</p></li>
+    <li><p>Formation of daily self-care practice-exercises (Monday through Friday) to help you stay focused, build momentum, and move forward throughout the week</p></li>
+    <li><p>Tailored invitations to work on between sessions to help you get stronger and more free</p></li>
 </ul>"""
 DEFAULT_OUTLINE = """<ul>
-      <li>Session 1 &amp; 2 - Liberate our minds by understanding and REMOVING the negative effects of historical and individual trauma.</li>
+      <li><p>Session 1 &amp; 2 - Liberate our minds by understanding and REMOVING the negative effects of historical and individual trauma.</p></li>
 
-      <li>Session 3 &amp; 4 Understand your current self-care practices and design ones that support you in developing you ideal self.</li>
+      <li><p>Session 3 &amp; 4 Understand your current self-care practices and design ones that support you in developing you ideal self.</p></li>
 
-      <li>Session 5 &amp; 6  Clarify your values and beliefs (including the limiting ones) in order to begin living an intentional, joy filled life.</li>
+      <li><p>Session 5 &amp; 6  Clarify your values and beliefs (including the limiting ones) in order to begin living an intentional, joy filled life.</p></li>
 
-      <li>Session 7 &amp; 8 - Begin designing life goals in order to crate clarity, purpose and restore passion.</li>
+      <li><p>Session 7 &amp; 8 - Begin designing life goals in order to crate clarity, purpose and restore passion.</p></li>
     </ul>"""
 DEFAULT_LOCATION = "600 North 65th street, Seattle, WA"
 

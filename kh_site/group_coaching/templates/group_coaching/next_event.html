@@ -8,7 +8,7 @@
 </section>
 <div class="container divider top-con divider-thick">
   <h2 class="text-center">Current Group</h2>
-  <article id="group-event-detail">
+  <article id="group-event-info">
     <p><strong>Start date:</strong> {{ event.start_date }}</p>
     <p><strong>End date:</strong> {{ event.end_date }}</p>
     <p><strong>Meets on:</strong> {{ event.meeting_days }}</p>
@@ -21,25 +21,17 @@
     </div>
   </article>
 </div>
-<div class="container">
+<div class="container" id="group-event-detail">
   <section>
-    <h3 class="text-center">Group Logistics</h3>
+    <h3 class="text-center bottom-20">Group Logistics</h3>
     {{ event.logistics | safe }}
   </section>
-  <section>
+  <section class="top-40">
     <h3 class="text-center">Session Outline</h3>
-    <p>Each week we will review certain special topics while still leaving room to meet the various needs of the group.</p>
-    <ul>
-      <li>Session 1 &amp; 2 - Liberate our minds by understanding and REMOVING the negative effects of historical and individual trauma.</li>
-
-      <li>Session 3 &amp; 4 Understand your current self-care practices and design ones that support you in developing you ideal self.</li>
-
-      <li>Session 5 &amp; 6  Clarify your values and beliefs (including the limiting ones) in order to begin living an intentional, joy filled life.</li>
-
-      <li>Session 7 &amp; 8 - Begin designing life goals in order to crate clarity, purpose and restore passion.</li>
-    </ul>
+    <p class="top-20">Each week we will review certain special topics while still leaving room to meet the various needs of the group.</p>
+    {{ event.outline | safe }}
   </section>
-  <div class="alert">
+  <div class="note text-center top-40 bottom-20">
     <p>The Investment is $79 Per Session, Plus a Testimonial and Feedback to Me at the End About What Worked Best and Your Suggestions for Improvement.</p>
   </div>
 </div>

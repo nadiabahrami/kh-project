@@ -26,7 +26,7 @@ class CoachingEventAdmin(admin.ModelAdmin):
     fields = [
         'start_date', 'end_date', 'meeting_days', 'current_event',
         'start_time', 'end_time', 'cost', 'external_link', 'location',
-        'logistics'
+        'logistics', 'outline'
     ]
     list_display = [start_date_formatter, end_date_formatter, 'current_event', 'location']
     date_hierarchy = 'start_date'
