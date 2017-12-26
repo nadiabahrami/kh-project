@@ -2,7 +2,10 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
 from blog.models import Article, AddArticle, DeleteArticle
+from blog.serializers import ArticleSerializer
 from django.http import HttpResponseRedirect
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
 
 class BlogView(ListView):
@@ -13,6 +16,15 @@ class BlogView(ListView):
     context_object_name = 'articles'
     template_name = 'blog/blog.html'
     paginate_by = 5
+
+
+class BlogAPIList(APIView):
+    """."""
+
+    def get(self, request, format=None):
+        """Handle the get request."""
+        serialized = ArticleSerializer(Article.objects.all(), many=True)
+        return Response(serialized.data)
 
 
 class BlogDetail(DetailView):

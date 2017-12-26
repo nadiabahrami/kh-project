@@ -25,6 +25,15 @@ class PresentationsList(ListView):
         return context
 
 
+class PresentationsJSONList(APIView):
+    """List all presentations."""
+
+    def get(self, request, format=None):
+        """Return all the presentations."""
+        serialized = PresentationSerializer(Presentation.objects.all(), many=True)
+        return Response(serialized.data)
+
+
 class PresentationDetail(APIView):
     """Get the details for one presentation."""
 
