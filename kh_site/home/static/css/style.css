@@ -554,8 +554,9 @@ nav .navbar-collapse ul .active a:hover {
 
 
 /* Healers */
-#healer-logo {
-    padding-top:15px;
+.top-logo img {
+    width: 40%;
+    margin: auto;
 }
 
 .front {
@@ -586,6 +587,22 @@ nav .navbar-collapse ul .active a:hover {
 
 #b3 {
     background-color: #ffb92d;
+}
+
+.healers-list {
+    width: 60%;
+    float: left;
+    list-style-type: disc;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+    margin-top: 0;
+}
+.healers-list li {
+    margin: 20px auto;
+}
+.side-img {
+    width: 40%;
+    float: right;
 }
 
 
