@@ -20,16 +20,9 @@
     <title>Kyeisha Hodge</title>
   </head>
   <body>
+    {% block overlay %}{% endblock %}
     {% include 'base/nav.html' %}
     {% block content %}{% endblock %}
     {% include 'base/footer.html' %}
-    <script>
-    $(window).scroll(function() {
-      // if ($(this).scrollTop() > 200) {
-      //   $( "nav #background" ).fadeIn();
-      // } else {
-      //   $( "nav #background" ).fadeOut();
-      // }
-    });</script>
   </body>
 </html>

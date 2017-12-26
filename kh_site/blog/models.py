@@ -29,6 +29,7 @@ class Article(models.Model):
     ]
 
     title = models.CharField(max_length=200, blank=True)
+    short_title = models.CharField(max_length=200, blank=True)
     slug = models.SlugField()
     excerpt = models.TextField(blank=True, null=True)
     content = RedactorField(blank=False)

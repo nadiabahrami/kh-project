@@ -1,5 +1,0 @@
-#!/bin/bash
-set -e
-cd kh_site
-python manage.py migrate
-gunicorn kh_site.wsgi --log-file -

@@ -1,22 +1,22 @@
 body {
     margin: 0px;
-    height:100%;
+    height: 100%;
 }
 
 img {
-    height:auto;
-    width:100%;
+    height: auto;
+    width: 100%;
 }
 
 h1 {
     font-family: 'Raleway', sans-serif;
-    font-size: 4em; 
+    font-size: 3.5em; 
     color: #EC8E71;
 }
 
 h2 {
     font-family: 'Raleway', sans-serif;
-    font-size: 4em;
+    font-size: 3.4em;
     color: #EC8E71;
 }
 h2.text-center {
@@ -25,25 +25,25 @@ h2.text-center {
 
 h3 {
     font-family: 'Raleway', sans-serif;
-    font-size: 3.5em;
+    font-size: 3.3em;
     margin-bottom: 0px;
     color: #EC8E71;
 }
 
 h4 {
     font-family: 'Raleway', sans-serif;
-    font-size:3em;
+    font-size: 2.6em;
     margin-top: 20px;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.35em;
+    font-size: 1.25em;
     line-height: 1.5em;
     letter-spacing: 0.03em;
 }
 .p-large {
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 .container p {
     margin-bottom: 20px;
@@ -128,8 +128,7 @@ nav .navbar-collapse ul .active a:hover {
 }
 
 .nav .open>a:hover, .nav .open>a {
-   /* border: 2px solid rgba(255, 146, 109, 1);*/
-    border: 2px solid rgba(255, 255, 255, .6);
+    border-bottom: 2px solid rgba(255, 255, 255, .6);
     background-color: transparent;
 }
 
@@ -248,7 +247,7 @@ nav .navbar-collapse ul .active a:hover {
 
 /* common classes */
 .main {
-    height:500px;
+    height: 430px;
     border-bottom: 3px solid #54F2CE;
     margin-top: 79px;
 }
@@ -263,7 +262,7 @@ nav .navbar-collapse ul .active a:hover {
 }
 .main h1 {
     color: white;
-    font-size: 8em;
+    font-size: 7em;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -303,9 +302,10 @@ nav .navbar-collapse ul .active a:hover {
     overflow: hidden;
     width: 45%;
     margin: 0 2.5% 40px;
+    height: 250px;
 }
 .service {
-    height: 300px;
+    height: 250px;
     z-index: 1;
 }
 .service-inner {
@@ -320,14 +320,13 @@ nav .navbar-collapse ul .active a:hover {
     z-index: 0;
 }
 .s1 img {
-    width: auto;
-    height: 300px;
+    width: 100%;
 }
 .s2 {
     top: -30%;
 }
 .s4 {
-    top: -55%;
+    top: -100%;
 }
 .s4 img {
     width: 150%;
@@ -343,7 +342,7 @@ nav .navbar-collapse ul .active a:hover {
     margin-top: 0;
 }
 .service h4 {
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 .service:hover {
@@ -440,7 +439,7 @@ nav .navbar-collapse ul .active a:hover {
 }
 
 .value-item {
-    margin: 40px auto;
+    margin: 20px auto;
 }
 
 #affiliates {
@@ -555,7 +554,7 @@ nav .navbar-collapse ul .active a:hover {
 
 /* Healers */
 .top-logo img {
-    width: 40%;
+    width: 70%;
     margin: auto;
 }
 
@@ -737,7 +736,8 @@ nav .navbar-collapse ul .active a:hover {
 
 .blog-btn:hover {
     text-decoration: none;
-    color: #979797;
+    color: #FFF;
+    background-color: #979797;
 }
 .blog-btn {
     padding: 15px 0;
@@ -792,11 +792,20 @@ nav .navbar-collapse ul .active a:hover {
 #recommended-articles h3 {
     margin-bottom: 20px;
 }
-#recommended-articles h4 {
+.recommended-title {
+    height: 70px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.recommended-title h4 {
     font-size: 2em;
     color: #EC8E71;
-    height: 100px;
     line-height: 1.3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 .recommended {
     text-align: center;
@@ -804,7 +813,7 @@ nav .navbar-collapse ul .active a:hover {
     padding-bottom: 30px;
     width: 45%;
     margin: 0 2.5% 40px;
-    height: 260px;
+    height: 230px;
 }
 
 /* Group Coaching */
@@ -852,6 +861,12 @@ nav .navbar-collapse ul .active a:hover {
     list-style-type: disc;
     font-family: 'Raleway', sans-serif;
     font-size: 1.3em;
+    width: 70%;
+    margin: auto;
+}
+.narrowed-text {
+    width: 70%;
+    margin: auto;
 }
 #group-event-detail li {
     margin: 20px 10px;
@@ -859,6 +874,40 @@ nav .navbar-collapse ul .active a:hover {
 .note {
     font-size: 1.3em;
     color: #EC8E71;
+}
+
+/* Loading Overlay */
+
+#loading-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 9999;
+    background-color: #EC8E71;
+    top: 0;
+    left: 0;
+}
+#loading-logo {
+    width: 30vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+#loading-gif {
+    width: 5vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+}
+#loading-text {
+    color: white;
+    width: 30vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 56%;
+    left: 50%;
 }
 
 /* TWEAKS */

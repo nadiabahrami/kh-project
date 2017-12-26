@@ -1,5 +1,8 @@
 {% extends 'base/base.html' %}
 {% load static %}
+{% block overlay %}
+    {% include 'base/loading_overlay.html' %}
+{% endblock %}
 {% block content %}
   <section class="main" style="background: url('{% static 'imgs/home-main.jpg' %}') no-repeat; background-size:100%; background-position:right;">
     <div class ="container">
@@ -78,6 +81,9 @@
     </div>
   </div>
   <script>
+    setTimeout(_ => {
+      $('#loading-overlay').fadeOut()
+    }, 1800)
     $('#navbar .navbar-nav li').removeClass("active");
     $('#home-link').addClass("active");
   </script>

@@ -16,7 +16,7 @@ class ArticleAdmin(admin.ModelAdmin):
     """."""
 
     fields = [
-        'title', 'slug', 'excerpt', 'content', 'status',
+        'title', 'short_title', 'slug', 'excerpt', 'content', 'status',
         last_modified_formatter, 'date_published',
     ]
     list_display = [
@@ -26,5 +26,6 @@ class ArticleAdmin(admin.ModelAdmin):
     date_hierarchy = 'date_created'
     empty_value_display = '-- empty --'
     readonly_fields = [last_modified_formatter]
+    save_on_top = True
 
-    prepopulated_fields = {'slug': ('title',), }
+    prepopulated_fields = {'slug': ('title',), 'short_title': ('title',)}
