@@ -98,4 +98,4 @@ ENV/
 */.idea
 
 # Ansible
-ansible/vars/aws_vars.yml
+ansible/vars/aws_vars.csv
