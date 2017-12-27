@@ -734,7 +734,7 @@ nav .navbar-collapse ul .active a:hover {
     text-decoration: none;
 }
 
-.blog-btn:hover {
+.blog-btn:hover, .blog-btn:focus {
     text-decoration: none;
     color: #FFF;
     background-color: #979797;
@@ -776,6 +776,16 @@ nav .navbar-collapse ul .active a:hover {
 
 #blog-article {
     padding-top: 40px;
+}
+#blog-article ol {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25em;
+    list-style-type: decimal;
+}
+#blog-article ul {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25em;
+    list-style-type: disc;
 }
 
 #article-bar {
@@ -860,7 +870,7 @@ nav .navbar-collapse ul .active a:hover {
 #group-event-detail ul {
     list-style-type: disc;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.25em;
     width: 70%;
     margin: auto;
 }
