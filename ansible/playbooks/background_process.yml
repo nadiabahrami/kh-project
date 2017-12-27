@@ -30,3 +30,4 @@
       systemd:
         name=khsite
         state=restarted
+        daemon_reload=yes
