@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^', include('home.urls')),
-    url(r'^admin/', admin.site.urls),
+    url(r'^manage/', admin.site.urls),
     url(r'^blog/', include('blog.urls')),
     url(r'^redactor/', include('redactor.urls')),
     url(r'^services/speaking/', include('speaking.urls')),
