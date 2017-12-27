@@ -1,31 +1,38 @@
 ---
-- name: Clone the repository down
-  git: 
-    clone=yes
-    repo=https://github.com/nadiabahrami/kh-project.git
-    dest=/home/ubuntu/kh-project
+- hosts: deployment
+  become: yes
+  become_method: sudo
+  vars:
+    - ansible_python_interpreter: /usr/bin/python3.6
+  tasks:
+    - name: Clone the repository down
+      git: 
+        clone=yes
+        repo=https://github.com/nadiabahrami/kh-project.git
+        dest=/home/ubuntu/kh-project
+        version=apr-nmhw
 
-- name: Create a virtual environment in the book app directory
-  command: python3.6 -m venv {{ env_path }}
+    - name: Create a virtual environment in the project directory
+      command: python3.6 -m venv {{ env_path }}
 
-- name: Install gunicorn to the virtual environment
-  pip:
-    virtualenv={{ env_path }}
-    name=gunicorn
+    - name: Install gunicorn to the virtual environment
+      pip:
+        virtualenv={{ env_path }}
+        name=gunicorn
 
-- name: Install project requirements to the virtual environment
-  pip:
-    requirements={{ env_path }}/../requirements.txt
-    virtualenv={{ env_path }}
+    - name: Install project requirements to the virtual environment
+      pip:
+        requirements={{ env_path }}/../requirements.txt
+        virtualenv={{ env_path }}
 
-- name: Apply any new migrations
-  django_manage:
-    virtualenv={{ env_path }}
-    app_path={{ env_path }}/../kh_site/
-    command=migrate
+    - name: Apply any new migrations
+      django_manage:
+        virtualenv={{ env_path }}
+        app_path={{ env_path }}/../kh_site/
+        command=migrate
 
-- name: Collect static files into S3
-  django_manage:
-    virtualenv={{ env_path }}
-    app_path={{ env_path }}/../kh_site/
-    command=collectstatic
+    - name: Collect static files into S3
+      django_manage:
+        virtualenv={{ env_path }}
+        app_path={{ env_path }}/../kh_site/
+        command=collectstatic

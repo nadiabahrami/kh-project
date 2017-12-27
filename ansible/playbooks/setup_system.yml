@@ -3,16 +3,17 @@
   become: yes
   become_method: sudo
   tasks:
-    - name: Update the Ubuntu system and services
-      apt: 
-        update_cache=yes
+    - name: Install the Python3-apt package
+      apt:
+        name=python3-apt
+        state=latest
 
     - name: Add the Python 3.6 apt repo
       apt_repository:
-      repo: 'ppa:deadsnakes/ppa'
-      state: present
+        repo: 'ppa:deadsnakes/ppa'
+        state: present
 
-    - name: Install all necessary system-level packages
+    - name: Install all other necessary system-level packages
       apt: 
         name={{ item }}
         state=latest
@@ -20,12 +21,11 @@
         - git
         - nginx
         - python3.6
+        - python3-venv
+        - python3.6-venv
         - python3-pip
         - libpq-dev
-        - libjpeg
-        - zlib
-        - libtiff
-        - libfreetype
-        - littlecms
-        - libwebp
-        - tcl
+
+    - name: Update the Ubuntu system and services
+      apt: 
+        update_cache=yes
