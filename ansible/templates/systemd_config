@@ -8,14 +8,6 @@ User=nobody
 Group=nogroup
 WorkingDirectory={{ env_path }}/../kh_site/
 
-Environment=ALLOWED_HOSTS={{ allowed_hosts }}
-Environment=AWS_ACCESS_KEY_ID={{ aws_access_key_id }}
-Environment=AWS_SECRET_ACCESS_KEY={{ aws_secret_access_key }}
-Environment=DATABASE_URL={{ database_url }}
-Environment=DEBUG=''
-Environment=GOOGLE_KEY={{ google_key }}
-Environment=SECRET_KEY={{ secret_key }}
-
 ExecStart={{ env_path }}/bin/gunicorn -b :8080 kh_site.wsgi:application
 
 [Install]
