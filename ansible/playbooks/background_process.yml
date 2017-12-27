@@ -24,9 +24,9 @@
     - name: Copy over system.d config
       template:
         src=../templates/systemd_config
-        dest=/etc/systemd/system/kh_site.service
+        dest=/etc/systemd/system/khsite.service
 
     - name: Start up the site's service
       systemd:
-        name=kh_site
+        name=khsite
         state=restarted
