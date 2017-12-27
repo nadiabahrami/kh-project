@@ -1,0 +1,8 @@
+---
+# convert name of the file to aws_vars.yml and fill with real data
+allowed_hosts: 'host1 host2 host3'
+aws_access_key_id: someone
+aws_secret_access_key: something
+database_url: somewhere
+google_key: something
+secret_key: literallyanything
