@@ -1,27 +1,31 @@
 ---
-- name: Update the Ubuntu system and services
-  apt: 
-    update_cache=yes
+- hosts: deployment
+  become: yes
+  become_method: sudo
+  tasks:
+    - name: Update the Ubuntu system and services
+      apt: 
+        update_cache=yes
 
-- name: Add the Python 3.6 apt repo
-  apt_repository:
-  repo: 'ppa:deadsnakes/ppa'
-  state: present
+    - name: Add the Python 3.6 apt repo
+      apt_repository:
+      repo: 'ppa:deadsnakes/ppa'
+      state: present
 
-- name: Install all necessary system-level packages
-  apt: 
-    name={{ item }}
-    state=latest
-  with_items:
-    - git
-    - nginx
-    - python3.6
-    - python3-pip
-    - libpq-dev
-    - libjpeg
-    - zlib
-    - libtiff
-    - libfreetype
-    - littlecms
-    - libwebp
-    - tcl
+    - name: Install all necessary system-level packages
+      apt: 
+        name={{ item }}
+        state=latest
+      with_items:
+        - git
+        - nginx
+        - python3.6
+        - python3-pip
+        - libpq-dev
+        - libjpeg
+        - zlib
+        - libtiff
+        - libfreetype
+        - littlecms
+        - libwebp
+        - tcl

@@ -1,8 +1,13 @@
 ---
-- hosts: deployment
-  become: yes
-  become_method: sudo
-  tasks:
-  - import_playbook: ./setup_system.yml
-  - import_playbook: ./configure_django.yml
-  - import_playbook: ./background_process.yml
+- import_playbook: setup_system.yml
+
+
+# - import_playbook: configure_django.yml
+#   hosts: deployment
+#   become: yes
+#   become_method: sudo
+
+# - import_playbook: background_process.yml
+#   hosts: deployment
+#   become: yes
+#   become_method: sudo
