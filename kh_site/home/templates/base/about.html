@@ -1,10 +1,14 @@
 {% extends 'base/base.html' %}
 {% load static %}
 {% block content %}
-  <section class="main" style="background: url('{% static 'imgs/forest-road-in-the-fall.jpg' %}') no-repeat; background-size:100%; background-position:right;">
+  <!-- <section class="main" style="background: url('{% static 'imgs/forest-road-in-the-fall.jpg' %}') no-repeat; background-size:100%; background-position:right;">
     <div class="container">
       <h1 class="text-center">About Kyeisha</h1>
     </div>
+  </section>-->
+  <section id="banner">
+    <img src="{% static 'imgs/about-main-crop.png' %}">
+    <h1 class="text-center">About Kyeisha</h1>
   </section>
   <div class="container divider top-con">
     <h2 class="text-center">A Little About Me</h2>
@@ -50,17 +54,17 @@
     <p>I am committed to creating and maintaining opportunities for social justice. I have been trained in social justice counseling and various issues related to the intersection of class, gender, race, and sexual orientation, and its impact on mental health.</p>
     <p>I have created and facilitated the group “Having the Conversation: Discussing Race, Oppression and Privilege”. For almost a year, this free community group served participants as they navigated past and ongoing racism. I have also served as a guest facilitator at the University of Washington's (UW) “Racial Justice Organizing and Caucus” where I assisted in facilitating the conversation on racism and various systems of oppression. It has also been an honor to provide psychosocial assessments to assist undocumented immigrants and their families.</p>
     <section id="affiliates">
-      <div class="col-md-2 col-sm-offset-1">
+      <div id="affil-1" class="col-md-2 col-sm-offset-1">
         <a target="_blank" href="https://therapists.psychologytoday.com/rms/prof_detail.php?profid=237765&p=10&tr=Ext_Verify">
           <img src="{% static 'imgs/external_verification.gif' %}"/>
         </a>
       </div>
-      <div class="col-md-4 col-sm-offset-1">
+      <div id="affil-2" class="col-md-4 col-sm-offset-1">
         <a target="_blank" href="https://www.mosaiccounselingcollective.com/kyeisha-hodge-lmhc/">
           <img src="{% static 'imgs/mosaic.jpeg' %}"/>
         </a>
       </div>
-      <div class="col-md-2 col-sm-offset-1">
+      <div id="affil-3" class="col-md-2 col-sm-offset-1">
         <a target="_blank" href="https://www.multiculturalcounselors.org/counselors/30">
           <img src="{% static 'imgs/mcc-badge-200.png' %}"/>
         </a>

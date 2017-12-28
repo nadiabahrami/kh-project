@@ -3,7 +3,12 @@
     h2 {
         font-size: 2.5em;
     }
-    p {
+    h4 {
+        font-size: 1.8em;
+    }
+
+    p,
+    .p-large {
         font-size: 1.15em;
     }
 
@@ -20,9 +25,13 @@
         margin-left: 0px;
         margin-right: 0px;
     }
+    .divider {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
 
-    #banner {
-        margin-top: 59px;
+    .top-con {
+        margin-top: 0px;
     }
 
     /* Loading Overlay */
@@ -82,6 +91,15 @@
         display: block;
     }
 
+    /* Banner */
+    #banner {
+        margin-top: 59px;
+    }
+
+    #banner h1 {
+        font-size: 3.3em;
+    }
+
     /* Footer */
     #consult {
         width: 100%;
@@ -115,6 +133,9 @@
         text-align: center;
     }
 
+    #home-squares {
+        margin-top: 20px;
+    }
     .service-container {
         width: 100%;
         height: 40vw;
@@ -136,6 +157,33 @@
         font-size: 4vw;
         max-width: 90%;
         margin: 20px auto;
+    }
+
+    /* About */
+    #about1 {
+        float: none;
+    }
+    #about2 {
+        display: none;
+    }
+    .about-img-div {
+        width: 50vw;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    #affiliates {
+        height: auto;
+        overflow: visible;
+    }
+    #affiliates div {
+        position: static;
+        transform: none;
+        margin: auto;
+    }
+    #affil-1,
+    #affil-3 {
+        width: 50vw;
     }
 
 }

@@ -299,6 +299,17 @@ span.mobile-item {
 #banner {
     margin-top: 79px;
     border-bottom: 3px solid #54F2CE;
+    position: relative;
+}
+#banner h1 {
+    color: white;
+    font-size: 7em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 100%;
 }
 
 .main {
