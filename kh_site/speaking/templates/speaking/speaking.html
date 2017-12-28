@@ -11,9 +11,16 @@
     <p class="top-20">My presentations seek to create liberation, truth telling, and healing within organizations like the YWCA and Seattle Therapy Alliance. These workshops and presentations are for companies that want to educate their staff on the complexities of domestic violence, sexual assualt, and racism/sexism on mental health. As well as how to systematically overcome them. Below are my most requested talks and workshops. Click on each item for details about the specific workshop:</p>
 </div>
 {% if presentations %}
-{% for pair in presentation_pairs %}
-    {% include 'speaking/presentation_row.html' %}
-{% endfor %}
+    {% for pair in presentation_pairs %}
+        {% include 'speaking/presentation_row.html' %}
+    {% endfor %}
+    {% if orphan %}
+    <div class="container spacer">
+        <div class="col-md-4 col-md-offset-1 speaking-item" data="presentation-{{ orphan.pk }}">
+            <img class="talk-dot" src="{{ orphan.image.url }}"/>
+        </div>
+    </div>
+    {% endif %}
 {% endif %}
 <div id="speaking-overlay">
     {% include 'speaking/presentation_detail.html'%}

@@ -18,10 +18,13 @@ class PresentationsList(ListView):
     def get_context_data(self, **kwargs):
         """Chop the presentations into pairs."""
         context = super().get_context_data(**kwargs)
-        presentations = context['presentations']
+        presentations = context[self.context_object_name]
         context['presentation_pairs'] = []
-        for i in range(0, len(context[self.context_object_name]) - 1, 2):
+
+        for i in range(0, len(presentations) - 1, 2):
             context['presentation_pairs'].append([presentations[i], presentations[i + 1]])
+        if len(presentations) % 2:
+            context['orphan'] = presentations.last()
         return context
 
 
