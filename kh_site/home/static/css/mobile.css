@@ -1,7 +1,7 @@
 @media screen and (max-width: 767px) {
     /* Boilerplate */
     h2 {
-        font-size: 2.8em;
+        font-size: 2.5em;
     }
     p {
         font-size: 1.15em;
@@ -21,6 +21,10 @@
         margin-right: 0px;
     }
 
+    #banner {
+        margin-top: 59px;
+    }
+
     /* Loading Overlay */
     #loading-logo {
         width: 60vw;
@@ -35,6 +39,39 @@
     }
 
     /* Navigation */
+    nav {
+        height: 60px;
+    }
+    .navbar-brand {
+        padding-top: 8px;
+    }
+    div#navbar-logo {
+        width: 25vw;
+        max-width: 120px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #navbar-logo img {
+        height: auto;
+        width: 85%;
+        margin: 0 7.5%;
+    }
+    #navbar-logo p {
+        text-align: center;
+        font-size: 0.6em;
+    }
+    #nav-branding {
+        width: auto;
+    }
+
+    #main-description {
+        margin-left: calc(22vw + 10px);
+    }
+    #main-description p {
+        font-size: 0.8em;
+    }
+
     .navbar-toggle {
         position: absolute;
         right: 0;
