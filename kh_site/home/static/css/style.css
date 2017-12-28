@@ -136,6 +136,13 @@ nav .navbar-collapse ul .active a:hover {
     color:#333;
 }
 
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+    height: auto!important;
+    color: white;
+}
+
 #index-logo {
     margin: auto;
     padding: 50px 100px;
@@ -157,26 +164,75 @@ nav .navbar-collapse ul .active a:hover {
 }
 
 #nav-branding {
-    width:500px;
+    width:300px;
+    overflow: hidden;
+}
+#nav-branding a {
+    padding: 12px 15px;
 }
 
 #nav-branding img {
-    margin-top: 1px;
+    margin-top: -4px;
 }
 
 #nav-branding p {
     font-family: 'Raleway', sans-serif;
     margin-bottom: 0px;
-    margin-left: -15px;
-    font-size: 1.2em;
+    font-size: 0.9em;
 }
 
 #nav-branding div{
     width:140px;
+    float: left;
 }
 #main-description {
     position: relative;
-    top: 20px;
+    float: left;
+    margin-left: 10px;
+}
+
+/* Mobile menu */
+.navbar-toggle span {
+    cursor: pointer;
+}
+
+#nav-mobile {
+    display: none;
+    background-color: white;
+    position: fixed;
+    top: -370px;
+    width: 100vw;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #EC8E71;
+    z-index: 1020;
+}
+.nav-list {
+    padding-left: 20px;
+}
+
+.mobile-item {
+    color: #EC8E71;
+}
+.mobile-item:hover,
+.mobile-item:focus {
+    text-decoration: none;
+}
+.mobile-item li,
+span.mobile-item {
+    padding: 8px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+span.mobile-item {
+    display: block;
+}
+
+.mobile-submenu {
+    padding-left: 10px;
+}
+.mobile-submenu li:before {
+    content: "- ";
+    text-indent: -5px;
 }
 
 

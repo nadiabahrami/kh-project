@@ -3,23 +3,23 @@
   <div id="background"></div>
   <div id="labels">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <button type="button" class="navbar-toggle collapsed">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <div id="nav-branding">
-        <a class="navbar-brand" href="/accounts/login/">
+      <a class="navbar-brand" href="{% url 'home' %}">
+        <div id="nav-branding">
           <div>
             <img src="{% static 'imgs/khsig-white.png' %}"/>
           </div>
-        </a>
-        <section id="main-description">
-          <p>Psychotherapist.</p>
-          <p>Coach. Speaker.</p>
-        </section>
-      </div>
+          <section id="main-description">
+            <p>Psychotherapist.</p>
+            <p>Coach. Speaker.</p>
+          </section>
+        </div>
+      </a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
@@ -44,3 +44,38 @@
     </div>
   </div>
 </nav>
+<div id="nav-mobile">
+  <ul class="nav-list">
+    <a class="mobile-item" href="{% url 'home'%}">
+      <li id="home-mobile">Home</li>
+    </a>
+    <a class="mobile-item" href="{% url 'about'%}">
+      <li id="about-mobile">About</li>
+    </a>
+    <li id="service-mobile" class="nav-expanded">
+      <span class="mobile-item">Services</span>
+      <ul class="mobile-submenu">
+        <a class="mobile-item" href="{% url 'counseling' %}">
+          <li>Therapy</li>
+        </a>
+        <a class="mobile-item" href="{% url 'presentation_list' %}">
+          <li>Speaking</li>
+        </a>
+        <a class="mobile-item" href="{% url 'coaching' %}">
+          <li>Group Coaching</li>
+        </a>
+        <a class="mobile-item" href="{% url 'healing_healers' %}">
+          <li>Healing the Healers</li>
+        </a>
+      </ul>
+    </li>
+    <a class="mobile-item" href="{% url 'blog'%}">
+      <li id="blog-mobile">Blog</li>
+    </a>
+    <a class="mobile-item" href="{% url 'contact'%}">
+      <li id="contact-mobile">Contact</li>
+    </a>
+    <a class="mobile-item" href="{% url 'resources'%}">
+      <li id="resc-mobile">Resources</li>
+    </a>
+</div>

@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     /* Loading Overlay */
     #loading-logo {
         width: 60vw;
@@ -10,5 +10,16 @@
     #loading-gif {
         width: 10vw;
         top: 60%;
+    }
+
+    /* Navigation */
+    .navbar-toggle {
+        position: absolute;
+        right: 0;
+        top: 40%;
+        transform: translateY(-50%);
+    }
+    #nav-mobile {
+        display: block;
     }
 }
