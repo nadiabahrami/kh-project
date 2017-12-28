@@ -39,13 +39,13 @@
         DATABASE_URL: "{{ lookup('csvfile', 'database_url file=../vars/aws_vars.csv delimiter=, col=1') }}"
         SECRET_KEY: "{{ lookup('csvfile', 'secret_key file=../vars/aws_vars.csv delimiter=, col=1') }}"
 
-    # - name: Collect static files into S3
-    #   django_manage:
-    #     virtualenv={{ env_path }}
-    #     app_path={{ env_path }}/../kh_site/
-    #     command=collectstatic
-    #   environment:
-    #     DATABASE_URL: "{{ lookup('csvfile', 'database_url file=../vars/aws_vars.csv delimiter=, col=1') }}"
-    #     AWS_ACCESS_KEY_ID: "{{ lookup('csvfile', 'aws_access_key_id file=../vars/aws_vars.csv delimiter=, col=1') }}"
-    #     AWS_SECRET_ACCESS_KEY: "{{ lookup('csvfile', 'aws_secret_access_key file=../vars/aws_vars.csv delimiter=, col=1') }}"
-    #     SECRET_KEY: "{{ lookup('csvfile', 'secret_key file=../vars/aws_vars.csv delimiter=, col=1') }}"
+    - name: Collect static files into S3
+      django_manage:
+        virtualenv={{ env_path }}
+        app_path={{ env_path }}/../kh_site/
+        command=collectstatic
+      environment:
+        DATABASE_URL: "{{ lookup('csvfile', 'database_url file=../vars/aws_vars.csv delimiter=, col=1') }}"
+        AWS_ACCESS_KEY_ID: "{{ lookup('csvfile', 'aws_access_key_id file=../vars/aws_vars.csv delimiter=, col=1') }}"
+        AWS_SECRET_ACCESS_KEY: "{{ lookup('csvfile', 'aws_secret_access_key file=../vars/aws_vars.csv delimiter=, col=1') }}"
+        SECRET_KEY: "{{ lookup('csvfile', 'secret_key file=../vars/aws_vars.csv delimiter=, col=1') }}"

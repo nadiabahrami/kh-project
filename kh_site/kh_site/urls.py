@@ -30,6 +30,9 @@ urlpatterns = [
     url(r'^accounts/', include('registration.backends.simple.urls')),
 ]
 
+handler404 = 'home.views.handler404'
+handler500 = 'home.views.handler500'
+
 admin.site.site_title = "Kyeisha Hodge admin"
 admin.site.site_header = "Kyeisha Hodge - Administration"
 

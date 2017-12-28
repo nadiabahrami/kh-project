@@ -1,0 +1,19 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+  <section class="main" style="background: url('{% static 'imgs/c5.jpg' %}') no-repeat; background-size:100%; background-position:bottom;">
+    <div class="container">
+      <h1 class="text-center">Oops!</h1>
+    </div>
+  </section>
+  <div class="container top-con">
+    <h2 class="text-center">Oh no! Looks like something went wrong!</h2>
+    <p class="top-20">
+      We keep track of these errors and try to fix them as soon as we can, but if the problem persists please feel free to contact us. In the meantime, try refreshing.
+    </p>
+  </div>
+  <script>
+      $('#navbar .navbar-nav .active').removeClass("active");
+      $('#home-link').addClass("active");
+  </script>
+{% endblock %}
