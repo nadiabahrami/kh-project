@@ -751,6 +751,68 @@ nav .navbar-collapse ul .active a:hover {
     border: thin solid #979797;
 }
 
+#share-btn {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    cursor: pointer;
+    height: 28.5px;
+    overflow: hidden;
+}
+#share-btn p {
+    background-color: #EC8E71;
+    color: white;
+    font-weight: 700;
+    padding: 5px 5px 2.5px;
+    margin: 0;
+    max-width: 155px;
+    float: left;
+}
+
+#share-list {
+    float: left!important;
+    list-style-type: none!important;
+    padding: 0;
+    margin-left: 5px;
+}
+#share-list a:hover,
+#share-list a:focus {
+    text-decoration: none;
+}
+.share-link {
+    height: 28.5px;
+    width: 30px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+.share-link i {
+    position: relative;
+    top: 41%;
+    transform: translateY(-50%);
+}
+
+.fb-share {
+    background-color: #4267b2;
+}
+.twitter-share {
+    background-color: #4AB3F4;
+}
+.google-share {
+    background-color: #E34429;
+}
+.linkedin-share {
+    background-color: #0084BF;
+}
+.clipboard-share {
+    background-color: #AAA; 
+}
+.clipboard-textarea {
+    position: absolute;
+    top: 20%;
+    visibility: hidden;
+}
+
 .page-control {
     padding-bottom: 20px;
     overflow: hidden;
