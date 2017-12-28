@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px) {
+    /* Loading Overlay */
+    #loading-logo {
+        width: 60vw;
+    }
+    #loading-text {
+        width: 70vw;
+        top: 52%;
+    }
+    #loading-gif {
+        width: 10vw;
+        top: 60%;
+    }
+}
