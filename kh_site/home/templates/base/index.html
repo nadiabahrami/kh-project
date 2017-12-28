@@ -4,7 +4,7 @@
     {% include 'base/loading_overlay.html' %}
 {% endblock %}
 {% block content %}
-  <section class="main" style="background: url('{% static 'imgs/home-main.jpg' %}') no-repeat; background-size:100%; background-position:right;">
+<!--  <section class="main" style="background: url('{% static 'imgs/home-main.jpg' %}') no-repeat; background-size:100%; background-position:right;">
     <div class ="container">
       <div class="col-md-8">
         <div class="col-md-12" id="index-logo">
@@ -13,12 +13,15 @@
         </div>
       </div>
     </div>
+  </section> -->
+  <section id="banner">
+    <img src="{% static 'imgs/home-main-crop.png' %}" />
   </section>
   <div class="container divider top-con" id="home-top">
     <div class="col-md-12">
       <div class="container">
         <div class="col-md-12">
-          <h1 class="">Trauma is a Liar</h1>
+          <h2 class="">Trauma is a Liar</h2>
           <p class="top-20">You are not broken. You do not have a pathology. <strong>You are not unworthy of love and the life you truly want.</strong> You simply haven't gained access to the power that you ALREADY have.</p>
           <p>The effects of Domestic Violence, sexual assualt, childhood abuse, racism, and sexism all create LIES that we unknownigly internalize and build a life around.</p>
           <p>My passion and my purpose is to dismantle this internalized oppression from the inside out.  Only then can you step into your power, <strong>live an intentional life, filled with purpose and PASSION</strong> without suffering through negative self talk, doubt, worry, and hyper-vigilence. Let's start the Jouney!</p>
@@ -27,9 +30,9 @@
     </div>
   </div>
   <div class="container" id="home-squares">
-    <div class="col-md-6 service-container">
+    <div class="col-md-6 service-container s1">
       <a href="{% url 'counseling' %}">
-        <div class='service-img s1'>
+        <div class='service-img'>
           <img src="{% static 'imgs/forest-road-in-the-fall.jpg' %}">
         </div>
         <div class="service">
@@ -68,8 +71,9 @@
     </div>
     <div class="col-md-6 service-container">
       <a href="{% url 'healing_healers' %}">
-        <div class='service-img s4'>
-          <img src="{% static 'imgs/c1.jpg' %}">
+        <!-- <div class='service-img s4'> -->
+        <div class="service-img">
+          <img src="{% static 'imgs/greenlake.jpg' %}">
         </div>
         <div class="service">
           <div class="service-inner">
@@ -81,10 +85,9 @@
     </div>
   </div>
   <script>
-  $('#loading-overlay').hide()
-    // setTimeout(_ => {
-    //   $('#loading-overlay').fadeOut()
-    // }, 1800)
+    setTimeout(_ => {
+      $('#loading-overlay').fadeOut()
+    }, 1800)
     $('#navbar .navbar-nav li').removeClass("active");
     $('#home-link').addClass("active");
   </script>

@@ -164,8 +164,7 @@ nav .navbar-collapse ul .active a:hover {
 }
 
 #nav-branding {
-    width:300px;
-    overflow: hidden;
+    width: 300px;
 }
 #nav-branding a {
     padding: 12px 15px;
@@ -302,6 +301,11 @@ span.mobile-item {
 }
 
 /* common classes */
+#banner {
+    margin-top: 79px;
+    border-bottom: 3px solid #54F2CE;
+}
+
 .main {
     height: 430px;
     border-bottom: 3px solid #54F2CE;
@@ -379,7 +383,7 @@ span.mobile-item {
     width: 100%;
 }
 .s2 {
-    top: -30%;
+    top: -40%;
 }
 .s4 {
     top: -100%;
