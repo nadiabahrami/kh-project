@@ -1,10 +1,9 @@
 {% extends 'base/base.html' %}
 {% load static %}
 {% block content %}
-<section class="main" style="background: url('{% static 'imgs/b1.jpg' %}') no-repeat; background-size:100%; background-position:right;">
-    <div class="container">
-      <h1 class="text-center">Blog</h1>
-    </div>
+<section id="banner">
+  <img src="{% static 'imgs/blog-main-crop.png' %}">
+  <h1 class="text-center">Blog</h1>
 </section>
 <div class="container divider top-con" id="blog-articles">
   {% if user.is_authenticated%}

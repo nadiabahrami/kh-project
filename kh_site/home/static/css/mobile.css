@@ -1,7 +1,7 @@
 @media screen and (max-width: 767px) {
     /* Boilerplate */
     h2 {
-        font-size: 2.5em;
+        font-size: 2.5em!important;
     }
     h3 {
         font-size: 2.15em;
@@ -197,4 +197,100 @@
         font-size: 1em!important;
     }
 
+    /* Speaking */
+    .spacer {
+        margin-bottom: 0;
+    }
+    .speaking-item {
+        margin-bottom: 20px;
+    }
+    #presentation-detail {
+        width: 100vw;
+    }
+    #presentation-content {
+        height: 52vh;
+    }
+    #presentation-content li {
+        margin: 10px 5px;
+        font-size: 0.8em;
+    }
+
+    /* Group Coaching */
+    #group-info-btn div {
+        width: 70vw;
+        max-width: 350px;
+        padding: 5px 10px;
+    }
+
+    .small-h1 {
+        font-size: 2.6em!important;
+    }
+
+    #group-event-info {
+        margin-bottom: 20px;
+    }
+
+    #group-event-detail ul {
+        width: 100%;
+        padding-left: 20px;
+        font-size: 1.15em;
+    }
+    #group-event-detail li {
+        margin: 10px 0;
+    }
+
+    .narrowed-text {
+        width: 100%;
+    }
+
+    .note {
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+
+    /* Healing the Healers */
+    .healers-list {
+        margin-bottom: 10px!important;
+        width: 100%;
+    }
+    .healers-list,
+    .side-img {
+        float: none;
+    }
+    .side-img {
+        width: 95%;
+        max-width: 410px;
+        margin: auto;
+        display: block;
+    }
+
+    /* Blog */
+    .title-link h2 {
+        text-align: center;
+        font-size: 1.8em!important;
+        line-height: 1.3em;
+    }
+    .blog-date-time {
+        margin-bottom: 10px;
+    }
+    .blog-date-time .text-divider {
+        display: none;
+    }
+    .blog-date-time p {
+        display: block;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .page-control {
+        margin-bottom: -10px;
+    }
+    .page-control .blog-btn {
+        margin-bottom: 20px;
+        display: block;
+    }
+    .page-control > * {
+        float: none!important;
+        margin: auto;
+    }
 }

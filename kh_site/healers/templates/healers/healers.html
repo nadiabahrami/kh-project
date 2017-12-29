@@ -1,10 +1,9 @@
 {% extends 'base/base.html' %}
 {% load static %}
 {% block content %}
-<section class="main" style="background: url('{% static 'imgs/g2b.jpg' %}') no-repeat; background-size:100%; background-position:right;">
-    <div class="container">
-      <h1 class="text-center">Healing the Healers</h1>
-    </div>
+<section id="banner">
+  <img src="{% static 'imgs/healing-healers-crop.png' %}">
+  <h1 class="text-center small-h1">Healing the Healers</h1>
 </section>
 <div class="container top-con">
   <div class="top-logo text-center top-20 bottom-40">
@@ -21,13 +20,15 @@
     <li>Foster connection with self and others </li>
     <li>Improve decision making skills</li>
     <li>Improve mental health </li>
+  </ul>
+  <img src="{% static 'imgs/seattle_therapy_alliance.jpg' %}" class="side-img" />
+  <ul class="healers-list">
     <li>Increase in job performance</li>
     <li>Understand the warning signs and prevention of burnout</li>
     <li>Understand and share a universal self-care vocabulary for helping professionals</li>
     <li>Improve overall quality of life and reduce vicarious trauma, work related depression or anxiety. </li>
     <li>Create a collaborative rather than competitive professional atmosphere</li>
   </ul>
-  <img src="{% static 'imgs/seattle_therapy_alliance.jpg' %}" class="side-img" />
   <div class="clearfix"></div>
   <div class="note text-center bottom-40">
     <p>To contact me about supporting you or your staff through Trauma Stewardship coaching or speaking, please schedule a free 15-minute session to discuss things further.</p>

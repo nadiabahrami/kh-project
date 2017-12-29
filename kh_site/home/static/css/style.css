@@ -662,6 +662,12 @@ span.mobile-item {
     font-size: 1.3em;
     margin-top: 0;
 }
+.healers-list:first-of-type {
+    margin-bottom: -20px;
+}
+.healers-list:last-of-type {
+    width: 100%;
+}
 .healers-list li {
     margin: 20px auto;
 }
@@ -749,7 +755,7 @@ span.mobile-item {
 }
 #presentation-content {
     overflow-y: scroll;
-    height: 370px;
+    height: 52vh;
 }
 #presentation-content ul {
     list-style-type: disc;
