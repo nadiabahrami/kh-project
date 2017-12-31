@@ -1,10 +1,9 @@
 {% extends 'base/base.html' %}
 {% load static %}
 {% block content %}
-  <section class="main" style="background: url('{% static 'imgs/c5.jpg' %}') no-repeat; background-size:100%; background-position:bottom;">
-    <div class="container">
-      <h1 class="text-center">Oops!</h1>
-    </div>
+  <section id="banner">
+    <img src="{% static 'imgs/not-found-crop.png' %}" />
+    <h1 class="text-center">Oops!</h1>
   </section>
   <div class="container top-con">
     <h2 class="text-center">Oh no! Looks like something went wrong!</h2>

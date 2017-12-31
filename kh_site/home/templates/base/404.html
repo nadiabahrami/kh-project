@@ -1,10 +1,9 @@
 {% extends 'base/base.html' %}
 {% load static %}
 {% block content %}
-  <section class="main" style="background: url('{% static 'imgs/not-found.jpg' %}') no-repeat; background-size:100%; background-position:right;">
-    <div class="container">
-      <h1 class="text-center">Not Here</h1>
-    </div>
+  <section id="banner">
+    <img src="{% static 'imgs/not-found-crop.png' %}" />
+    <h1 class="text-center">Not Here</h1>
   </section>
   <div class="container top-con">
     <h2 class="text-center">Sorry, but what you're looking for isn't here</h2>
@@ -13,9 +12,9 @@
     </p>
   </div>
   <div class="container" id="home-squares">
-    <div class="col-md-6 service-container">
+    <div class="col-md-6 service-container s1">
       <a href="{% url 'counseling' %}">
-        <div class='service-img s1'>
+        <div class='service-img'>
           <img src="{% static 'imgs/forest-road-in-the-fall.jpg' %}">
         </div>
         <div class="service">
@@ -54,8 +53,9 @@
     </div>
     <div class="col-md-6 service-container">
       <a href="{% url 'healing_healers' %}">
-        <div class='service-img s4'>
-          <img src="{% static 'imgs/c1.jpg' %}">
+        <!-- <div class='service-img s4'> -->
+        <div class="service-img">
+          <img src="{% static 'imgs/greenlake.jpg' %}">
         </div>
         <div class="service">
           <div class="service-inner">
