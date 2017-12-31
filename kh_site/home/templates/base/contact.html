@@ -1,10 +1,9 @@
 {% extends 'base/base.html' %}
 {% load static %}
 {% block content %}
-<section class="main" style="background: url('{% static 'imgs/b1.jpg' %}') no-repeat; background-size:100%; background-position:right;">
-    <div class="container">
-      <h1 class="text-center">Contact</h1>
-    </div>
+<section id="banner">
+  <img src="{% static 'imgs/contact-main-crop.png' %}">
+  <h1 class="text-center">Contact</h1>
 </section>
 <div class="container" id="contact-body">
     <div class="col-md-3">
@@ -15,6 +14,7 @@
                 <li>Suite 226</li>
                 <li>Seattle, WA 98103</li>
             </ul>
+            <p id="find-me"><a href="https://www.google.com/maps/place/Introspective+Counseling+-+Kyeisha+Hodge/@47.6517406,-122.353203,17z/data=!3m1!4b1!4m5!3m4!1s0x54901500aacc2e7f:0x156ca010744175d5!8m2!3d47.6517406!4d-122.3510143" target="_blank">Find me! <i class="fa fa-globe" aria-hidden="true"></i></a></p>
         </section>
         <h4>Parking:</h4>
         <p>Paid street parking is available 8am to 8pm on the street surrounding both the Fremont Office.</p>

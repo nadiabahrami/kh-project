@@ -334,4 +334,66 @@
         width: 80vw;
         max-width: 300px;
     }
+
+    /* Contact */
+    #contact-body {
+        text-align: center;
+    }
+    #contact-body p {
+        margin-bottom: 0;
+    }
+    .contact-p {
+        padding-top: 10px;
+    }
+    #map {
+        margin-top: 20px;
+    }
+    #find-me {
+        display: block;
+    }
+
+    /* Resources */
+    #resources-body h4 {
+        text-align: center;
+    }
+    .book-container {
+        width: auto;
+        display: inline-block;
+    }
+    .book-container:nth-child(even) {
+        margin-left: 7vw;
+    }
+    .book {
+        width: auto;
+        margin: 10px auto 10px;
+    }
+    .book-cover {
+        height: 46vw;
+        width: auto;
+    }
+
+    .res-con {
+        text-align: center;
+    }
+    .res-con .divider {
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .res-con .divider:last-child {
+        border-bottom: 2px solid darkgrey;
+    }
+    #resources-right .divider:last-child {
+        border-bottom: none;
+    }
+    .res-con h4 {
+        font-size: 1.7em;
+        text-align: center;
+    }
+    .resource-inner {
+        font-size: 0.9em;
+        left: 0;
+    }
+    .resource-inner p {
+        margin-bottom: 5px;
+    }
 }

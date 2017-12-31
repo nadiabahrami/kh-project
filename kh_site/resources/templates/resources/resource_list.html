@@ -1,10 +1,9 @@
 {% extends 'base/base.html' %}
 {% load static %}
 {% block content %}
-<section class="main" style="background: url('{% static 'imgs/book-main-long.jpg' %}') no-repeat; background-size:100%; background-position:center left;">
-    <div class="container">
-        <h1 class="text-center">Resources</h1>
-    </div>
+<section id="banner">
+  <img src="{% static 'imgs/resources-main-crop.png' %}">
+  <h1 class="text-center">Resources</h1>
 </section>
 <div class="container top-con" id="resources-body">
     <div class="divider">
@@ -21,7 +20,7 @@
             {% include 'resources/resource_item.html' %}
         {% endfor %}
     </div>
-    <div class="col-md-6 res-con">
+    <div class="col-md-6 res-con" id="resources-right">
         {% for resource in resources_right %}
             {% include 'resources/resource_item.html' %}
         {% endfor %}
