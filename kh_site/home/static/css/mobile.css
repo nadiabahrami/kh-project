@@ -237,6 +237,7 @@
     }
     #group-event-detail li {
         margin: 10px 0;
+        font-size: 0.9em;
     }
 
     .narrowed-text {
@@ -256,6 +257,9 @@
     .healers-list,
     .side-img {
         float: none;
+    }
+    .healers-list li {
+        font-size: 0.9em;
     }
     .side-img {
         width: 95%;
