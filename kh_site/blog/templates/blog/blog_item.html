@@ -1,5 +1,5 @@
 {% load blog_functions %}
-<div class="col-md-12 blg-exr">
+<div class="col-md-12 blg-exr container">
   <a href="{% url 'blog_detail_slug' slug=article.slug %}" class="title-link"><h2>{{ article.title }}</h2></a>
   <section class="blog-date-time">
     <p>{{ article.date_published|date:'F d, Y' }}</p><span class="text-divider"> | </span><p>Reading Time: {{ article.content|reading_time }}</p>

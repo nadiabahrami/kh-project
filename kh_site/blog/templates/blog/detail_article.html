@@ -6,7 +6,7 @@
   <img src="{% static 'imgs/blog-main-crop.png' %}">
   <h1 class="text-center">Blog</h1>
 </section>
-<div id="blog-body">
+<div id="blog-body container">
   <div class="container divider b2-top" id="blog-article">
     {% if user.is_authenticated%}
       <a href="{% url 'add_bpost' %}">Add a Post</a>

@@ -237,6 +237,7 @@ span.mobile-item {
     padding-top:20px;
     border-top: 3px solid #54F2CE;
     overflow: hidden;
+    margin-top: 40px;
 }
 
 .footer p{
@@ -696,9 +697,23 @@ span.mobile-item {
     font-style: italic;
     font-weight: 100;
     padding-top: 20px;
+    width: 60%;
+    margin: 0 auto 20px;
+}
+.top-quote p:first-child::before {
+    content: '"';
+    font-family: cursive;
+    font-size: 160px;
+    position: relative;
+    top: 40px;
+    left: -30px;
 }
 .top-quote p {
     margin-bottom: 5px;
+    line-height: 1.7em;
+}
+.quote-name-line {
+    font-size: 0.9em;
 }
 
 #coun-img {
