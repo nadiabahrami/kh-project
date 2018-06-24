@@ -1004,6 +1004,17 @@ span.mobile-item {
     text-align: center;
 }
 
+.listing {
+    margin-bottom: 20px;
+}
+.listing li {
+    list-style-type: disc;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    letter-spacing: 0.03em;
+}
+
 .join-btn {
     text-align: center;
 }
@@ -1024,7 +1035,6 @@ span.mobile-item {
     list-style-type: disc;
     font-family: 'Raleway', sans-serif;
     font-size: 1.25em;
-    width: 70%;
     margin: auto;
 }
 .narrowed-text {
@@ -1037,6 +1047,13 @@ span.mobile-item {
 .note {
     font-size: 1.3em;
     color: #EC8E71;
+}
+.group-coach-subhead {
+    text-decoration: underline;
+}
+#session-outline {
+    width: 70%;
+    margin: auto;
 }
 
 /* Loading Overlay */

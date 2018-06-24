@@ -8,19 +8,49 @@ from redactor.fields import RedactorField
 DATE_FMT = '%b %d, %Y'
 DEFAULT_LOGISTICS = """<ul>
     <li><p>8 group sessions total</p></li>
-    <li><p>Weekly “office hours” (TBD in the new year) over the phone where I’m available for troubleshooting, Q&A, and check-ins</p></li>
+    <li><p>Total of 12 phenomenal women per group</p></li>
+    <li><p>Weekly "office hours" (TBD in the new year) over the phone where I’m available for troubleshooting, Q&A, and check-ins</p></li>
     <li><p>Formation of daily self-care practice-exercises (Monday through Friday) to help you stay focused, build momentum, and move forward throughout the week</p></li>
     <li><p>Tailored invitations to work on between sessions to help you get stronger and more free</p></li>
 </ul>"""
-DEFAULT_OUTLINE = """<ul>
-      <li><p>Session 1 &amp; 2 - Liberate our minds by understanding and REMOVING the negative effects of historical and individual trauma.</p></li>
-
-      <li><p>Session 3 &amp; 4 Understand your current self-care practices and design ones that support you in developing you ideal self.</p></li>
-
-      <li><p>Session 5 &amp; 6  Clarify your values and beliefs (including the limiting ones) in order to begin living an intentional, joy filled life.</p></li>
-
-      <li><p>Session 7 &amp; 8 - Begin designing life goals in order to crate clarity, purpose and restore passion.</p></li>
-    </ul>"""
+DEFAULT_OUTLINE = """
+<div>
+    <h4>Session 1 &amp; 2  &mdash; Foundational Self Love</h4>
+    <p class="group-coach-subhead">Topics:</p>
+    <ul>
+        <li>Developing self-care practices, transforming self-talk</li>
+        <li>Identifying the origin of negative self-talk</li>
+        <li>Identifying trauma’s lies, finding personal truths</li>
+    </ul>
+</div>
+<div>
+    <h4>Session 3 &amp; 4 &mdash; Transforming Beliefs</h4>
+    <p class="group-coach-subhead">Topics:</p>
+    <ul>
+        <li>Understanding the common limiting beliefs associated with having to navigate domestic violence and childhood abuse.</li>
+        <li>Identifying your "Goliath limited beliefs" and its impact on the way you view safety, trust, power/control, intimacy, and self esteem.</li>
+        <li>Learn tools to challenge and revise old negative patterns of thinking.</li>
+    </ul>
+</div>
+<div>
+    <h4>Session 5 &amp; 6 &mdash; Evaluating Core Values</h4>
+    <p class="group-coach-subhead">Topics:</p>
+    <ul>
+        <li>Articulate your values and WHY you have them</li>
+        <li>Identify and re-design your "rulebook" for success and how to acquire what you value; one's judgment of what is important in life.</li>
+        <li>Align beliefs to achieve practice values.</li>
+    </ul>
+</div>
+<div>
+    <h4>Session 7 &amp; 8 &mdash; Restoring Passion</h4>
+    <p class="group-coach-subhead">Topics:</p>
+    <ul>
+        <li>Identify an area of "Play" and engage in it weekly or monthly.</li>
+        <li>Articulate your life goals in the following areas: career, physical health, mental health, emotional health, and spirituality.</li>
+        <li>Create a 90-day life goal plan for different life areas.</li>
+        <li>Receive guidance and support to create clarity, purpose and restore your passion.</li>
+    </ul>
+</div>"""
 DEFAULT_LOCATION = "600 North 65th street, Seattle, WA"
 
 
